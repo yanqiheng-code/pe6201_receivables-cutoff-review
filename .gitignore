@@ -8,3 +8,4 @@ local_tester/config.py
 local_tester/review_workspace/
 SUBMISSION_REQUIREMENTS_AND_PLAN.md
 *.zip
+.venv-cloud/

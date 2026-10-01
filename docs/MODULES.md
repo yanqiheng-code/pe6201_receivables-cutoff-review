@@ -31,4 +31,11 @@ Generators and answer keys are evaluator resources, not runtime evidence for the
 - `test_baseline.py`: baseline operation without answer access and selected boundary behaviors.
 - `test_review_app.py`: isolated fixture workspaces; confirmation-triggered model calls, import validation, history, failure handling, reset and acceptance gates. Model calls are mocked and incur no fees.
 
-All three test modules reside in `local_tester/`. The frontend uses no npm packages; Python uses only the standard library. There is no additional dependency lockfile to install.
+All three local test modules reside in `local_tester/`. The frontend uses no npm packages; the local Python entry point uses only the standard library.
+
+## Optional hosted adapter
+
+- `cloud_app.py`: Flask transport for the same review engine and frontend, anonymous signed browser sessions, separate workspaces, shared daily call budget and bounded concurrent calls. No visitor password is required. It uses a server environment key and never reads local `config.py`.
+- `requirements.txt`: Flask and Gunicorn dependencies for the hosted version only.
+- `render.yaml`: optional Render Blueprint for one worker with four HTTP threads and a health endpoint.
+- `tests_cloud/test_cloud.py`: isolated HTTP tests for browser separation, CSRF/origin checks, automatic model invocation, persistent counters and empty-state acceptance. Uses mocked provider responses, not paid calls.

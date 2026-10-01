@@ -1,6 +1,6 @@
 # Web Deployment Plan
 
-Status: proposed deployment path, not a completed public deployment.
+Status update: a password-free Flask/Gunicorn cloud adapter, anonymous browser workspaces, request limits and Render settings have now been implemented. A live public deployment has not yet been verified. Follow [the current setup guide](../docs/RENDER_SETUP.md). The planning notes below describe the original deployment considerations; authenticated access is deferred by the student's explicit choice for this synthetic public demo.
 
 ## Current implementation
 

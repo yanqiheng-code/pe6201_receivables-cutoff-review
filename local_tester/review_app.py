@@ -63,6 +63,10 @@ def request_ai(body, key):
         return json.load(response)
 
 
+class DemoLimitError(Exception):
+    """A hosted-demo policy prevented a provider request; safe to display to the user."""
+
+
 class ReviewStore:
     def __init__(self, folder=WORKSPACE, project=run.PROJECT, runs=None):
         self.folder = Path(folder)
@@ -366,6 +370,9 @@ class ReviewStore:
                     run.save(folder / 'response.json', raw)
                     attempt['reported_cost_usd'] = run.cost(raw.get('usage'))
                     attempt['result'] = run.parse_response(raw, case)
+                except DemoLimitError as exc:
+                    attempt['error'] = str(exc)
+                    attempt['reported_cost_usd'] = 0
                 except urllib.error.HTTPError as exc:
                     attempt['error'] = f'OpenRouter HTTP {exc.code}. Check access, billing or rate limits. No automatic retry.'
                 except (urllib.error.URLError, TimeoutError, OSError):

@@ -19,7 +19,11 @@ Stop the server with Ctrl+C. If port 8765 is already in use, stop the earlier in
 
 Importing and viewing data do not call the model. Confirmation in steps 01 and 03 does. There are no automatic retries. Sidebar **Reset** deletes local demo state, attempts and demo archives, while retaining the repository datasets and evaluation evidence. It is disabled during an AI run. For details, see [the UI guide](local_tester/REVIEW_APP.md).
 
-## Evaluate without the interface
+## Optional public Render demo
+
+The hosted entry point is `cloud_app.py`; it serves the same frontend without a visitor password. Each browser has an isolated workspace. The default provider-call limit is 200 attempts per UTC day across all visitors. This temporary demo stores progress on the instance filesystem, so free-service restarts can lose progress. See [Render setup](docs/RENDER_SETUP.md) for exact settings, secrets and limitations. `requirements.txt` and `render.yaml` are included. Deployment to an actual public URL still requires the owner's Render account and a successful live check.
+
+## Evaluation commands
 
 Set `DATASET = "formal_test_80"`, `RUN_ALL = True` and `BACKEND = "baseline"` in your local configuration, then run `local_tester/main.py` in VS Code for an offline rules baseline. Use `BACKEND = "live"` for a paid 80-case model evaluation. Live requests use `openai/gpt-4.1-mini` through OpenRouter. New outputs go to the ignored `local_tester/runs/` directory.
 
