@@ -1,0 +1,3540 @@
+{
+  "reporting_period_start": "2025-01-01",
+  "cutoff_date": "2025-12-31",
+  "records_available_through": "2026-01-20",
+  "currency": "CNY",
+  "assumptions": [
+    "All contracts are valid, approved and unchanged. Collection was probable at contract inception.",
+    "Each case is one separate contract, invoice, delivery batch and accounting entry.",
+    "All goods have a fixed price. All amounts exclude tax. There are no discounts, returns, reversals, financing components or service obligations.",
+    "There are no opening balances or other entries for these transactions. No payments have been received through 20 January 2026.",
+    "Ledger records are complete for these transactions through 20 January 2026. Delivery table values supplied are verified synthetic facts; null required fields are missing evidence, not proof of non-performance.",
+    "A null acceptance field in a contract without substantive acceptance is not a missing required event.",
+    "Payment rights become unconditional at the qualifying contractual event.",
+    "Invoice issuance before the qualifying event is administrative only; it does not create an earlier unconditional payment right.",
+    "A populated customer receipt date includes signed receipt. A populated dispatch date under a collection contract represents completed buyer collection. No partial deliveries are present."
+  ],
+  "dataset": "Formal synthetic test set v1.0, separate from development examples",
+  "cases": [
+    {
+      "transaction_id": "TEST-001",
+      "contract": {
+        "document_id": "CONTRACT-001",
+        "customer": "Industrial Buyer 001",
+        "goods": "Aluminium brackets",
+        "quantity": 200,
+        "unit_price_cny": 60,
+        "total_price_cny": 12000,
+        "terms": "Control transfers when the customer receives the shipment and signs the warehouse receipt. Dispatch alone does not complete performance. Payment becomes unconditional at that event and is due 30 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-001",
+        "transaction_id": "TEST-001",
+        "accounting_date": "2025-12-30",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 12000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 12000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-001",
+        "transaction_id": "TEST-001",
+        "invoice_date": "2026-01-05",
+        "quantity": 200,
+        "amount_cny": 12000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-001",
+        "transaction_id": "TEST-001",
+        "batch_id": "LOT-001",
+        "actual_dispatch_date": "2025-12-29",
+        "actual_customer_receipt_date": "2025-12-30",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 200,
+        "received_quantity": 200,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-002",
+      "contract": {
+        "document_id": "CONTRACT-002",
+        "customer": "Industrial Buyer 002",
+        "goods": "Pump housings",
+        "quantity": 150,
+        "unit_price_cny": 125,
+        "total_price_cny": 18750,
+        "terms": "Control transfers when the customer receives the shipment and signs the warehouse receipt. Dispatch alone does not complete performance. Payment becomes unconditional at that event and is due 30 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-002",
+        "transaction_id": "TEST-002",
+        "accounting_date": "2026-01-02",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 18750,
+          "credit_account": "Sales revenue",
+          "credit_cny": 18750
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-002",
+        "transaction_id": "TEST-002",
+        "invoice_date": "2025-12-23",
+        "quantity": 150,
+        "amount_cny": 18750
+      },
+      "delivery": {
+        "document_id": "DELIVERY-002",
+        "transaction_id": "TEST-002",
+        "batch_id": "LOT-002",
+        "actual_dispatch_date": "2025-12-24",
+        "actual_customer_receipt_date": "2025-12-25",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 150,
+        "received_quantity": 150,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-003",
+      "contract": {
+        "document_id": "CONTRACT-003",
+        "customer": "Industrial Buyer 003",
+        "goods": "Pump housings",
+        "quantity": 40,
+        "unit_price_cny": 240,
+        "total_price_cny": 9600,
+        "terms": "Transfer of control occurs on signed delivery at the buyer warehouse. The seller remains responsible during transit. No additional acceptance procedure applies. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-003",
+        "transaction_id": "TEST-003",
+        "accounting_date": "2025-12-31",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 9600,
+          "credit_account": "Sales revenue",
+          "credit_cny": 9600
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-003",
+        "transaction_id": "TEST-003",
+        "invoice_date": "2025-12-23",
+        "quantity": 40,
+        "amount_cny": 9600
+      },
+      "delivery": {
+        "document_id": "DELIVERY-003",
+        "transaction_id": "TEST-003",
+        "batch_id": "LOT-003",
+        "actual_dispatch_date": "2025-12-27",
+        "actual_customer_receipt_date": null,
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 40,
+        "received_quantity": null,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-004",
+      "contract": {
+        "document_id": "CONTRACT-004",
+        "customer": "Industrial Buyer 004",
+        "goods": "Aluminium brackets",
+        "quantity": 80,
+        "unit_price_cny": 60,
+        "total_price_cny": 4800,
+        "terms": "Control transfers when the goods are collected by the customer at the factory. The collection is recorded in the actual dispatch field. The customer can direct their use immediately. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-004",
+        "transaction_id": "TEST-004",
+        "accounting_date": "2026-01-03",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 4800,
+          "credit_account": "Sales revenue",
+          "credit_cny": 4800
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-004",
+        "transaction_id": "TEST-004",
+        "invoice_date": "2025-12-23",
+        "quantity": 80,
+        "amount_cny": 4800
+      },
+      "delivery": {
+        "document_id": "DELIVERY-004",
+        "transaction_id": "TEST-004",
+        "batch_id": "LOT-004",
+        "actual_dispatch_date": "2026-01-03",
+        "actual_customer_receipt_date": "2026-01-05",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 80,
+        "received_quantity": 80,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-005",
+      "contract": {
+        "document_id": "CONTRACT-005",
+        "customer": "Industrial Buyer 005",
+        "goods": "Aluminium brackets",
+        "quantity": 40,
+        "unit_price_cny": 125,
+        "total_price_cny": 5000,
+        "terms": "Control passes on handover to the carrier appointed by the buyer. The buyer can redirect the shipment thereafter; the seller retains no substantive control. Payment becomes unconditional at that event and is due 30 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-005",
+        "transaction_id": "TEST-005",
+        "accounting_date": "2025-12-23",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 5000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 5000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-005",
+        "transaction_id": "TEST-005",
+        "invoice_date": "2026-01-02",
+        "quantity": 40,
+        "amount_cny": 5000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-005",
+        "transaction_id": "TEST-005",
+        "batch_id": "LOT-005",
+        "actual_dispatch_date": "2025-12-23",
+        "actual_customer_receipt_date": "2025-12-24",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 40,
+        "received_quantity": 40,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-006",
+      "contract": {
+        "document_id": "CONTRACT-006",
+        "customer": "Industrial Buyer 006",
+        "goods": "Aluminium brackets",
+        "quantity": 200,
+        "unit_price_cny": 125,
+        "total_price_cny": 25000,
+        "terms": "Transfer of control occurs on signed delivery at the buyer warehouse. The seller remains responsible during transit. No additional acceptance procedure applies. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-006",
+        "transaction_id": "TEST-006",
+        "accounting_date": "2025-12-28",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 25000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 25000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-006",
+        "transaction_id": "TEST-006",
+        "invoice_date": "2025-12-30",
+        "quantity": 200,
+        "amount_cny": 25000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-006",
+        "transaction_id": "TEST-006",
+        "batch_id": "LOT-006",
+        "actual_dispatch_date": "2025-12-24",
+        "actual_customer_receipt_date": "2025-12-28",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 200,
+        "received_quantity": 200,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-007",
+      "contract": {
+        "document_id": "CONTRACT-007",
+        "customer": "Industrial Buyer 007",
+        "goods": "Bearing sleeves",
+        "quantity": 40,
+        "unit_price_cny": 240,
+        "total_price_cny": 9600,
+        "terms": "Transfer of control occurs on signed delivery at the buyer warehouse. The seller remains responsible during transit. No additional acceptance procedure applies. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-007",
+        "transaction_id": "TEST-007",
+        "accounting_date": "2026-01-08",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 9600,
+          "credit_account": "Sales revenue",
+          "credit_cny": 9600
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-007",
+        "transaction_id": "TEST-007",
+        "invoice_date": "2025-12-30",
+        "quantity": 40,
+        "amount_cny": 9600
+      },
+      "delivery": {
+        "document_id": "DELIVERY-007",
+        "transaction_id": "TEST-007",
+        "batch_id": "LOT-007",
+        "actual_dispatch_date": "2026-01-04",
+        "actual_customer_receipt_date": "2026-01-08",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 40,
+        "received_quantity": 40,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-008",
+      "contract": {
+        "document_id": "CONTRACT-008",
+        "customer": "Industrial Buyer 008",
+        "goods": "Aluminium brackets",
+        "quantity": 60,
+        "unit_price_cny": 60,
+        "total_price_cny": 3600,
+        "terms": "Control passes when the goods are handed to the buyer-authorised carrier at the loading point. Subsequent transport does not delay this transfer. Payment becomes unconditional at that event and is due 30 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-008",
+        "transaction_id": "TEST-008",
+        "accounting_date": "2025-12-27",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 3600,
+          "credit_account": "Sales revenue",
+          "credit_cny": 3600
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-008",
+        "transaction_id": "TEST-008",
+        "invoice_date": "2025-12-30",
+        "quantity": 60,
+        "amount_cny": 3600
+      },
+      "delivery": {
+        "document_id": "DELIVERY-008",
+        "transaction_id": "TEST-008",
+        "batch_id": "LOT-008",
+        "actual_dispatch_date": "2025-12-27",
+        "actual_customer_receipt_date": "2025-12-28",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 60,
+        "received_quantity": 60,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-009",
+      "contract": {
+        "document_id": "CONTRACT-009",
+        "customer": "Industrial Buyer 009",
+        "goods": "Bearing sleeves",
+        "quantity": 120,
+        "unit_price_cny": 240,
+        "total_price_cny": 28800,
+        "terms": "Control transfers when the goods are collected by the customer at the factory. The collection is recorded in the actual dispatch field. The customer can direct their use immediately. Payment becomes unconditional at that event and is due 30 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-009",
+        "transaction_id": "TEST-009",
+        "accounting_date": "2025-12-31",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 28800,
+          "credit_account": "Sales revenue",
+          "credit_cny": 28800
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-009",
+        "transaction_id": "TEST-009",
+        "invoice_date": "2026-01-10",
+        "quantity": 120,
+        "amount_cny": 28800
+      },
+      "delivery": {
+        "document_id": "DELIVERY-009",
+        "transaction_id": "TEST-009",
+        "batch_id": "LOT-009",
+        "actual_dispatch_date": null,
+        "actual_customer_receipt_date": null,
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": null,
+        "received_quantity": null,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-010",
+      "contract": {
+        "document_id": "CONTRACT-010",
+        "customer": "Industrial Buyer 010",
+        "goods": "Steel fasteners",
+        "quantity": 120,
+        "unit_price_cny": 60,
+        "total_price_cny": 7200,
+        "terms": "Control transfers when the customer receives the shipment and signs the warehouse receipt. Dispatch alone does not complete performance. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-010",
+        "transaction_id": "TEST-010",
+        "accounting_date": "2026-01-05",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 7200,
+          "credit_account": "Sales revenue",
+          "credit_cny": 7200
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-010",
+        "transaction_id": "TEST-010",
+        "invoice_date": "2026-01-10",
+        "quantity": 120,
+        "amount_cny": 7200
+      },
+      "delivery": {
+        "document_id": "DELIVERY-010",
+        "transaction_id": "TEST-010",
+        "batch_id": "LOT-010",
+        "actual_dispatch_date": "2026-01-01",
+        "actual_customer_receipt_date": "2026-01-05",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 120,
+        "received_quantity": 120,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-011",
+      "contract": {
+        "document_id": "CONTRACT-011",
+        "customer": "Industrial Buyer 011",
+        "goods": "Bearing sleeves",
+        "quantity": 40,
+        "unit_price_cny": 60,
+        "total_price_cny": 2400,
+        "terms": "Control transfers when the goods are collected by the customer at the factory. The collection is recorded in the actual dispatch field. The customer can direct their use immediately. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-011",
+        "transaction_id": "TEST-011",
+        "accounting_date": "2025-12-29",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 2400,
+          "credit_account": "Sales revenue",
+          "credit_cny": 2400
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-011",
+        "transaction_id": "TEST-011",
+        "invoice_date": "2026-01-02",
+        "quantity": 40,
+        "amount_cny": 2400
+      },
+      "delivery": {
+        "document_id": "DELIVERY-011",
+        "transaction_id": "TEST-011",
+        "batch_id": "LOT-011",
+        "actual_dispatch_date": "2026-01-01",
+        "actual_customer_receipt_date": "2026-01-05",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 40,
+        "received_quantity": 40,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-012",
+      "contract": {
+        "document_id": "CONTRACT-012",
+        "customer": "Industrial Buyer 012",
+        "goods": "Pump housings",
+        "quantity": 40,
+        "unit_price_cny": 85,
+        "total_price_cny": 3400,
+        "terms": "Control transfers only upon customer inspection approval and acceptance. The inspection verifies contractual performance and is a substantive condition. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-012",
+        "transaction_id": "TEST-012",
+        "accounting_date": "2025-12-31",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 3400,
+          "credit_account": "Sales revenue",
+          "credit_cny": 3400
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-012",
+        "transaction_id": "TEST-012",
+        "invoice_date": "2026-01-05",
+        "quantity": 40,
+        "amount_cny": 3400
+      },
+      "delivery": {
+        "document_id": "DELIVERY-012",
+        "transaction_id": "TEST-012",
+        "batch_id": "LOT-012",
+        "actual_dispatch_date": "2025-12-27",
+        "actual_customer_receipt_date": "2025-12-29",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 40,
+        "received_quantity": 40,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-013",
+      "contract": {
+        "document_id": "CONTRACT-013",
+        "customer": "Industrial Buyer 013",
+        "goods": "Bearing sleeves",
+        "quantity": 60,
+        "unit_price_cny": 240,
+        "total_price_cny": 14400,
+        "terms": "Control passes only after substantive customer acceptance following inspection. Physical receipt alone is insufficient. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-013",
+        "transaction_id": "TEST-013",
+        "accounting_date": "2026-01-05",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 14400,
+          "credit_account": "Sales revenue",
+          "credit_cny": 14400
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-013",
+        "transaction_id": "TEST-013",
+        "invoice_date": "2026-01-10",
+        "quantity": 60,
+        "amount_cny": 14400
+      },
+      "delivery": {
+        "document_id": "DELIVERY-013",
+        "transaction_id": "TEST-013",
+        "batch_id": "LOT-013",
+        "actual_dispatch_date": "2026-01-01",
+        "actual_customer_receipt_date": "2026-01-04",
+        "actual_customer_acceptance_date": "2026-01-05",
+        "dispatched_quantity": 60,
+        "received_quantity": 60,
+        "accepted_quantity": 60,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-014",
+      "contract": {
+        "document_id": "CONTRACT-014",
+        "customer": "Industrial Buyer 014",
+        "goods": "Bearing sleeves",
+        "quantity": 200,
+        "unit_price_cny": 125,
+        "total_price_cny": 25000,
+        "terms": "Control transfers when the customer receives the shipment and signs the warehouse receipt. Dispatch alone does not complete performance. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-014",
+        "transaction_id": "TEST-014",
+        "accounting_date": "2026-01-01",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 25000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 25000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-014",
+        "transaction_id": "TEST-014",
+        "invoice_date": "2025-12-23",
+        "quantity": 200,
+        "amount_cny": 25000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-014",
+        "transaction_id": "TEST-014",
+        "batch_id": "LOT-014",
+        "actual_dispatch_date": "2025-12-28",
+        "actual_customer_receipt_date": "2026-01-01",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 200,
+        "received_quantity": 200,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-015",
+      "contract": {
+        "document_id": "CONTRACT-015",
+        "customer": "Industrial Buyer 015",
+        "goods": "Bearing sleeves",
+        "quantity": 40,
+        "unit_price_cny": 35,
+        "total_price_cny": 1400,
+        "terms": "Control passes on handover to the carrier appointed by the buyer. The buyer can redirect the shipment thereafter; the seller retains no substantive control. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-015",
+        "transaction_id": "TEST-015",
+        "accounting_date": "2025-12-31",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 1400,
+          "credit_account": "Sales revenue",
+          "credit_cny": 1400
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-015",
+        "transaction_id": "TEST-015",
+        "invoice_date": "2025-12-30",
+        "quantity": 40,
+        "amount_cny": 1400
+      },
+      "delivery": {
+        "document_id": "DELIVERY-015",
+        "transaction_id": "TEST-015",
+        "batch_id": "LOT-015",
+        "actual_dispatch_date": null,
+        "actual_customer_receipt_date": null,
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": null,
+        "received_quantity": null,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-016",
+      "contract": {
+        "document_id": "CONTRACT-016",
+        "customer": "Industrial Buyer 016",
+        "goods": "Pump housings",
+        "quantity": 150,
+        "unit_price_cny": 85,
+        "total_price_cny": 12750,
+        "terms": "Control passes on customer receipt at the agreed warehouse, evidenced by signed delivery. No separate acceptance test is required. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-016",
+        "transaction_id": "TEST-016",
+        "accounting_date": "2026-01-03",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 12750,
+          "credit_account": "Sales revenue",
+          "credit_cny": 12750
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-016",
+        "transaction_id": "TEST-016",
+        "invoice_date": "2025-12-31",
+        "quantity": 150,
+        "amount_cny": 12750
+      },
+      "delivery": {
+        "document_id": "DELIVERY-016",
+        "transaction_id": "TEST-016",
+        "batch_id": "LOT-016",
+        "actual_dispatch_date": "2025-12-30",
+        "actual_customer_receipt_date": "2026-01-03",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 150,
+        "received_quantity": 150,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-017",
+      "contract": {
+        "document_id": "CONTRACT-017",
+        "customer": "Industrial Buyer 017",
+        "goods": "Aluminium brackets",
+        "quantity": 25,
+        "unit_price_cny": 85,
+        "total_price_cny": 2125,
+        "terms": "Control transfers when the customer receives the shipment and signs the warehouse receipt. Dispatch alone does not complete performance. Payment becomes unconditional at that event and is due 30 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-017",
+        "transaction_id": "TEST-017",
+        "accounting_date": "2025-12-25",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 2125,
+          "credit_account": "Sales revenue",
+          "credit_cny": 2125
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-017",
+        "transaction_id": "TEST-017",
+        "invoice_date": "2025-12-23",
+        "quantity": 25,
+        "amount_cny": 2125
+      },
+      "delivery": {
+        "document_id": "DELIVERY-017",
+        "transaction_id": "TEST-017",
+        "batch_id": "LOT-017",
+        "actual_dispatch_date": "2025-12-24",
+        "actual_customer_receipt_date": "2025-12-25",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 25,
+        "received_quantity": 25,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-018",
+      "contract": {
+        "document_id": "CONTRACT-018",
+        "customer": "Industrial Buyer 018",
+        "goods": "Pump housings",
+        "quantity": 120,
+        "unit_price_cny": 60,
+        "total_price_cny": 7200,
+        "terms": "Control passes on handover to the carrier appointed by the buyer. The buyer can redirect the shipment thereafter; the seller retains no substantive control. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-018",
+        "transaction_id": "TEST-018",
+        "accounting_date": "2025-12-31",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 7200,
+          "credit_account": "Sales revenue",
+          "credit_cny": 7200
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-018",
+        "transaction_id": "TEST-018",
+        "invoice_date": "2025-12-28",
+        "quantity": 120,
+        "amount_cny": 7200
+      },
+      "delivery": {
+        "document_id": "DELIVERY-018",
+        "transaction_id": "TEST-018",
+        "batch_id": "LOT-018",
+        "actual_dispatch_date": "2025-12-31",
+        "actual_customer_receipt_date": "2026-01-02",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 120,
+        "received_quantity": 120,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-019",
+      "contract": {
+        "document_id": "CONTRACT-019",
+        "customer": "Industrial Buyer 019",
+        "goods": "Steel fasteners",
+        "quantity": 200,
+        "unit_price_cny": 160,
+        "total_price_cny": 32000,
+        "terms": "Control passes on customer receipt at the agreed warehouse, evidenced by signed delivery. No separate acceptance test is required. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-019",
+        "transaction_id": "TEST-019",
+        "accounting_date": "2025-12-31",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 32000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 32000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-019",
+        "transaction_id": "TEST-019",
+        "invoice_date": "2025-12-28",
+        "quantity": 200,
+        "amount_cny": 32000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-019",
+        "transaction_id": "TEST-019",
+        "batch_id": "LOT-019",
+        "actual_dispatch_date": "2025-12-28",
+        "actual_customer_receipt_date": "2025-12-31",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 200,
+        "received_quantity": 200,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-020",
+      "contract": {
+        "document_id": "CONTRACT-020",
+        "customer": "Industrial Buyer 020",
+        "goods": "Pump housings",
+        "quantity": 200,
+        "unit_price_cny": 160,
+        "total_price_cny": 32000,
+        "terms": "Control transfers when the customer receives the shipment and signs the warehouse receipt. Dispatch alone does not complete performance. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-020",
+        "transaction_id": "TEST-020",
+        "accounting_date": "2025-12-25",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 32000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 32000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-020",
+        "transaction_id": "TEST-020",
+        "invoice_date": "2026-01-05",
+        "quantity": 200,
+        "amount_cny": 32000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-020",
+        "transaction_id": "TEST-020",
+        "batch_id": "LOT-020",
+        "actual_dispatch_date": "2025-12-23",
+        "actual_customer_receipt_date": "2025-12-25",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 200,
+        "received_quantity": 200,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-021",
+      "contract": {
+        "document_id": "CONTRACT-021",
+        "customer": "Industrial Buyer 021",
+        "goods": "Pump housings",
+        "quantity": 200,
+        "unit_price_cny": 35,
+        "total_price_cny": 7000,
+        "terms": "Control transfers when the goods are collected by the customer at the factory. The collection is recorded in the actual dispatch field. The customer can direct their use immediately. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-021",
+        "transaction_id": "TEST-021",
+        "accounting_date": "2025-12-28",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 7000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 7000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-021",
+        "transaction_id": "TEST-021",
+        "invoice_date": "2026-01-10",
+        "quantity": 200,
+        "amount_cny": 7000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-021",
+        "transaction_id": "TEST-021",
+        "batch_id": "LOT-021",
+        "actual_dispatch_date": "2025-12-28",
+        "actual_customer_receipt_date": "2025-12-29",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 200,
+        "received_quantity": 200,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-022",
+      "contract": {
+        "document_id": "CONTRACT-022",
+        "customer": "Industrial Buyer 022",
+        "goods": "Aluminium brackets",
+        "quantity": 40,
+        "unit_price_cny": 160,
+        "total_price_cny": 6400,
+        "terms": "Control transfers when the goods are collected by the customer at the factory. The collection is recorded in the actual dispatch field. The customer can direct their use immediately. Payment becomes unconditional at that event and is due 30 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-022",
+        "transaction_id": "TEST-022",
+        "accounting_date": "2026-01-09",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 6400,
+          "credit_account": "Sales revenue",
+          "credit_cny": 6400
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-022",
+        "transaction_id": "TEST-022",
+        "invoice_date": "2025-12-31",
+        "quantity": 40,
+        "amount_cny": 6400
+      },
+      "delivery": {
+        "document_id": "DELIVERY-022",
+        "transaction_id": "TEST-022",
+        "batch_id": "LOT-022",
+        "actual_dispatch_date": "2026-01-09",
+        "actual_customer_receipt_date": "2026-01-13",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 40,
+        "received_quantity": 40,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-023",
+      "contract": {
+        "document_id": "CONTRACT-023",
+        "customer": "Industrial Buyer 023",
+        "goods": "Steel fasteners",
+        "quantity": 60,
+        "unit_price_cny": 85,
+        "total_price_cny": 5100,
+        "terms": "Control transfers when the customer receives the shipment and signs the warehouse receipt. Dispatch alone does not complete performance. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-023",
+        "transaction_id": "TEST-023",
+        "accounting_date": "2026-01-07",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 5100,
+          "credit_account": "Sales revenue",
+          "credit_cny": 5100
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-023",
+        "transaction_id": "TEST-023",
+        "invoice_date": "2025-12-23",
+        "quantity": 60,
+        "amount_cny": 5100
+      },
+      "delivery": {
+        "document_id": "DELIVERY-023",
+        "transaction_id": "TEST-023",
+        "batch_id": "LOT-023",
+        "actual_dispatch_date": "2026-01-05",
+        "actual_customer_receipt_date": "2026-01-07",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 60,
+        "received_quantity": 60,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-024",
+      "contract": {
+        "document_id": "CONTRACT-024",
+        "customer": "Industrial Buyer 024",
+        "goods": "Steel fasteners",
+        "quantity": 120,
+        "unit_price_cny": 85,
+        "total_price_cny": 10200,
+        "terms": "Control passes only after substantive customer acceptance following inspection. Physical receipt alone is insufficient. Payment becomes unconditional at that event and is due 30 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-024",
+        "transaction_id": "TEST-024",
+        "accounting_date": "2025-12-30",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 10200,
+          "credit_account": "Sales revenue",
+          "credit_cny": 10200
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-024",
+        "transaction_id": "TEST-024",
+        "invoice_date": "2026-01-05",
+        "quantity": 120,
+        "amount_cny": 10200
+      },
+      "delivery": {
+        "document_id": "DELIVERY-024",
+        "transaction_id": "TEST-024",
+        "batch_id": "LOT-024",
+        "actual_dispatch_date": "2025-12-28",
+        "actual_customer_receipt_date": "2025-12-29",
+        "actual_customer_acceptance_date": "2025-12-30",
+        "dispatched_quantity": 120,
+        "received_quantity": 120,
+        "accepted_quantity": 120,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-025",
+      "contract": {
+        "document_id": "CONTRACT-025",
+        "customer": "Industrial Buyer 025",
+        "goods": "Steel fasteners",
+        "quantity": 80,
+        "unit_price_cny": 35,
+        "total_price_cny": 2800,
+        "terms": "Control passes only after substantive customer acceptance following inspection. Physical receipt alone is insufficient. Payment becomes unconditional at that event and is due 30 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-025",
+        "transaction_id": "TEST-025",
+        "accounting_date": "2026-01-04",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 2800,
+          "credit_account": "Sales revenue",
+          "credit_cny": 2800
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-025",
+        "transaction_id": "TEST-025",
+        "invoice_date": "2025-12-23",
+        "quantity": 80,
+        "amount_cny": 2800
+      },
+      "delivery": {
+        "document_id": "DELIVERY-025",
+        "transaction_id": "TEST-025",
+        "batch_id": "LOT-025",
+        "actual_dispatch_date": "2025-12-31",
+        "actual_customer_receipt_date": "2026-01-02",
+        "actual_customer_acceptance_date": "2026-01-04",
+        "dispatched_quantity": 80,
+        "received_quantity": 80,
+        "accepted_quantity": 80,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-026",
+      "contract": {
+        "document_id": "CONTRACT-026",
+        "customer": "Industrial Buyer 026",
+        "goods": "Bearing sleeves",
+        "quantity": 60,
+        "unit_price_cny": 85,
+        "total_price_cny": 5100,
+        "terms": "The customer does not obtain control until substantive inspection sign-off and acceptance. Earlier delivery to its premises is insufficient. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-026",
+        "transaction_id": "TEST-026",
+        "accounting_date": "2026-01-02",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 5100,
+          "credit_account": "Sales revenue",
+          "credit_cny": 5100
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-026",
+        "transaction_id": "TEST-026",
+        "invoice_date": "2025-12-28",
+        "quantity": 60,
+        "amount_cny": 5100
+      },
+      "delivery": {
+        "document_id": "DELIVERY-026",
+        "transaction_id": "TEST-026",
+        "batch_id": "LOT-026",
+        "actual_dispatch_date": "2025-12-30",
+        "actual_customer_receipt_date": "2025-12-31",
+        "actual_customer_acceptance_date": "2026-01-02",
+        "dispatched_quantity": 60,
+        "received_quantity": 60,
+        "accepted_quantity": 60,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-027",
+      "contract": {
+        "document_id": "CONTRACT-027",
+        "customer": "Industrial Buyer 027",
+        "goods": "Pump housings",
+        "quantity": 150,
+        "unit_price_cny": 125,
+        "total_price_cny": 18750,
+        "terms": "The customer does not obtain control until substantive inspection sign-off and acceptance. Earlier delivery to its premises is insufficient. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-027",
+        "transaction_id": "TEST-027",
+        "accounting_date": "2025-12-30",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 18750,
+          "credit_account": "Sales revenue",
+          "credit_cny": 18750
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-027",
+        "transaction_id": "TEST-027",
+        "invoice_date": "2026-01-02",
+        "quantity": 150,
+        "amount_cny": 18750
+      },
+      "delivery": {
+        "document_id": "DELIVERY-027",
+        "transaction_id": "TEST-027",
+        "batch_id": "LOT-027",
+        "actual_dispatch_date": "2025-12-27",
+        "actual_customer_receipt_date": "2025-12-28",
+        "actual_customer_acceptance_date": "2025-12-30",
+        "dispatched_quantity": 150,
+        "received_quantity": 150,
+        "accepted_quantity": 150,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-028",
+      "contract": {
+        "document_id": "CONTRACT-028",
+        "customer": "Industrial Buyer 028",
+        "goods": "Steel fasteners",
+        "quantity": 150,
+        "unit_price_cny": 60,
+        "total_price_cny": 9000,
+        "terms": "Control transfers only upon customer inspection approval and acceptance. The inspection verifies contractual performance and is a substantive condition. Payment becomes unconditional at that event and is due 30 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-028",
+        "transaction_id": "TEST-028",
+        "accounting_date": "2026-01-06",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 9000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 9000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-028",
+        "transaction_id": "TEST-028",
+        "invoice_date": "2026-01-05",
+        "quantity": 150,
+        "amount_cny": 9000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-028",
+        "transaction_id": "TEST-028",
+        "batch_id": "LOT-028",
+        "actual_dispatch_date": "2026-01-02",
+        "actual_customer_receipt_date": "2026-01-03",
+        "actual_customer_acceptance_date": "2026-01-06",
+        "dispatched_quantity": 150,
+        "received_quantity": 150,
+        "accepted_quantity": 150,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-029",
+      "contract": {
+        "document_id": "CONTRACT-029",
+        "customer": "Industrial Buyer 029",
+        "goods": "Bearing sleeves",
+        "quantity": 40,
+        "unit_price_cny": 35,
+        "total_price_cny": 1400,
+        "terms": "Control passes on handover to the carrier appointed by the buyer. The buyer can redirect the shipment thereafter; the seller retains no substantive control. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-029",
+        "transaction_id": "TEST-029",
+        "accounting_date": "2025-12-31",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 1400,
+          "credit_account": "Sales revenue",
+          "credit_cny": 1400
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-029",
+        "transaction_id": "TEST-029",
+        "invoice_date": "2025-12-30",
+        "quantity": 40,
+        "amount_cny": 1400
+      },
+      "delivery": {
+        "document_id": "DELIVERY-029",
+        "transaction_id": "TEST-029",
+        "batch_id": "LOT-029",
+        "actual_dispatch_date": "2025-12-31",
+        "actual_customer_receipt_date": "2026-01-02",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 40,
+        "received_quantity": 40,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-030",
+      "contract": {
+        "document_id": "CONTRACT-030",
+        "customer": "Industrial Buyer 030",
+        "goods": "Pump housings",
+        "quantity": 200,
+        "unit_price_cny": 35,
+        "total_price_cny": 7000,
+        "terms": "Transfer of control occurs on signed delivery at the buyer warehouse. The seller remains responsible during transit. No additional acceptance procedure applies. Payment becomes unconditional at that event and is due 30 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-030",
+        "transaction_id": "TEST-030",
+        "accounting_date": "2025-12-28",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 7000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 7000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-030",
+        "transaction_id": "TEST-030",
+        "invoice_date": "2025-12-28",
+        "quantity": 200,
+        "amount_cny": 7000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-030",
+        "transaction_id": "TEST-030",
+        "batch_id": "LOT-030",
+        "actual_dispatch_date": "2025-12-24",
+        "actual_customer_receipt_date": "2025-12-28",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 200,
+        "received_quantity": 200,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-031",
+      "contract": {
+        "document_id": "CONTRACT-031",
+        "customer": "Industrial Buyer 031",
+        "goods": "Pump housings",
+        "quantity": 120,
+        "unit_price_cny": 125,
+        "total_price_cny": 15000,
+        "terms": "Control passes only after substantive customer acceptance following inspection. Physical receipt alone is insufficient. Payment becomes unconditional at that event and is due 30 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-031",
+        "transaction_id": "TEST-031",
+        "accounting_date": "2025-12-24",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 15000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 15000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-031",
+        "transaction_id": "TEST-031",
+        "invoice_date": "2025-12-23",
+        "quantity": 120,
+        "amount_cny": 15000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-031",
+        "transaction_id": "TEST-031",
+        "batch_id": "LOT-031",
+        "actual_dispatch_date": "2025-12-21",
+        "actual_customer_receipt_date": "2025-12-23",
+        "actual_customer_acceptance_date": "2025-12-24",
+        "dispatched_quantity": 120,
+        "received_quantity": 120,
+        "accepted_quantity": 120,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-032",
+      "contract": {
+        "document_id": "CONTRACT-032",
+        "customer": "Industrial Buyer 032",
+        "goods": "Pump housings",
+        "quantity": 25,
+        "unit_price_cny": 240,
+        "total_price_cny": 6000,
+        "terms": "Control passes on customer receipt at the agreed warehouse, evidenced by signed delivery. No separate acceptance test is required. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-032",
+        "transaction_id": "TEST-032",
+        "accounting_date": "2026-01-04",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 6000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 6000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-032",
+        "transaction_id": "TEST-032",
+        "invoice_date": "2025-12-23",
+        "quantity": 25,
+        "amount_cny": 6000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-032",
+        "transaction_id": "TEST-032",
+        "batch_id": "LOT-032",
+        "actual_dispatch_date": "2025-12-23",
+        "actual_customer_receipt_date": "2025-12-26",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 25,
+        "received_quantity": 25,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-033",
+      "contract": {
+        "document_id": "CONTRACT-033",
+        "customer": "Industrial Buyer 033",
+        "goods": "Pump housings",
+        "quantity": 25,
+        "unit_price_cny": 160,
+        "total_price_cny": 4000,
+        "terms": "Control transfers when the customer receives the shipment and signs the warehouse receipt. Dispatch alone does not complete performance. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-033",
+        "transaction_id": "TEST-033",
+        "accounting_date": "2025-12-31",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 4000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 4000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-033",
+        "transaction_id": "TEST-033",
+        "invoice_date": "2026-01-02",
+        "quantity": 25,
+        "amount_cny": 4000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-033",
+        "transaction_id": "TEST-033",
+        "batch_id": "LOT-033",
+        "actual_dispatch_date": "2025-12-27",
+        "actual_customer_receipt_date": null,
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 25,
+        "received_quantity": null,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-034",
+      "contract": {
+        "document_id": "CONTRACT-034",
+        "customer": "Industrial Buyer 034",
+        "goods": "Steel fasteners",
+        "quantity": 150,
+        "unit_price_cny": 85,
+        "total_price_cny": 12750,
+        "terms": "Control passes when the goods are handed to the buyer-authorised carrier at the loading point. Subsequent transport does not delay this transfer. Payment becomes unconditional at that event and is due 30 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-034",
+        "transaction_id": "TEST-034",
+        "accounting_date": "2025-12-22",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 12750,
+          "credit_account": "Sales revenue",
+          "credit_cny": 12750
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-034",
+        "transaction_id": "TEST-034",
+        "invoice_date": "2025-12-31",
+        "quantity": 150,
+        "amount_cny": 12750
+      },
+      "delivery": {
+        "document_id": "DELIVERY-034",
+        "transaction_id": "TEST-034",
+        "batch_id": "LOT-034",
+        "actual_dispatch_date": "2025-12-22",
+        "actual_customer_receipt_date": "2025-12-25",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 150,
+        "received_quantity": 150,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-035",
+      "contract": {
+        "document_id": "CONTRACT-035",
+        "customer": "Industrial Buyer 035",
+        "goods": "Pump housings",
+        "quantity": 80,
+        "unit_price_cny": 60,
+        "total_price_cny": 4800,
+        "terms": "Control transfers when the goods are collected by the customer at the factory. The collection is recorded in the actual dispatch field. The customer can direct their use immediately. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-035",
+        "transaction_id": "TEST-035",
+        "accounting_date": "2025-12-28",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 4800,
+          "credit_account": "Sales revenue",
+          "credit_cny": 4800
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-035",
+        "transaction_id": "TEST-035",
+        "invoice_date": "2025-12-28",
+        "quantity": 80,
+        "amount_cny": 4800
+      },
+      "delivery": {
+        "document_id": "DELIVERY-035",
+        "transaction_id": "TEST-035",
+        "batch_id": "LOT-035",
+        "actual_dispatch_date": "2025-12-28",
+        "actual_customer_receipt_date": "2025-12-29",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 80,
+        "received_quantity": 80,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-036",
+      "contract": {
+        "document_id": "CONTRACT-036",
+        "customer": "Industrial Buyer 036",
+        "goods": "Pump housings",
+        "quantity": 120,
+        "unit_price_cny": 240,
+        "total_price_cny": 28800,
+        "terms": "Control transfers when the goods are collected by the customer at the factory. The collection is recorded in the actual dispatch field. The customer can direct their use immediately. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-036",
+        "transaction_id": "TEST-036",
+        "accounting_date": "2026-01-07",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 28800,
+          "credit_account": "Sales revenue",
+          "credit_cny": 28800
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-036",
+        "transaction_id": "TEST-036",
+        "invoice_date": "2026-01-02",
+        "quantity": 120,
+        "amount_cny": 28800
+      },
+      "delivery": {
+        "document_id": "DELIVERY-036",
+        "transaction_id": "TEST-036",
+        "batch_id": "LOT-036",
+        "actual_dispatch_date": "2026-01-07",
+        "actual_customer_receipt_date": "2026-01-10",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 120,
+        "received_quantity": 120,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-037",
+      "contract": {
+        "document_id": "CONTRACT-037",
+        "customer": "Industrial Buyer 037",
+        "goods": "Pump housings",
+        "quantity": 120,
+        "unit_price_cny": 60,
+        "total_price_cny": 7200,
+        "terms": "Control transfers only upon customer inspection approval and acceptance. The inspection verifies contractual performance and is a substantive condition. Payment becomes unconditional at that event and is due 30 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-037",
+        "transaction_id": "TEST-037",
+        "accounting_date": "2025-12-27",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 7200,
+          "credit_account": "Sales revenue",
+          "credit_cny": 7200
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-037",
+        "transaction_id": "TEST-037",
+        "invoice_date": "2026-01-02",
+        "quantity": 120,
+        "amount_cny": 7200
+      },
+      "delivery": {
+        "document_id": "DELIVERY-037",
+        "transaction_id": "TEST-037",
+        "batch_id": "LOT-037",
+        "actual_dispatch_date": "2025-12-31",
+        "actual_customer_receipt_date": "2026-01-03",
+        "actual_customer_acceptance_date": "2026-01-05",
+        "dispatched_quantity": 120,
+        "received_quantity": 120,
+        "accepted_quantity": 120,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-038",
+      "contract": {
+        "document_id": "CONTRACT-038",
+        "customer": "Industrial Buyer 038",
+        "goods": "Steel fasteners",
+        "quantity": 120,
+        "unit_price_cny": 160,
+        "total_price_cny": 19200,
+        "terms": "Control transfers when the goods are collected by the customer at the factory. The collection is recorded in the actual dispatch field. The customer can direct their use immediately. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-038",
+        "transaction_id": "TEST-038",
+        "accounting_date": "2026-01-08",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 19200,
+          "credit_account": "Sales revenue",
+          "credit_cny": 19200
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-038",
+        "transaction_id": "TEST-038",
+        "invoice_date": "2025-12-28",
+        "quantity": 120,
+        "amount_cny": 19200
+      },
+      "delivery": {
+        "document_id": "DELIVERY-038",
+        "transaction_id": "TEST-038",
+        "batch_id": "LOT-038",
+        "actual_dispatch_date": "2026-01-08",
+        "actual_customer_receipt_date": "2026-01-11",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 120,
+        "received_quantity": 120,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-039",
+      "contract": {
+        "document_id": "CONTRACT-039",
+        "customer": "Industrial Buyer 039",
+        "goods": "Bearing sleeves",
+        "quantity": 120,
+        "unit_price_cny": 35,
+        "total_price_cny": 4200,
+        "terms": "Control transfers when the customer receives the shipment and signs the warehouse receipt. Dispatch alone does not complete performance. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-039",
+        "transaction_id": "TEST-039",
+        "accounting_date": "2026-01-05",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 4200,
+          "credit_account": "Sales revenue",
+          "credit_cny": 4200
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-039",
+        "transaction_id": "TEST-039",
+        "invoice_date": "2025-12-30",
+        "quantity": 120,
+        "amount_cny": 4200
+      },
+      "delivery": {
+        "document_id": "DELIVERY-039",
+        "transaction_id": "TEST-039",
+        "batch_id": "LOT-039",
+        "actual_dispatch_date": "2026-01-02",
+        "actual_customer_receipt_date": "2026-01-05",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 120,
+        "received_quantity": 120,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-040",
+      "contract": {
+        "document_id": "CONTRACT-040",
+        "customer": "Industrial Buyer 040",
+        "goods": "Pump housings",
+        "quantity": 120,
+        "unit_price_cny": 160,
+        "total_price_cny": 19200,
+        "terms": "Control passes on handover to the carrier appointed by the buyer. The buyer can redirect the shipment thereafter; the seller retains no substantive control. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-040",
+        "transaction_id": "TEST-040",
+        "accounting_date": "2026-01-03",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 19200,
+          "credit_account": "Sales revenue",
+          "credit_cny": 19200
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-040",
+        "transaction_id": "TEST-040",
+        "invoice_date": "2026-01-05",
+        "quantity": 120,
+        "amount_cny": 19200
+      },
+      "delivery": {
+        "document_id": "DELIVERY-040",
+        "transaction_id": "TEST-040",
+        "batch_id": "LOT-040",
+        "actual_dispatch_date": "2025-12-21",
+        "actual_customer_receipt_date": "2025-12-25",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 120,
+        "received_quantity": 120,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-041",
+      "contract": {
+        "document_id": "CONTRACT-041",
+        "customer": "Industrial Buyer 041",
+        "goods": "Pump housings",
+        "quantity": 60,
+        "unit_price_cny": 35,
+        "total_price_cny": 2100,
+        "terms": "Control passes only after substantive customer acceptance following inspection. Physical receipt alone is insufficient. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-041",
+        "transaction_id": "TEST-041",
+        "accounting_date": "2025-12-31",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 2100,
+          "credit_account": "Sales revenue",
+          "credit_cny": 2100
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-041",
+        "transaction_id": "TEST-041",
+        "invoice_date": "2026-01-05",
+        "quantity": 60,
+        "amount_cny": 2100
+      },
+      "delivery": {
+        "document_id": "DELIVERY-041",
+        "transaction_id": "TEST-041",
+        "batch_id": "LOT-041",
+        "actual_dispatch_date": "2025-12-27",
+        "actual_customer_receipt_date": "2025-12-29",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 60,
+        "received_quantity": 60,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-042",
+      "contract": {
+        "document_id": "CONTRACT-042",
+        "customer": "Industrial Buyer 042",
+        "goods": "Bearing sleeves",
+        "quantity": 150,
+        "unit_price_cny": 125,
+        "total_price_cny": 18750,
+        "terms": "Control passes on customer receipt at the agreed warehouse, evidenced by signed delivery. No separate acceptance test is required. Payment becomes unconditional at that event and is due 30 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-042",
+        "transaction_id": "TEST-042",
+        "accounting_date": "2026-01-08",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 18750,
+          "credit_account": "Sales revenue",
+          "credit_cny": 18750
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-042",
+        "transaction_id": "TEST-042",
+        "invoice_date": "2025-12-30",
+        "quantity": 150,
+        "amount_cny": 18750
+      },
+      "delivery": {
+        "document_id": "DELIVERY-042",
+        "transaction_id": "TEST-042",
+        "batch_id": "LOT-042",
+        "actual_dispatch_date": "2026-01-06",
+        "actual_customer_receipt_date": "2026-01-08",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 150,
+        "received_quantity": 150,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-043",
+      "contract": {
+        "document_id": "CONTRACT-043",
+        "customer": "Industrial Buyer 043",
+        "goods": "Steel fasteners",
+        "quantity": 200,
+        "unit_price_cny": 125,
+        "total_price_cny": 25000,
+        "terms": "Control transfers only upon customer inspection approval and acceptance. The inspection verifies contractual performance and is a substantive condition. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-043",
+        "transaction_id": "TEST-043",
+        "accounting_date": "2026-01-02",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 25000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 25000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-043",
+        "transaction_id": "TEST-043",
+        "invoice_date": "2026-01-10",
+        "quantity": 200,
+        "amount_cny": 25000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-043",
+        "transaction_id": "TEST-043",
+        "batch_id": "LOT-043",
+        "actual_dispatch_date": "2025-12-31",
+        "actual_customer_receipt_date": "2026-01-01",
+        "actual_customer_acceptance_date": "2026-01-02",
+        "dispatched_quantity": 200,
+        "received_quantity": 200,
+        "accepted_quantity": 200,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-044",
+      "contract": {
+        "document_id": "CONTRACT-044",
+        "customer": "Industrial Buyer 044",
+        "goods": "Steel fasteners",
+        "quantity": 200,
+        "unit_price_cny": 125,
+        "total_price_cny": 25000,
+        "terms": "Control passes only after substantive customer acceptance following inspection. Physical receipt alone is insufficient. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-044",
+        "transaction_id": "TEST-044",
+        "accounting_date": "2026-01-07",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 25000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 25000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-044",
+        "transaction_id": "TEST-044",
+        "invoice_date": "2025-12-23",
+        "quantity": 200,
+        "amount_cny": 25000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-044",
+        "transaction_id": "TEST-044",
+        "batch_id": "LOT-044",
+        "actual_dispatch_date": "2025-12-17",
+        "actual_customer_receipt_date": "2025-12-20",
+        "actual_customer_acceptance_date": "2025-12-22",
+        "dispatched_quantity": 200,
+        "received_quantity": 200,
+        "accepted_quantity": 200,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-045",
+      "contract": {
+        "document_id": "CONTRACT-045",
+        "customer": "Industrial Buyer 045",
+        "goods": "Pump housings",
+        "quantity": 80,
+        "unit_price_cny": 125,
+        "total_price_cny": 10000,
+        "terms": "Control transfers when the goods are collected by the customer at the factory. The collection is recorded in the actual dispatch field. The customer can direct their use immediately. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-045",
+        "transaction_id": "TEST-045",
+        "accounting_date": "2025-12-25",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 10000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 10000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-045",
+        "transaction_id": "TEST-045",
+        "invoice_date": "2026-01-05",
+        "quantity": 80,
+        "amount_cny": 10000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-045",
+        "transaction_id": "TEST-045",
+        "batch_id": "LOT-045",
+        "actual_dispatch_date": "2025-12-25",
+        "actual_customer_receipt_date": "2025-12-28",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 80,
+        "received_quantity": 80,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-046",
+      "contract": {
+        "document_id": "CONTRACT-046",
+        "customer": "Industrial Buyer 046",
+        "goods": "Pump housings",
+        "quantity": 120,
+        "unit_price_cny": 60,
+        "total_price_cny": 7200,
+        "terms": "Control transfers only upon customer inspection approval and acceptance. The inspection verifies contractual performance and is a substantive condition. Payment becomes unconditional at that event and is due 30 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-046",
+        "transaction_id": "TEST-046",
+        "accounting_date": "2026-01-02",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 7200,
+          "credit_account": "Sales revenue",
+          "credit_cny": 7200
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-046",
+        "transaction_id": "TEST-046",
+        "invoice_date": "2025-12-31",
+        "quantity": 120,
+        "amount_cny": 7200
+      },
+      "delivery": {
+        "document_id": "DELIVERY-046",
+        "transaction_id": "TEST-046",
+        "batch_id": "LOT-046",
+        "actual_dispatch_date": "2025-12-28",
+        "actual_customer_receipt_date": "2025-12-30",
+        "actual_customer_acceptance_date": "2026-01-02",
+        "dispatched_quantity": 120,
+        "received_quantity": 120,
+        "accepted_quantity": 120,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-047",
+      "contract": {
+        "document_id": "CONTRACT-047",
+        "customer": "Industrial Buyer 047",
+        "goods": "Aluminium brackets",
+        "quantity": 120,
+        "unit_price_cny": 60,
+        "total_price_cny": 7200,
+        "terms": "Control transfers only upon customer inspection approval and acceptance. The inspection verifies contractual performance and is a substantive condition. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-047",
+        "transaction_id": "TEST-047",
+        "accounting_date": "2025-12-24",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 7200,
+          "credit_account": "Sales revenue",
+          "credit_cny": 7200
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-047",
+        "transaction_id": "TEST-047",
+        "invoice_date": "2025-12-31",
+        "quantity": 120,
+        "amount_cny": 7200
+      },
+      "delivery": {
+        "document_id": "DELIVERY-047",
+        "transaction_id": "TEST-047",
+        "batch_id": "LOT-047",
+        "actual_dispatch_date": "2025-12-19",
+        "actual_customer_receipt_date": "2025-12-21",
+        "actual_customer_acceptance_date": "2025-12-24",
+        "dispatched_quantity": 120,
+        "received_quantity": 120,
+        "accepted_quantity": 120,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-048",
+      "contract": {
+        "document_id": "CONTRACT-048",
+        "customer": "Industrial Buyer 048",
+        "goods": "Steel fasteners",
+        "quantity": 25,
+        "unit_price_cny": 125,
+        "total_price_cny": 3125,
+        "terms": "Control passes on handover to the carrier appointed by the buyer. The buyer can redirect the shipment thereafter; the seller retains no substantive control. Payment becomes unconditional at that event and is due 30 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-048",
+        "transaction_id": "TEST-048",
+        "accounting_date": "2026-01-07",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 3125,
+          "credit_account": "Sales revenue",
+          "credit_cny": 3125
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-048",
+        "transaction_id": "TEST-048",
+        "invoice_date": "2026-01-10",
+        "quantity": 25,
+        "amount_cny": 3125
+      },
+      "delivery": {
+        "document_id": "DELIVERY-048",
+        "transaction_id": "TEST-048",
+        "batch_id": "LOT-048",
+        "actual_dispatch_date": "2026-01-07",
+        "actual_customer_receipt_date": "2026-01-10",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 25,
+        "received_quantity": 25,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-049",
+      "contract": {
+        "document_id": "CONTRACT-049",
+        "customer": "Industrial Buyer 049",
+        "goods": "Steel fasteners",
+        "quantity": 80,
+        "unit_price_cny": 125,
+        "total_price_cny": 10000,
+        "terms": "Control transfers when the customer receives the shipment and signs the warehouse receipt. Dispatch alone does not complete performance. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-049",
+        "transaction_id": "TEST-049",
+        "accounting_date": "2025-12-27",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 10000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 10000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-049",
+        "transaction_id": "TEST-049",
+        "invoice_date": "2025-12-23",
+        "quantity": 80,
+        "amount_cny": 10000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-049",
+        "transaction_id": "TEST-049",
+        "batch_id": "LOT-049",
+        "actual_dispatch_date": "2025-12-31",
+        "actual_customer_receipt_date": "2026-01-01",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 80,
+        "received_quantity": 80,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-050",
+      "contract": {
+        "document_id": "CONTRACT-050",
+        "customer": "Industrial Buyer 050",
+        "goods": "Bearing sleeves",
+        "quantity": 150,
+        "unit_price_cny": 160,
+        "total_price_cny": 24000,
+        "terms": "Control passes on handover to the carrier appointed by the buyer. The buyer can redirect the shipment thereafter; the seller retains no substantive control. Payment becomes unconditional at that event and is due 30 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-050",
+        "transaction_id": "TEST-050",
+        "accounting_date": "2026-01-09",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 24000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 24000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-050",
+        "transaction_id": "TEST-050",
+        "invoice_date": "2026-01-02",
+        "quantity": 150,
+        "amount_cny": 24000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-050",
+        "transaction_id": "TEST-050",
+        "batch_id": "LOT-050",
+        "actual_dispatch_date": "2026-01-09",
+        "actual_customer_receipt_date": "2026-01-10",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 150,
+        "received_quantity": 150,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-051",
+      "contract": {
+        "document_id": "CONTRACT-051",
+        "customer": "Industrial Buyer 051",
+        "goods": "Pump housings",
+        "quantity": 120,
+        "unit_price_cny": 60,
+        "total_price_cny": 7200,
+        "terms": "Control passes on customer receipt at the agreed warehouse, evidenced by signed delivery. No separate acceptance test is required. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-051",
+        "transaction_id": "TEST-051",
+        "accounting_date": "2025-12-31",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 7200,
+          "credit_account": "Sales revenue",
+          "credit_cny": 7200
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-051",
+        "transaction_id": "TEST-051",
+        "invoice_date": "2025-12-30",
+        "quantity": 120,
+        "amount_cny": 7200
+      },
+      "delivery": {
+        "document_id": "DELIVERY-051",
+        "transaction_id": "TEST-051",
+        "batch_id": "LOT-051",
+        "actual_dispatch_date": "2025-12-29",
+        "actual_customer_receipt_date": "2025-12-31",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 120,
+        "received_quantity": 120,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-052",
+      "contract": {
+        "document_id": "CONTRACT-052",
+        "customer": "Industrial Buyer 052",
+        "goods": "Aluminium brackets",
+        "quantity": 120,
+        "unit_price_cny": 60,
+        "total_price_cny": 7200,
+        "terms": "Control passes on customer receipt at the agreed warehouse, evidenced by signed delivery. No separate acceptance test is required. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-052",
+        "transaction_id": "TEST-052",
+        "accounting_date": "2025-12-31",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 7200,
+          "credit_account": "Sales revenue",
+          "credit_cny": 7200
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-052",
+        "transaction_id": "TEST-052",
+        "invoice_date": "2026-01-02",
+        "quantity": 120,
+        "amount_cny": 7200
+      },
+      "delivery": {
+        "document_id": "DELIVERY-052",
+        "transaction_id": "TEST-052",
+        "batch_id": "LOT-052",
+        "actual_dispatch_date": "2025-12-27",
+        "actual_customer_receipt_date": null,
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 120,
+        "received_quantity": null,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-053",
+      "contract": {
+        "document_id": "CONTRACT-053",
+        "customer": "Industrial Buyer 053",
+        "goods": "Pump housings",
+        "quantity": 200,
+        "unit_price_cny": 35,
+        "total_price_cny": 7000,
+        "terms": "Control transfers only upon customer inspection approval and acceptance. The inspection verifies contractual performance and is a substantive condition. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-053",
+        "transaction_id": "TEST-053",
+        "accounting_date": "2026-01-09",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 7000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 7000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-053",
+        "transaction_id": "TEST-053",
+        "invoice_date": "2025-12-30",
+        "quantity": 200,
+        "amount_cny": 7000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-053",
+        "transaction_id": "TEST-053",
+        "batch_id": "LOT-053",
+        "actual_dispatch_date": "2026-01-06",
+        "actual_customer_receipt_date": "2026-01-07",
+        "actual_customer_acceptance_date": "2026-01-09",
+        "dispatched_quantity": 200,
+        "received_quantity": 200,
+        "accepted_quantity": 200,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-054",
+      "contract": {
+        "document_id": "CONTRACT-054",
+        "customer": "Industrial Buyer 054",
+        "goods": "Aluminium brackets",
+        "quantity": 60,
+        "unit_price_cny": 125,
+        "total_price_cny": 7500,
+        "terms": "Control transfers only upon customer inspection approval and acceptance. The inspection verifies contractual performance and is a substantive condition. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-054",
+        "transaction_id": "TEST-054",
+        "accounting_date": "2026-01-01",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 7500,
+          "credit_account": "Sales revenue",
+          "credit_cny": 7500
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-054",
+        "transaction_id": "TEST-054",
+        "invoice_date": "2025-12-28",
+        "quantity": 60,
+        "amount_cny": 7500
+      },
+      "delivery": {
+        "document_id": "DELIVERY-054",
+        "transaction_id": "TEST-054",
+        "batch_id": "LOT-054",
+        "actual_dispatch_date": "2025-12-23",
+        "actual_customer_receipt_date": "2025-12-26",
+        "actual_customer_acceptance_date": "2025-12-28",
+        "dispatched_quantity": 60,
+        "received_quantity": 60,
+        "accepted_quantity": 60,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-055",
+      "contract": {
+        "document_id": "CONTRACT-055",
+        "customer": "Industrial Buyer 055",
+        "goods": "Steel fasteners",
+        "quantity": 120,
+        "unit_price_cny": 125,
+        "total_price_cny": 15000,
+        "terms": "Control passes on customer receipt at the agreed warehouse, evidenced by signed delivery. No separate acceptance test is required. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-055",
+        "transaction_id": "TEST-055",
+        "accounting_date": "2025-12-31",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 15000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 15000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-055",
+        "transaction_id": "TEST-055",
+        "invoice_date": "2025-12-28",
+        "quantity": 120,
+        "amount_cny": 15000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-055",
+        "transaction_id": "TEST-055",
+        "batch_id": "LOT-055",
+        "actual_dispatch_date": "2026-01-04",
+        "actual_customer_receipt_date": "2026-01-06",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 120,
+        "received_quantity": 120,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-056",
+      "contract": {
+        "document_id": "CONTRACT-056",
+        "customer": "Industrial Buyer 056",
+        "goods": "Bearing sleeves",
+        "quantity": 40,
+        "unit_price_cny": 60,
+        "total_price_cny": 2400,
+        "terms": "Control passes only after substantive customer acceptance following inspection. Physical receipt alone is insufficient. Payment becomes unconditional at that event and is due 30 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-056",
+        "transaction_id": "TEST-056",
+        "accounting_date": "2026-01-07",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 2400,
+          "credit_account": "Sales revenue",
+          "credit_cny": 2400
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-056",
+        "transaction_id": "TEST-056",
+        "invoice_date": "2025-12-28",
+        "quantity": 40,
+        "amount_cny": 2400
+      },
+      "delivery": {
+        "document_id": "DELIVERY-056",
+        "transaction_id": "TEST-056",
+        "batch_id": "LOT-056",
+        "actual_dispatch_date": "2026-01-04",
+        "actual_customer_receipt_date": "2026-01-05",
+        "actual_customer_acceptance_date": "2026-01-07",
+        "dispatched_quantity": 40,
+        "received_quantity": 40,
+        "accepted_quantity": 40,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-057",
+      "contract": {
+        "document_id": "CONTRACT-057",
+        "customer": "Industrial Buyer 057",
+        "goods": "Aluminium brackets",
+        "quantity": 40,
+        "unit_price_cny": 125,
+        "total_price_cny": 5000,
+        "terms": "Control passes when the goods are handed to the buyer-authorised carrier at the loading point. Subsequent transport does not delay this transfer. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-057",
+        "transaction_id": "TEST-057",
+        "accounting_date": "2026-01-06",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 5000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 5000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-057",
+        "transaction_id": "TEST-057",
+        "invoice_date": "2026-01-02",
+        "quantity": 40,
+        "amount_cny": 5000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-057",
+        "transaction_id": "TEST-057",
+        "batch_id": "LOT-057",
+        "actual_dispatch_date": "2026-01-06",
+        "actual_customer_receipt_date": "2026-01-10",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 40,
+        "received_quantity": 40,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-058",
+      "contract": {
+        "document_id": "CONTRACT-058",
+        "customer": "Industrial Buyer 058",
+        "goods": "Bearing sleeves",
+        "quantity": 200,
+        "unit_price_cny": 85,
+        "total_price_cny": 17000,
+        "terms": "Control passes when the goods are handed to the buyer-authorised carrier at the loading point. Subsequent transport does not delay this transfer. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-058",
+        "transaction_id": "TEST-058",
+        "accounting_date": "2026-01-08",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 17000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 17000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-058",
+        "transaction_id": "TEST-058",
+        "invoice_date": "2026-01-10",
+        "quantity": 200,
+        "amount_cny": 17000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-058",
+        "transaction_id": "TEST-058",
+        "batch_id": "LOT-058",
+        "actual_dispatch_date": "2026-01-08",
+        "actual_customer_receipt_date": "2026-01-10",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 200,
+        "received_quantity": 200,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-059",
+      "contract": {
+        "document_id": "CONTRACT-059",
+        "customer": "Industrial Buyer 059",
+        "goods": "Bearing sleeves",
+        "quantity": 25,
+        "unit_price_cny": 85,
+        "total_price_cny": 2125,
+        "terms": "The customer does not obtain control until substantive inspection sign-off and acceptance. Earlier delivery to its premises is insufficient. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-059",
+        "transaction_id": "TEST-059",
+        "accounting_date": "2025-12-31",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 2125,
+          "credit_account": "Sales revenue",
+          "credit_cny": 2125
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-059",
+        "transaction_id": "TEST-059",
+        "invoice_date": "2026-01-05",
+        "quantity": 25,
+        "amount_cny": 2125
+      },
+      "delivery": {
+        "document_id": "DELIVERY-059",
+        "transaction_id": "TEST-059",
+        "batch_id": "LOT-059",
+        "actual_dispatch_date": "2025-12-29",
+        "actual_customer_receipt_date": "2025-12-30",
+        "actual_customer_acceptance_date": "2025-12-31",
+        "dispatched_quantity": 25,
+        "received_quantity": 25,
+        "accepted_quantity": 25,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-060",
+      "contract": {
+        "document_id": "CONTRACT-060",
+        "customer": "Industrial Buyer 060",
+        "goods": "Aluminium brackets",
+        "quantity": 60,
+        "unit_price_cny": 85,
+        "total_price_cny": 5100,
+        "terms": "Control transfers when the goods are collected by the customer at the factory. The collection is recorded in the actual dispatch field. The customer can direct their use immediately. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-060",
+        "transaction_id": "TEST-060",
+        "accounting_date": "2026-01-04",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 5100,
+          "credit_account": "Sales revenue",
+          "credit_cny": 5100
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-060",
+        "transaction_id": "TEST-060",
+        "invoice_date": "2026-01-05",
+        "quantity": 60,
+        "amount_cny": 5100
+      },
+      "delivery": {
+        "document_id": "DELIVERY-060",
+        "transaction_id": "TEST-060",
+        "batch_id": "LOT-060",
+        "actual_dispatch_date": "2025-12-22",
+        "actual_customer_receipt_date": "2025-12-23",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 60,
+        "received_quantity": 60,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-061",
+      "contract": {
+        "document_id": "CONTRACT-061",
+        "customer": "Industrial Buyer 061",
+        "goods": "Aluminium brackets",
+        "quantity": 40,
+        "unit_price_cny": 160,
+        "total_price_cny": 6400,
+        "terms": "The customer does not obtain control until substantive inspection sign-off and acceptance. Earlier delivery to its premises is insufficient. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-061",
+        "transaction_id": "TEST-061",
+        "accounting_date": "2026-01-04",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 6400,
+          "credit_account": "Sales revenue",
+          "credit_cny": 6400
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-061",
+        "transaction_id": "TEST-061",
+        "invoice_date": "2025-12-30",
+        "quantity": 40,
+        "amount_cny": 6400
+      },
+      "delivery": {
+        "document_id": "DELIVERY-061",
+        "transaction_id": "TEST-061",
+        "batch_id": "LOT-061",
+        "actual_dispatch_date": "2025-12-31",
+        "actual_customer_receipt_date": "2026-01-02",
+        "actual_customer_acceptance_date": "2026-01-04",
+        "dispatched_quantity": 40,
+        "received_quantity": 40,
+        "accepted_quantity": 40,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-062",
+      "contract": {
+        "document_id": "CONTRACT-062",
+        "customer": "Industrial Buyer 062",
+        "goods": "Aluminium brackets",
+        "quantity": 80,
+        "unit_price_cny": 240,
+        "total_price_cny": 19200,
+        "terms": "The customer does not obtain control until substantive inspection sign-off and acceptance. Earlier delivery to its premises is insufficient. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-062",
+        "transaction_id": "TEST-062",
+        "accounting_date": "2025-12-28",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 19200,
+          "credit_account": "Sales revenue",
+          "credit_cny": 19200
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-062",
+        "transaction_id": "TEST-062",
+        "invoice_date": "2026-01-05",
+        "quantity": 80,
+        "amount_cny": 19200
+      },
+      "delivery": {
+        "document_id": "DELIVERY-062",
+        "transaction_id": "TEST-062",
+        "batch_id": "LOT-062",
+        "actual_dispatch_date": "2025-12-24",
+        "actual_customer_receipt_date": "2025-12-26",
+        "actual_customer_acceptance_date": "2025-12-28",
+        "dispatched_quantity": 80,
+        "received_quantity": 80,
+        "accepted_quantity": 80,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-063",
+      "contract": {
+        "document_id": "CONTRACT-063",
+        "customer": "Industrial Buyer 063",
+        "goods": "Steel fasteners",
+        "quantity": 150,
+        "unit_price_cny": 240,
+        "total_price_cny": 36000,
+        "terms": "Control passes on customer receipt at the agreed warehouse, evidenced by signed delivery. No separate acceptance test is required. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-063",
+        "transaction_id": "TEST-063",
+        "accounting_date": "2025-12-23",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 36000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 36000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-063",
+        "transaction_id": "TEST-063",
+        "invoice_date": "2026-01-10",
+        "quantity": 150,
+        "amount_cny": 36000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-063",
+        "transaction_id": "TEST-063",
+        "batch_id": "LOT-063",
+        "actual_dispatch_date": "2025-12-22",
+        "actual_customer_receipt_date": "2025-12-23",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 150,
+        "received_quantity": 150,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-064",
+      "contract": {
+        "document_id": "CONTRACT-064",
+        "customer": "Industrial Buyer 064",
+        "goods": "Aluminium brackets",
+        "quantity": 25,
+        "unit_price_cny": 160,
+        "total_price_cny": 4000,
+        "terms": "Control passes only after substantive customer acceptance following inspection. Physical receipt alone is insufficient. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-064",
+        "transaction_id": "TEST-064",
+        "accounting_date": "2025-12-31",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 4000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 4000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-064",
+        "transaction_id": "TEST-064",
+        "invoice_date": "2025-12-31",
+        "quantity": 25,
+        "amount_cny": 4000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-064",
+        "transaction_id": "TEST-064",
+        "batch_id": "LOT-064",
+        "actual_dispatch_date": "2025-12-25",
+        "actual_customer_receipt_date": "2025-12-28",
+        "actual_customer_acceptance_date": "2025-12-31",
+        "dispatched_quantity": 25,
+        "received_quantity": 25,
+        "accepted_quantity": 25,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-065",
+      "contract": {
+        "document_id": "CONTRACT-065",
+        "customer": "Industrial Buyer 065",
+        "goods": "Aluminium brackets",
+        "quantity": 80,
+        "unit_price_cny": 85,
+        "total_price_cny": 6800,
+        "terms": "Transfer of control occurs on signed delivery at the buyer warehouse. The seller remains responsible during transit. No additional acceptance procedure applies. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-065",
+        "transaction_id": "TEST-065",
+        "accounting_date": "2025-12-29",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 6800,
+          "credit_account": "Sales revenue",
+          "credit_cny": 6800
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-065",
+        "transaction_id": "TEST-065",
+        "invoice_date": "2025-12-30",
+        "quantity": 80,
+        "amount_cny": 6800
+      },
+      "delivery": {
+        "document_id": "DELIVERY-065",
+        "transaction_id": "TEST-065",
+        "batch_id": "LOT-065",
+        "actual_dispatch_date": "2025-12-26",
+        "actual_customer_receipt_date": "2025-12-29",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 80,
+        "received_quantity": 80,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-066",
+      "contract": {
+        "document_id": "CONTRACT-066",
+        "customer": "Industrial Buyer 066",
+        "goods": "Pump housings",
+        "quantity": 120,
+        "unit_price_cny": 160,
+        "total_price_cny": 19200,
+        "terms": "Transfer of control occurs on signed delivery at the buyer warehouse. The seller remains responsible during transit. No additional acceptance procedure applies. Payment becomes unconditional at that event and is due 30 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-066",
+        "transaction_id": "TEST-066",
+        "accounting_date": "2026-01-07",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 19200,
+          "credit_account": "Sales revenue",
+          "credit_cny": 19200
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-066",
+        "transaction_id": "TEST-066",
+        "invoice_date": "2025-12-23",
+        "quantity": 120,
+        "amount_cny": 19200
+      },
+      "delivery": {
+        "document_id": "DELIVERY-066",
+        "transaction_id": "TEST-066",
+        "batch_id": "LOT-066",
+        "actual_dispatch_date": "2026-01-04",
+        "actual_customer_receipt_date": "2026-01-07",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 120,
+        "received_quantity": 120,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-067",
+      "contract": {
+        "document_id": "CONTRACT-067",
+        "customer": "Industrial Buyer 067",
+        "goods": "Bearing sleeves",
+        "quantity": 80,
+        "unit_price_cny": 240,
+        "total_price_cny": 19200,
+        "terms": "Control passes on handover to the carrier appointed by the buyer. The buyer can redirect the shipment thereafter; the seller retains no substantive control. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-067",
+        "transaction_id": "TEST-067",
+        "accounting_date": "2026-01-03",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 19200,
+          "credit_account": "Sales revenue",
+          "credit_cny": 19200
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-067",
+        "transaction_id": "TEST-067",
+        "invoice_date": "2025-12-28",
+        "quantity": 80,
+        "amount_cny": 19200
+      },
+      "delivery": {
+        "document_id": "DELIVERY-067",
+        "transaction_id": "TEST-067",
+        "batch_id": "LOT-067",
+        "actual_dispatch_date": "2026-01-03",
+        "actual_customer_receipt_date": "2026-01-05",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 80,
+        "received_quantity": 80,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-068",
+      "contract": {
+        "document_id": "CONTRACT-068",
+        "customer": "Industrial Buyer 068",
+        "goods": "Aluminium brackets",
+        "quantity": 200,
+        "unit_price_cny": 160,
+        "total_price_cny": 32000,
+        "terms": "Control passes on handover to the carrier appointed by the buyer. The buyer can redirect the shipment thereafter; the seller retains no substantive control. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-068",
+        "transaction_id": "TEST-068",
+        "accounting_date": "2025-12-30",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 32000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 32000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-068",
+        "transaction_id": "TEST-068",
+        "invoice_date": "2025-12-28",
+        "quantity": 200,
+        "amount_cny": 32000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-068",
+        "transaction_id": "TEST-068",
+        "batch_id": "LOT-068",
+        "actual_dispatch_date": "2026-01-06",
+        "actual_customer_receipt_date": "2026-01-10",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 200,
+        "received_quantity": 200,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-069",
+      "contract": {
+        "document_id": "CONTRACT-069",
+        "customer": "Industrial Buyer 069",
+        "goods": "Pump housings",
+        "quantity": 200,
+        "unit_price_cny": 240,
+        "total_price_cny": 48000,
+        "terms": "Control passes when the goods are handed to the buyer-authorised carrier at the loading point. Subsequent transport does not delay this transfer. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-069",
+        "transaction_id": "TEST-069",
+        "accounting_date": "2026-01-04",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 48000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 48000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-069",
+        "transaction_id": "TEST-069",
+        "invoice_date": "2025-12-31",
+        "quantity": 200,
+        "amount_cny": 48000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-069",
+        "transaction_id": "TEST-069",
+        "batch_id": "LOT-069",
+        "actual_dispatch_date": "2026-01-04",
+        "actual_customer_receipt_date": "2026-01-06",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 200,
+        "received_quantity": 200,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-070",
+      "contract": {
+        "document_id": "CONTRACT-070",
+        "customer": "Industrial Buyer 070",
+        "goods": "Bearing sleeves",
+        "quantity": 200,
+        "unit_price_cny": 85,
+        "total_price_cny": 17000,
+        "terms": "Control passes when the goods are handed to the buyer-authorised carrier at the loading point. Subsequent transport does not delay this transfer. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-070",
+        "transaction_id": "TEST-070",
+        "accounting_date": "2025-12-29",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 17000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 17000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-070",
+        "transaction_id": "TEST-070",
+        "invoice_date": "2026-01-02",
+        "quantity": 200,
+        "amount_cny": 17000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-070",
+        "transaction_id": "TEST-070",
+        "batch_id": "LOT-070",
+        "actual_dispatch_date": "2025-12-29",
+        "actual_customer_receipt_date": "2025-12-31",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 200,
+        "received_quantity": 200,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-071",
+      "contract": {
+        "document_id": "CONTRACT-071",
+        "customer": "Industrial Buyer 071",
+        "goods": "Bearing sleeves",
+        "quantity": 60,
+        "unit_price_cny": 60,
+        "total_price_cny": 3600,
+        "terms": "Control transfers only upon customer inspection approval and acceptance. The inspection verifies contractual performance and is a substantive condition. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-071",
+        "transaction_id": "TEST-071",
+        "accounting_date": "2025-12-25",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 3600,
+          "credit_account": "Sales revenue",
+          "credit_cny": 3600
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-071",
+        "transaction_id": "TEST-071",
+        "invoice_date": "2025-12-30",
+        "quantity": 60,
+        "amount_cny": 3600
+      },
+      "delivery": {
+        "document_id": "DELIVERY-071",
+        "transaction_id": "TEST-071",
+        "batch_id": "LOT-071",
+        "actual_dispatch_date": "2025-12-21",
+        "actual_customer_receipt_date": "2025-12-24",
+        "actual_customer_acceptance_date": "2025-12-25",
+        "dispatched_quantity": 60,
+        "received_quantity": 60,
+        "accepted_quantity": 60,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-072",
+      "contract": {
+        "document_id": "CONTRACT-072",
+        "customer": "Industrial Buyer 072",
+        "goods": "Aluminium brackets",
+        "quantity": 25,
+        "unit_price_cny": 125,
+        "total_price_cny": 3125,
+        "terms": "Control passes only after substantive customer acceptance following inspection. Physical receipt alone is insufficient. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-072",
+        "transaction_id": "TEST-072",
+        "accounting_date": "2025-12-29",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 3125,
+          "credit_account": "Sales revenue",
+          "credit_cny": 3125
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-072",
+        "transaction_id": "TEST-072",
+        "invoice_date": "2026-01-10",
+        "quantity": 25,
+        "amount_cny": 3125
+      },
+      "delivery": {
+        "document_id": "DELIVERY-072",
+        "transaction_id": "TEST-072",
+        "batch_id": "LOT-072",
+        "actual_dispatch_date": "2025-12-24",
+        "actual_customer_receipt_date": "2025-12-26",
+        "actual_customer_acceptance_date": "2025-12-29",
+        "dispatched_quantity": 25,
+        "received_quantity": 25,
+        "accepted_quantity": 25,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-073",
+      "contract": {
+        "document_id": "CONTRACT-073",
+        "customer": "Industrial Buyer 073",
+        "goods": "Pump housings",
+        "quantity": 200,
+        "unit_price_cny": 60,
+        "total_price_cny": 12000,
+        "terms": "Control passes on handover to the carrier appointed by the buyer. The buyer can redirect the shipment thereafter; the seller retains no substantive control. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-073",
+        "transaction_id": "TEST-073",
+        "accounting_date": "2025-12-25",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 12000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 12000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-073",
+        "transaction_id": "TEST-073",
+        "invoice_date": "2026-01-02",
+        "quantity": 200,
+        "amount_cny": 12000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-073",
+        "transaction_id": "TEST-073",
+        "batch_id": "LOT-073",
+        "actual_dispatch_date": "2025-12-25",
+        "actual_customer_receipt_date": "2025-12-29",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 200,
+        "received_quantity": 200,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-074",
+      "contract": {
+        "document_id": "CONTRACT-074",
+        "customer": "Industrial Buyer 074",
+        "goods": "Aluminium brackets",
+        "quantity": 25,
+        "unit_price_cny": 85,
+        "total_price_cny": 2125,
+        "terms": "Transfer of control occurs on signed delivery at the buyer warehouse. The seller remains responsible during transit. No additional acceptance procedure applies. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-074",
+        "transaction_id": "TEST-074",
+        "accounting_date": "2026-01-04",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 2125,
+          "credit_account": "Sales revenue",
+          "credit_cny": 2125
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-074",
+        "transaction_id": "TEST-074",
+        "invoice_date": "2026-01-10",
+        "quantity": 25,
+        "amount_cny": 2125
+      },
+      "delivery": {
+        "document_id": "DELIVERY-074",
+        "transaction_id": "TEST-074",
+        "batch_id": "LOT-074",
+        "actual_dispatch_date": "2025-12-31",
+        "actual_customer_receipt_date": "2026-01-04",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 25,
+        "received_quantity": 25,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-075",
+      "contract": {
+        "document_id": "CONTRACT-075",
+        "customer": "Industrial Buyer 075",
+        "goods": "Bearing sleeves",
+        "quantity": 60,
+        "unit_price_cny": 60,
+        "total_price_cny": 3600,
+        "terms": "Control passes on customer receipt at the agreed warehouse, evidenced by signed delivery. No separate acceptance test is required. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-075",
+        "transaction_id": "TEST-075",
+        "accounting_date": "2026-01-08",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 3600,
+          "credit_account": "Sales revenue",
+          "credit_cny": 3600
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-075",
+        "transaction_id": "TEST-075",
+        "invoice_date": "2025-12-30",
+        "quantity": 60,
+        "amount_cny": 3600
+      },
+      "delivery": {
+        "document_id": "DELIVERY-075",
+        "transaction_id": "TEST-075",
+        "batch_id": "LOT-075",
+        "actual_dispatch_date": "2026-01-05",
+        "actual_customer_receipt_date": "2026-01-08",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 60,
+        "received_quantity": 60,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-076",
+      "contract": {
+        "document_id": "CONTRACT-076",
+        "customer": "Industrial Buyer 076",
+        "goods": "Aluminium brackets",
+        "quantity": 200,
+        "unit_price_cny": 160,
+        "total_price_cny": 32000,
+        "terms": "Control passes when the goods are handed to the buyer-authorised carrier at the loading point. Subsequent transport does not delay this transfer. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-076",
+        "transaction_id": "TEST-076",
+        "accounting_date": "2025-12-31",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 32000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 32000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-076",
+        "transaction_id": "TEST-076",
+        "invoice_date": "2025-12-31",
+        "quantity": 200,
+        "amount_cny": 32000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-076",
+        "transaction_id": "TEST-076",
+        "batch_id": "LOT-076",
+        "actual_dispatch_date": null,
+        "actual_customer_receipt_date": null,
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": null,
+        "received_quantity": null,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-077",
+      "contract": {
+        "document_id": "CONTRACT-077",
+        "customer": "Industrial Buyer 077",
+        "goods": "Pump housings",
+        "quantity": 60,
+        "unit_price_cny": 35,
+        "total_price_cny": 2100,
+        "terms": "Control passes only after substantive customer acceptance following inspection. Physical receipt alone is insufficient. Payment becomes unconditional at that event and is due 30 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-077",
+        "transaction_id": "TEST-077",
+        "accounting_date": "2025-12-29",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 2100,
+          "credit_account": "Sales revenue",
+          "credit_cny": 2100
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-077",
+        "transaction_id": "TEST-077",
+        "invoice_date": "2025-12-28",
+        "quantity": 60,
+        "amount_cny": 2100
+      },
+      "delivery": {
+        "document_id": "DELIVERY-077",
+        "transaction_id": "TEST-077",
+        "batch_id": "LOT-077",
+        "actual_dispatch_date": "2025-12-30",
+        "actual_customer_receipt_date": "2025-12-31",
+        "actual_customer_acceptance_date": "2026-01-02",
+        "dispatched_quantity": 60,
+        "received_quantity": 60,
+        "accepted_quantity": 60,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-078",
+      "contract": {
+        "document_id": "CONTRACT-078",
+        "customer": "Industrial Buyer 078",
+        "goods": "Pump housings",
+        "quantity": 60,
+        "unit_price_cny": 125,
+        "total_price_cny": 7500,
+        "terms": "Control passes on customer receipt at the agreed warehouse, evidenced by signed delivery. No separate acceptance test is required. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-078",
+        "transaction_id": "TEST-078",
+        "accounting_date": "2025-12-21",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 7500,
+          "credit_account": "Sales revenue",
+          "credit_cny": 7500
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-078",
+        "transaction_id": "TEST-078",
+        "invoice_date": "2026-01-05",
+        "quantity": 60,
+        "amount_cny": 7500
+      },
+      "delivery": {
+        "document_id": "DELIVERY-078",
+        "transaction_id": "TEST-078",
+        "batch_id": "LOT-078",
+        "actual_dispatch_date": "2025-12-20",
+        "actual_customer_receipt_date": "2025-12-21",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 60,
+        "received_quantity": 60,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-079",
+      "contract": {
+        "document_id": "CONTRACT-079",
+        "customer": "Industrial Buyer 079",
+        "goods": "Bearing sleeves",
+        "quantity": 200,
+        "unit_price_cny": 160,
+        "total_price_cny": 32000,
+        "terms": "Control transfers only upon customer inspection approval and acceptance. The inspection verifies contractual performance and is a substantive condition. Payment becomes unconditional at that event and is due 30 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-079",
+        "transaction_id": "TEST-079",
+        "accounting_date": "2025-12-26",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 32000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 32000
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-079",
+        "transaction_id": "TEST-079",
+        "invoice_date": "2025-12-23",
+        "quantity": 200,
+        "amount_cny": 32000
+      },
+      "delivery": {
+        "document_id": "DELIVERY-079",
+        "transaction_id": "TEST-079",
+        "batch_id": "LOT-079",
+        "actual_dispatch_date": "2025-12-22",
+        "actual_customer_receipt_date": "2025-12-25",
+        "actual_customer_acceptance_date": "2025-12-26",
+        "dispatched_quantity": 200,
+        "received_quantity": 200,
+        "accepted_quantity": 200,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    },
+    {
+      "transaction_id": "TEST-080",
+      "contract": {
+        "document_id": "CONTRACT-080",
+        "customer": "Industrial Buyer 080",
+        "goods": "Bearing sleeves",
+        "quantity": 80,
+        "unit_price_cny": 60,
+        "total_price_cny": 4800,
+        "terms": "The customer does not obtain control until substantive inspection sign-off and acceptance. Earlier delivery to its premises is insufficient. Payment becomes unconditional at that event and is due 30 days later. Early invoicing is administrative and creates no earlier right to payment."
+      },
+      "ledger": {
+        "document_id": "LEDGER-080",
+        "transaction_id": "TEST-080",
+        "accounting_date": "2026-01-04",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 4800,
+          "credit_account": "Sales revenue",
+          "credit_cny": 4800
+        }
+      },
+      "invoice": {
+        "document_id": "INVOICE-080",
+        "transaction_id": "TEST-080",
+        "invoice_date": "2026-01-10",
+        "quantity": 80,
+        "amount_cny": 4800
+      },
+      "delivery": {
+        "document_id": "DELIVERY-080",
+        "transaction_id": "TEST-080",
+        "batch_id": "LOT-080",
+        "actual_dispatch_date": "2025-12-31",
+        "actual_customer_receipt_date": "2026-01-02",
+        "actual_customer_acceptance_date": "2026-01-04",
+        "dispatched_quantity": 80,
+        "received_quantity": 80,
+        "accepted_quantity": 80,
+        "carrier_authorised_by_customer": null,
+        "note": "All populated event dates and quantities are verified synthetic facts. Required null event fields are unknown, not evidence of non-performance."
+      }
+    }
+  ]
+}

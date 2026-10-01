@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790826760-U54If8w7bBzeTIDLtU8n",
+  "object": "chat.completion",
+  "created": 1790826760,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"DEV-02\",\"recognition_condition\":\"Control transfers when the goods are physically handed to the carrier authorised by the customer.\",\"qualifying_event_date\":\"2025-12-31\",\"recorded_accounting_date\":\"2025-12-31\",\"eligible_quantity_by_cutoff\":100,\"recorded_quantity_in_2025\":100,\"conclusion\":\"No cut-off exception identified\",\"difference_cny\":0,\"explanation\":\"The contract specifies recognition upon handover to the customer-authorised carrier. The delivery record confirms handover occurred on 2025-12-31, the cut-off date. The ledger records the full quantity and amount in the 2025 period, matching the eligible quantity. Therefore, recognition timing is appropriate with no cut-off difference.\",\"evidence_references\":[\"CON-02\",\"LED-02\",\"INV-02\",\"DEL-02\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2403,
+    "completion_tokens": 185,
+    "total_tokens": 2588,
+    "cost": 0.0006812,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0006812,
+      "upstream_inference_prompt_cost": 0.0003852,
+      "upstream_inference_completions_cost": 0.000296
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790838346-piJ1SUdrvGNEkCotU4Oq",
+  "object": "chat.completion",
+  "created": 1790838346,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"TEST-050\",\"recognition_condition\":\"Control passes on handover to the carrier appointed by the buyer, as per CONTRACT-050. Payment becomes unconditional at that event.\",\"qualifying_event_date\":\"2026-01-09\",\"recorded_accounting_date\":\"2026-01-09\",\"eligible_quantity_by_cutoff\":0,\"recorded_quantity_in_2025\":0,\"conclusion\":\"No cut-off exception identified\",\"difference_cny\":0,\"explanation\":\"The contract specifies recognition upon handover to the buyer's carrier, which occurred on 2026-01-09, after the 2025-12-31 cut-off date. The accounting entry was recorded on 2026-01-09, consistent with the qualifying event date. Therefore, no premature recognition occurred within the 2025 reporting period.\",\"evidence_references\":[\"CONTRACT-050\",\"LEDGER-050\",\"INVOICE-050\",\"DELIVERY-050\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2535,
+    "completion_tokens": 204,
+    "total_tokens": 2739,
+    "cost": 0.0007644,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007644,
+      "upstream_inference_prompt_cost": 0.000438,
+      "upstream_inference_completions_cost": 0.0003264
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

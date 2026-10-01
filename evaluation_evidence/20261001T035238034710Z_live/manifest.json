@@ -1,0 +1,33 @@
+{
+  "mode": "live",
+  "model": "openai/gpt-4.1-mini",
+  "created_utc": "20261001T035238034710Z",
+  "selected_ids": [
+    "DEV-01",
+    "DEV-02",
+    "DEV-03",
+    "DEV-04",
+    "DEV-05",
+    "DEV-06",
+    "DEV-07",
+    "DEV-08",
+    "DEV-09",
+    "DEV-10",
+    "DEV-11",
+    "DEV-12",
+    "DEV-13",
+    "DEV-14",
+    "DEV-15",
+    "DEV-16",
+    "DEV-17",
+    "DEV-18",
+    "DEV-19",
+    "DEV-20"
+  ],
+  "prompt_sha256": "c98cde7d28018a1d6dc83da8e9f48a75dc2c550a74b9817222c20fc176cf2f06",
+  "inputs_sha256": "acb8959e3f0ead043a0bfb65aa4d7b2708f907c684fb69844a48ff1d82230055",
+  "api_base_url": "https://openrouter.ai/api/v1",
+  "cost_source": "OpenRouter usage.cost (USD)",
+  "max_output_tokens_per_case": 1400,
+  "automatic_retries": 0
+}

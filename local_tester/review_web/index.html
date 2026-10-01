@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="review-token" content="__REVIEW_TOKEN__">
+  <title>Cut-off Review · Audit Workspace</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brandmark">c<span>r</span></span><div>Cut-off Review<small>AUDIT WORKSPACE</small></div></div>
+    <nav aria-label="Workspace"><button id="input-nav" class="nav">Source input</button><button id="workbench-nav" class="nav active">Workbench</button><button id="summary-nav" class="nav">Review summary <span id="review-count">0</span></button></nav>
+    <div class="user"><span class="local-dot"></span><span>Local prototype</span><label for="reviewer">Reviewer</label><input id="reviewer" placeholder="Your name" maxlength="100" autocomplete="name"></div>
+  </header>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="engagement"><span class="eyebrow">ENGAGEMENT / FY2025</span><h2>Industrial credit sales</h2><p>Trade receivables · CNY</p><div class="tag">Synthetic training data</div></div>
+      <div class="queue-head"><h3>Transactions <span id="queue-total">80</span></h3><button id="clear-filters" class="text-button" title="Clear all local demo evidence, AI attempts and human reviews">Reset</button></div>
+      <p class="reset-hint">Reset clears all local demo data.</p><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search ID or customer" aria-label="Search transactions"></label>
+      <select id="filter" aria-label="Filter transactions"><option value="all">All transactions</option><option value="attention">AI exceptions & evidence</option><option value="evidence">AI requests evidence</option><option value="pending">Awaiting human review</option><option value="reviewed">Human review complete</option></select>
+      <div id="queue" class="queue" aria-label="Transaction list"></div>
+      <div class="sidebar-foot"><span class="small-icon">↳</span><p>Every AI finding is a draft.<br><strong>The auditor owns the decision.</strong></p></div>
+    </aside>
+    <main>
+      <div id="workbench-overview"><div class="page-head"><div><div class="eyebrow">RECEIVABLES / CUT-OFF TESTING</div><h1>Review with the evidence.</h1><p>Reporting cut-off <strong id="cutoff">31 Dec 2025</strong><span class="separator">/</span><span id="source-info">Loading saved results…</span></p></div><button id="run-pending" class="button primary">Run pending AI checks</button></div>
+      <section class="stats" aria-label="Engagement progress" id="stats"></section>
+      <div class="workflow" aria-label="Review workflow"><span><i>1</i>Inspect evidence</span><b>→</b><span><i>2</i>Assess AI findings</span><b>→</b><span><i>3</i>Supplement & rerun</span><b>→</b><span><i>4</i>Review & accept</span></div>
+      </div><div id="run-banner" class="run-banner" role="status" hidden></div>
+      <section id="input-page" hidden></section><section id="workbench"></section>
+      <section id="summary" hidden></section>
+    </main>
+  </div>
+  <div id="toast" role="status" class="toast" hidden></div>
+  <dialog id="accept-dialog"><form id="accept-form"><div class="eyebrow">FINAL HUMAN CHECKPOINT</div><h2>Accept the review batch</h2><p>This records your acceptance of the completed review summary. It does not post entries or issue an audit opinion.</p><label>Acceptance note<textarea name="note" rows="3" required placeholder="Summarise your review and any matters to carry forward."></textarea></label><label class="check"><input name="confirmed" type="checkbox" required><span>I have reviewed all transaction conclusions and amounts in the summary.</span></label><div class="dialog-actions"><button type="button" id="cancel-accept" class="button secondary">Back to summary</button><button class="button primary" type="submit">Record acceptance</button></div></form></dialog>
+</body>
+</html>

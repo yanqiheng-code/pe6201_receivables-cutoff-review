@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790759416-1IF0fsRuoh9fGjfDNzIZ",
+  "object": "chat.completion",
+  "created": 1790759416,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"DEV-16\",\"recognition_condition\":\"Customer completes a substantive inspection and accepts the goods, as required by contract CON-16.\",\"qualifying_event_date\":\"2025-12-30\",\"recorded_accounting_date\":\"2026-01-03\",\"eligible_quantity_by_cutoff\":100,\"recorded_quantity_in_2025\":0,\"conclusion\":\"Delayed or omitted recognition\",\"difference_cny\":10000,\"explanation\":\"The contract requires customer acceptance before revenue recognition. Acceptance occurred on 2025-12-30, before the 2025-12-31 cut-off date, making the entire quantity eligible for recognition in 2025. However, the accounting entry was recorded on 2026-01-03, after the cut-off, indicating delayed recognition and an omitted receivable in 2025.\",\"evidence_references\":[\"CON-16\",\"DEL-16\",\"LED-16\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2316,
+    "completion_tokens": 195,
+    "total_tokens": 2511,
+    "cost": 0.0012384,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0012384,
+      "upstream_inference_prompt_cost": 0.0009264,
+      "upstream_inference_completions_cost": 0.000312
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

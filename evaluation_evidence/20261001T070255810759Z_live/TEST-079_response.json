@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790838450-g9btH9Zl0u5zGURckFlC",
+  "object": "chat.completion",
+  "created": 1790838450,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"TEST-079\",\"recognition_condition\":\"Control transfers only upon customer inspection approval and acceptance, which is a substantive condition per contract CONTRACT-079.\",\"qualifying_event_date\":\"2025-12-26\",\"recorded_accounting_date\":\"2025-12-26\",\"eligible_quantity_by_cutoff\":200,\"recorded_quantity_in_2025\":200,\"conclusion\":\"No cut-off exception identified\",\"difference_cny\":0,\"explanation\":\"The contract requires customer acceptance after inspection as the recognition event. The actual acceptance occurred on 2025-12-26, which is on the cut-off date. The ledger records the sale and receivable on the same date for the full quantity and amount. Therefore, recognition timing is appropriate with no cut-off error.\",\"evidence_references\":[\"CONTRACT-079\",\"LEDGER-079\",\"INVOICE-079\",\"DELIVERY-079\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2535,
+    "completion_tokens": 191,
+    "total_tokens": 2726,
+    "cost": 0.0007436,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007436,
+      "upstream_inference_prompt_cost": 0.000438,
+      "upstream_inference_completions_cost": 0.0003056
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

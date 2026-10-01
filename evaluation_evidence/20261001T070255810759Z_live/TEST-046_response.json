@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790838333-qNRgHv7glChxsZjCb5z5",
+  "object": "chat.completion",
+  "created": 1790838333,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"TEST-046\",\"recognition_condition\":\"Control transfers only upon customer inspection approval and acceptance, which is a substantive condition per contract CONTRACT-046.\",\"qualifying_event_date\":\"2026-01-02\",\"recorded_accounting_date\":\"2026-01-02\",\"eligible_quantity_by_cutoff\":0,\"recorded_quantity_in_2025\":120,\"conclusion\":\"Premature recognition\",\"difference_cny\":7200,\"explanation\":\"The contract requires customer acceptance as the recognition event, which occurred on 2026-01-02, after the 2025-12-31 cut-off date. However, the ledger recorded the sale and receivable on 2026-01-02, matching the acceptance date, so no premature recognition in 2025. But the invoice was issued on 2025-12-31, which is administrative only and does not create earlier recognition. Since the accounting entry is dated after the acceptance event, there is no premature recognition. However, the question is whether the sale was recorded in 2025 or 2026. The ledger entry is dated 2026-01-02, so no recognition in 2025. Therefore, no cut-off exception identified. The eligible quantity by cut-off is zero because acceptance was after cut-off. Recorded quantity in 2025 is zero, as ledger entry is in 2026. The invoice date does not affect recognition. The conclusion is no cut-off exception identified.\",\"evidence_references\":[\"CONTRACT-046\",\"LEDGER-046\",\"INVOICE-046\",\"DELIVERY-046\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2536,
+    "completion_tokens": 333,
+    "total_tokens": 2869,
+    "cost": 0.0009712,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0009712,
+      "upstream_inference_prompt_cost": 0.0004384,
+      "upstream_inference_completions_cost": 0.0005328
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

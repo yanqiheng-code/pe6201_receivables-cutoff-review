@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790838283-9ZnL8alFn5xWS5veS9YX",
+  "object": "chat.completion",
+  "created": 1790838283,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"TEST-032\",\"recognition_condition\":\"Control passes on customer receipt at the agreed warehouse, evidenced by signed delivery. No separate acceptance test is required. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment. (CONTRACT-032)\",\"qualifying_event_date\":\"2025-12-26\",\"recorded_accounting_date\":\"2026-01-04\",\"eligible_quantity_by_cutoff\":25,\"recorded_quantity_in_2025\":0,\"conclusion\":\"Delayed or omitted recognition\",\"difference_cny\":6000,\"explanation\":\"The contract requires control transfer upon customer receipt at the warehouse, evidenced by signed delivery, which occurred on 2025-12-26, before the cut-off date 2025-12-31. However, the accounting entry was recorded on 2026-01-04, after the reporting period, resulting in delayed recognition of the full quantity of 25 units. The invoice date is administrative and does not affect recognition timing.\",\"evidence_references\":[\"CONTRACT-032\",\"LEDGER-032\",\"INVOICE-032\",\"DELIVERY-032\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2530,
+    "completion_tokens": 249,
+    "total_tokens": 2779,
+    "cost": 0.0008344,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0008344,
+      "upstream_inference_prompt_cost": 0.000436,
+      "upstream_inference_completions_cost": 0.0003984
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

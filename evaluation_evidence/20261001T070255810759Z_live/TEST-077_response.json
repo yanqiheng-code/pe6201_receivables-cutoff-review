@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790838442-rLvTQ35eQ7ab6NA93CTL",
+  "object": "chat.completion",
+  "created": 1790838442,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"TEST-077\",\"recognition_condition\":\"Control passes only after substantive customer acceptance following inspection, as stated in CONTRACT-077. Physical receipt alone is insufficient; payment becomes unconditional at acceptance.\",\"qualifying_event_date\":\"2026-01-02\",\"recorded_accounting_date\":\"2025-12-29\",\"eligible_quantity_by_cutoff\":0,\"recorded_quantity_in_2025\":60,\"conclusion\":\"Premature recognition\",\"difference_cny\":2100,\"explanation\":\"The contract requires substantive customer acceptance for control transfer, which occurred on 2026-01-02, after the 2025-12-31 cut-off. However, the sale and receivable were recorded on 2025-12-29 for the full quantity of 60 units, resulting in premature recognition of revenue and receivables for 2100 CNY.\",\"evidence_references\":[\"CONTRACT-077\",\"LEDGER-077\",\"INVOICE-077\",\"DELIVERY-077\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2531,
+    "completion_tokens": 210,
+    "total_tokens": 2741,
+    "cost": 0.0007724,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007724,
+      "upstream_inference_prompt_cost": 0.0004364,
+      "upstream_inference_completions_cost": 0.000336
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

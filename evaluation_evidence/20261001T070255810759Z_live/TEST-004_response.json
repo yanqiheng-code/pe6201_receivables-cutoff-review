@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790838185-WIE9F5ns1NhpEiHjIS50",
+  "object": "chat.completion",
+  "created": 1790838185,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"TEST-004\",\"recognition_condition\":\"Control transfers when the goods are collected by the customer at the factory, as recorded by the actual dispatch date (CONTRACT-004).\",\"qualifying_event_date\":\"2026-01-03\",\"recorded_accounting_date\":\"2026-01-03\",\"eligible_quantity_by_cutoff\":0,\"recorded_quantity_in_2025\":0,\"conclusion\":\"Delayed or omitted recognition\",\"difference_cny\":4800,\"explanation\":\"The contract specifies that control transfers upon customer collection at the factory, evidenced by the actual dispatch date. The actual dispatch occurred on 2026-01-03, after the 2025-12-31 cut-off date, so no revenue or receivable should be recognized in 2025. However, the ledger shows recognition on 2026-01-03, consistent with the event date, indicating no premature recognition. Since the qualifying event was after the cut-off, and no recognition occurred in 2025, there is no cut-off exception. But because the recognition occurred only after the cut-off, the eligible quantity for 2025 is zero, and the recorded quantity in 2025 is also zero, so no difference arises for 2025. The conclusion is delayed or omitted recognition for 2025, with the full amount recognized in 2026.\",\"evidence_references\":[\"CONTRACT-004\",\"LEDGER-004\",\"INVOICE-004\",\"DELIVERY-004\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2540,
+    "completion_tokens": 310,
+    "total_tokens": 2850,
+    "cost": 0.000936,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000936,
+      "upstream_inference_prompt_cost": 0.00044,
+      "upstream_inference_completions_cost": 0.000496
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

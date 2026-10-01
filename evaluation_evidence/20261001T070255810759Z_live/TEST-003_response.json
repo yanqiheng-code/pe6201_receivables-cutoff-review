@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790838181-qaZPTyzTCdbTnYZ7wXnm",
+  "object": "chat.completion",
+  "created": 1790838181,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"TEST-003\",\"recognition_condition\":\"Transfer of control occurs on signed delivery at the buyer warehouse. The seller remains responsible during transit. No additional acceptance procedure applies. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment. (CONTRACT-003)\",\"qualifying_event_date\":null,\"recorded_accounting_date\":\"2025-12-31\",\"eligible_quantity_by_cutoff\":null,\"recorded_quantity_in_2025\":40,\"conclusion\":\"Additional evidence required\",\"difference_cny\":null,\"explanation\":\"The contract requires signed delivery at the buyer warehouse as the recognition event. The actual customer receipt date, which would confirm this event, is missing (null). Without this date, it cannot be determined if the recognition condition was met by the cut-off date. The ledger records recognition on 2025-12-31 for 40 units, but the qualifying event date and eligible quantity cannot be confirmed from the evidence.\",\"evidence_references\":[\"CONTRACT-003\",\"LEDGER-003\",\"INVOICE-003\",\"DELIVERY-003\"],\"additional_evidence_requested\":[\"Please provide the actual customer receipt date or signed delivery confirmation date for transaction TEST-003. This is necessary to verify whether the transfer of control occurred on or before the cut-off date 2025-12-31, as required by the contract.\"]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2526,
+    "completion_tokens": 292,
+    "total_tokens": 2818,
+    "cost": 0.0009016,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0009016,
+      "upstream_inference_prompt_cost": 0.0004344,
+      "upstream_inference_completions_cost": 0.0004672
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

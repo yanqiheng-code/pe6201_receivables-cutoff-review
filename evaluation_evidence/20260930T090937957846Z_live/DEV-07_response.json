@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790759393-5UKPQowRh7hiZCTsliXi",
+  "object": "chat.completion",
+  "created": 1790759393,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"DEV-07\",\"recognition_condition\":\"Delivery-based transfer: Control transfers when the goods reach the customer warehouse and the customer signs for receipt. No further acceptance is required.\",\"qualifying_event_date\":\"2025-12-29\",\"recorded_accounting_date\":\"2025-12-29\",\"eligible_quantity_by_cutoff\":100,\"recorded_quantity_in_2025\":100,\"conclusion\":\"No cut-off exception identified\",\"difference_cny\":0,\"explanation\":\"The contract requires delivery to the customer warehouse and customer signature for receipt as the recognition event. The delivery records show the goods were received by the customer on 2025-12-29, which is on or before the cut-off date 2025-12-31. The ledger records the sale and accounts receivable on 2025-12-29 for the full quantity of 100 units at the agreed price. Therefore, recognition timing aligns with the contract condition and delivery facts, with no premature or delayed recognition.\",\"evidence_references\":[\"CON-07\",\"LED-07\",\"INV-07\",\"DEL-07\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2309,
+    "completion_tokens": 233,
+    "total_tokens": 2542,
+    "cost": 0.0012964,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0012964,
+      "upstream_inference_prompt_cost": 0.0009236,
+      "upstream_inference_completions_cost": 0.0003728
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

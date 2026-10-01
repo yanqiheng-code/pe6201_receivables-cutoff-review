@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790826796-zJfBmedxmJITL6Zf43TQ",
+  "object": "chat.completion",
+  "created": 1790826796,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"DEV-13\",\"recognition_condition\":\"Delivery-based transfer: Control transfers when the goods reach the customer warehouse and the customer signs for receipt. No further acceptance is required.\",\"qualifying_event_date\":\"2025-12-28\",\"recorded_accounting_date\":\"2025-12-28\",\"eligible_quantity_by_cutoff\":100,\"recorded_quantity_in_2025\":100,\"conclusion\":\"No cut-off exception identified\",\"difference_cny\":0,\"explanation\":\"The contract requires delivery to the customer warehouse and customer receipt (signing) for control transfer. The delivery records show the customer received the goods on 2025-12-28, which is on or before the cut-off date. The ledger records the sale and receivable on 2025-12-28 for the full quantity of 100 units at the agreed price. Therefore, recognition timing is appropriate with no cut-off difference.\",\"evidence_references\":[\"CON-13\",\"LED-13\",\"INV-13\",\"DEL-13\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2390,
+    "completion_tokens": 216,
+    "total_tokens": 2606,
+    "cost": 0.0007256,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007256,
+      "upstream_inference_prompt_cost": 0.00038,
+      "upstream_inference_completions_cost": 0.0003456
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

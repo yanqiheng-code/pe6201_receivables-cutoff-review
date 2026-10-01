@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790759388-QhZrXrDtm2NIfUw5DYm3",
+  "object": "chat.completion",
+  "created": 1790759388,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"DEV-05\",\"recognition_condition\":\"Control transfers when the goods are physically handed to the carrier authorised by the customer.\",\"qualifying_event_date\":\"2026-01-03\",\"recorded_accounting_date\":\"2026-01-03\",\"eligible_quantity_by_cutoff\":0,\"recorded_quantity_in_2025\":0,\"conclusion\":\"No cut-off exception identified\",\"difference_cny\":null,\"explanation\":\"The contract specifies recognition upon handover to the authorised carrier. Actual dispatch (handover) occurred on 2026-01-03, after the 2025-12-31 cut-off date. The ledger entry is also dated 2026-01-03, matching the qualifying event date. No quantity was eligible for recognition in 2025, and none was recorded then. Therefore, no cut-off exception is identified.\",\"evidence_references\":[\"CON-05\",\"LED-05\",\"INV-05\",\"DEL-05\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2322,
+    "completion_tokens": 205,
+    "total_tokens": 2527,
+    "cost": 0.0012568,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0012568,
+      "upstream_inference_prompt_cost": 0.0009288,
+      "upstream_inference_completions_cost": 0.000328
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

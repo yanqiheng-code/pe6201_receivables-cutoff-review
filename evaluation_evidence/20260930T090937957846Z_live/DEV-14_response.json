@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790759411-iCbq6BBKeXsxjuqcDIsd",
+  "object": "chat.completion",
+  "created": 1790759411,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"DEV-14\",\"recognition_condition\":\"Customer completes a substantive inspection and accepts the goods; delivery alone does not complete performance. (Source: CON-14)\",\"qualifying_event_date\":\"2025-12-29\",\"recorded_accounting_date\":\"2025-12-29\",\"eligible_quantity_by_cutoff\":100,\"recorded_quantity_in_2025\":100,\"conclusion\":\"No cut-off exception identified\",\"difference_cny\":null,\"explanation\":\"The contract requires customer acceptance for control transfer. Acceptance occurred on 2025-12-29, on or before the cut-off date. The ledger records the sale and receivable on the same date for the full quantity. Therefore, recognition timing is appropriate with no cut-off error.\",\"evidence_references\":[\"CON-14\",\"LED-14\",\"INV-14\",\"DEL-14\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2316,
+    "completion_tokens": 184,
+    "total_tokens": 2500,
+    "cost": 0.0012208,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0012208,
+      "upstream_inference_prompt_cost": 0.0009264,
+      "upstream_inference_completions_cost": 0.0002944
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

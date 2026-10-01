@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790838418-Bw9mT3G7GwUPL8x6IBNg",
+  "object": "chat.completion",
+  "created": 1790838418,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"TEST-070\",\"recognition_condition\":\"Control passes when the goods are handed to the buyer-authorised carrier at the loading point, as stated in CONTRACT-070. Payment becomes unconditional at that event.\",\"qualifying_event_date\":\"2025-12-29\",\"recorded_accounting_date\":\"2025-12-29\",\"eligible_quantity_by_cutoff\":200,\"recorded_quantity_in_2025\":200,\"conclusion\":\"No cut-off exception identified\",\"difference_cny\":0,\"explanation\":\"The contract specifies recognition upon handover to the buyer-authorised carrier at loading. The delivery record confirms dispatch on 2025-12-29 with carrier authorised by customer, meeting the recognition condition before the 2025-12-31 cut-off. The ledger records the sale and receivable on 2025-12-29 for the full quantity and amount. Invoice date after cut-off does not affect recognition timing. Therefore, recognition is timely and complete with no cut-off difference.\",\"evidence_references\":[\"CONTRACT-070\",\"LEDGER-070\",\"INVOICE-070\",\"DELIVERY-070\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2534,
+    "completion_tokens": 236,
+    "total_tokens": 2770,
+    "cost": 0.0008152,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0008152,
+      "upstream_inference_prompt_cost": 0.0004376,
+      "upstream_inference_completions_cost": 0.0003776
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

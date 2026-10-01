@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790838245-ve2qWUwtr4tQlKeTXknr",
+  "object": "chat.completion",
+  "created": 1790838245,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"TEST-021\",\"recognition_condition\":\"Control transfers when the goods are collected by the customer at the factory, evidenced by the actual dispatch date as per CONTRACT-021.\",\"qualifying_event_date\":\"2025-12-28\",\"recorded_accounting_date\":\"2025-12-28\",\"eligible_quantity_by_cutoff\":200,\"recorded_quantity_in_2025\":200,\"conclusion\":\"No cut-off exception identified\",\"difference_cny\":0,\"explanation\":\"The contract specifies that control transfers upon customer collection at the factory, recorded as the actual dispatch date. The delivery record shows dispatch on 2025-12-28, before the 2025-12-31 cut-off. The ledger records the sale and accounts receivable on 2025-12-28 for the full quantity of 200 units at the agreed price. The invoice date is after the cut-off but is administrative only. Therefore, recognition timing aligns with the contractual condition and delivery facts, with no cut-off error.\",\"evidence_references\":[\"CONTRACT-021\",\"LEDGER-021\",\"INVOICE-021\",\"DELIVERY-021\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2540,
+    "completion_tokens": 240,
+    "total_tokens": 2780,
+    "cost": 0.000824,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000824,
+      "upstream_inference_prompt_cost": 0.00044,
+      "upstream_inference_completions_cost": 0.000384
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

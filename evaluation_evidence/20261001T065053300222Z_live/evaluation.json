@@ -1,0 +1,821 @@
+{
+  "selected_cases": 80,
+  "valid_predictions": 8,
+  "technical_failures_or_not_run": 72,
+  "exact_label_correct": 8,
+  "amount_correct": 8,
+  "amount_field_accuracy": 0.1,
+  "error_amount_correct": 1,
+  "error_amount_accuracy": 0.08333333333333333,
+  "planted_errors": 12,
+  "errors_flagged": 1,
+  "errors_not_flagged_including_abstentions_and_failures": 11,
+  "error_recall": 0.08333333333333333,
+  "false_flags_on_normal_cases": 0,
+  "abstentions": 1,
+  "missing_evidence_cases_correct": 1,
+  "rows": [
+    {
+      "transaction_id": "TEST-001",
+      "expected": "No cut-off exception identified",
+      "predicted": "No cut-off exception identified",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": 0,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": true
+    },
+    {
+      "transaction_id": "TEST-002",
+      "expected": "Delayed or omitted recognition",
+      "predicted": "Delayed or omitted recognition",
+      "expected_difference_cny": 18750,
+      "predicted_difference_cny": 18750,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": true
+    },
+    {
+      "transaction_id": "TEST-003",
+      "expected": "Additional evidence required",
+      "predicted": "Additional evidence required",
+      "expected_difference_cny": null,
+      "predicted_difference_cny": null,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": true
+    },
+    {
+      "transaction_id": "TEST-004",
+      "expected": "No cut-off exception identified",
+      "predicted": "No cut-off exception identified",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": 0,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": true
+    },
+    {
+      "transaction_id": "TEST-005",
+      "expected": "No cut-off exception identified",
+      "predicted": "No cut-off exception identified",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": 0,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": true
+    },
+    {
+      "transaction_id": "TEST-006",
+      "expected": "No cut-off exception identified",
+      "predicted": "No cut-off exception identified",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": 0,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": true
+    },
+    {
+      "transaction_id": "TEST-007",
+      "expected": "No cut-off exception identified",
+      "predicted": "No cut-off exception identified",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": 0,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": true
+    },
+    {
+      "transaction_id": "TEST-008",
+      "expected": "No cut-off exception identified",
+      "predicted": "No cut-off exception identified",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": 0,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": true
+    },
+    {
+      "transaction_id": "TEST-009",
+      "expected": "Additional evidence required",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": null,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-010",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-011",
+      "expected": "Premature recognition",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 2400,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-012",
+      "expected": "Additional evidence required",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": null,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-013",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-014",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-015",
+      "expected": "Additional evidence required",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": null,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-016",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-017",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-018",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-019",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-020",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-021",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-022",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-023",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-024",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-025",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-026",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-027",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-028",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-029",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-030",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-031",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-032",
+      "expected": "Delayed or omitted recognition",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 6000,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-033",
+      "expected": "Additional evidence required",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": null,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-034",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-035",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-036",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-037",
+      "expected": "Premature recognition",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 7200,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-038",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-039",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-040",
+      "expected": "Delayed or omitted recognition",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 19200,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-041",
+      "expected": "Additional evidence required",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": null,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-042",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-043",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-044",
+      "expected": "Delayed or omitted recognition",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 25000,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-045",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-046",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-047",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-048",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-049",
+      "expected": "Premature recognition",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 10000,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-050",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-051",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-052",
+      "expected": "Additional evidence required",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": null,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-053",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-054",
+      "expected": "Delayed or omitted recognition",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 7500,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-055",
+      "expected": "Premature recognition",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 15000,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-056",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-057",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-058",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-059",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-060",
+      "expected": "Delayed or omitted recognition",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 5100,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-061",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-062",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-063",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-064",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-065",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-066",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-067",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-068",
+      "expected": "Premature recognition",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 32000,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-069",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-070",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-071",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-072",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-073",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-074",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-075",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-076",
+      "expected": "Additional evidence required",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": null,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-077",
+      "expected": "Premature recognition",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 2100,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-078",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-079",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "TEST-080",
+      "expected": "No cut-off exception identified",
+      "predicted": "Technical failure / not run",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": false,
+      "label_correct": false,
+      "amount_correct": false
+    }
+  ],
+  "known_usage_reported_cost_usd": 0.0081156,
+  "cost_incomplete": false
+}

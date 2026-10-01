@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790837476-iEc79ANKkOrpEjaQ5K7r",
+  "object": "chat.completion",
+  "created": 1790837476,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"TEST-009\",\"recognition_condition\":\"Control transfers when the goods are collected by the customer at the factory, recorded in the actual dispatch date as per CONTRACT-009.\",\"qualifying_event_date\":\"Unknown\",\"recorded_accounting_date\":\"2025-12-31\",\"eligible_quantity_by_cutoff\":null,\"recorded_quantity_in_2025\":120,\"conclusion\":\"Additional evidence required\",\"difference_cny\":null,\"explanation\":\"The contract specifies that recognition occurs upon customer collection at the factory, evidenced by the actual dispatch date. However, the actual dispatch date and quantities are missing (null) in DELIVERY-009, so it cannot be established whether the recognition condition was met by the cut-off date. The ledger records the full quantity as of 2025-12-31, but without confirming the qualifying event date, no definitive cut-off conclusion can be made.\",\"evidence_references\":[\"CONTRACT-009\",\"LEDGER-009\",\"DELIVERY-009\",\"INVOICE-009\"],\"additional_evidence_requested\":[\"Please provide the actual dispatch date and dispatched quantity to confirm whether the customer collected the goods on or before 2025-12-31, as required by the contract for revenue recognition.\"]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2417,
+    "completion_tokens": 251,
+    "total_tokens": 2668,
+    "cost": 0.0007924,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007924,
+      "upstream_inference_prompt_cost": 0.0003908,
+      "upstream_inference_completions_cost": 0.0004016
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

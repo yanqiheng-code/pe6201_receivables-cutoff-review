@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+.DS_Store
+local_tester/runs/
+local_tester/config.py
+local_tester/review_workspace/
+SUBMISSION_REQUIREMENTS_AND_PLAN.md
+*.zip

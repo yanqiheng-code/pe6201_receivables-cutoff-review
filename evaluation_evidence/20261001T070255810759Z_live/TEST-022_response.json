@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790838249-1iyDAUM8te5PGNWC6o85",
+  "object": "chat.completion",
+  "created": 1790838249,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"TEST-022\",\"recognition_condition\":\"Control transfers when the goods are collected by the customer at the factory, as recorded by the actual dispatch date in the delivery record (DELIVERY-022).\",\"qualifying_event_date\":\"2026-01-09\",\"recorded_accounting_date\":\"2026-01-09\",\"eligible_quantity_by_cutoff\":0,\"recorded_quantity_in_2025\":0,\"conclusion\":\"No cut-off exception identified\",\"difference_cny\":0,\"explanation\":\"The contract specifies that control transfers upon customer collection at the factory, evidenced by the actual dispatch date. The actual dispatch occurred on 2026-01-09, which is after the reporting cut-off date of 2025-12-31. The ledger records the sale and receivable on 2026-01-09, consistent with the qualifying event date. Therefore, no premature recognition occurred and no cut-off exception is identified.\",\"evidence_references\":[\"CONTRACT-022\",\"LEDGER-022\",\"INVOICE-022\",\"DELIVERY-022\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2540,
+    "completion_tokens": 226,
+    "total_tokens": 2766,
+    "cost": 0.0008016,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0008016,
+      "upstream_inference_prompt_cost": 0.00044,
+      "upstream_inference_completions_cost": 0.0003616
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

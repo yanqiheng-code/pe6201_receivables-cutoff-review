@@ -1,0 +1,1778 @@
+[
+  {
+    "transaction_id": "TEST-001",
+    "result": {
+      "transaction_id": "TEST-001",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": "2025-12-30",
+      "recorded_accounting_date": "2025-12-30",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-001",
+        "LEDGER-001",
+        "DELIVERY-001"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 0.000333
+  },
+  {
+    "transaction_id": "TEST-002",
+    "result": {
+      "transaction_id": "TEST-002",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": "2025-12-25",
+      "recorded_accounting_date": "2026-01-02",
+      "eligible_quantity_by_cutoff": 150,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "Delayed or omitted recognition",
+      "difference_cny": 18750,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-002",
+        "LEDGER-002",
+        "DELIVERY-002"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 2.3e-05
+  },
+  {
+    "transaction_id": "TEST-003",
+    "result": {
+      "transaction_id": "TEST-003",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": null,
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 40,
+      "conclusion": "Additional evidence required",
+      "difference_cny": null,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-003",
+        "LEDGER-003",
+        "DELIVERY-003"
+      ],
+      "additional_evidence_requested": [
+        "Provide an unambiguous recognition condition and its actual event date."
+      ]
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 2.1e-05
+  },
+  {
+    "transaction_id": "TEST-004",
+    "result": {
+      "transaction_id": "TEST-004",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": "2026-01-03",
+      "recorded_accounting_date": "2026-01-03",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-004",
+        "LEDGER-004",
+        "DELIVERY-004"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 2.1e-05
+  },
+  {
+    "transaction_id": "TEST-005",
+    "result": {
+      "transaction_id": "TEST-005",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": "2025-12-23",
+      "recorded_accounting_date": "2025-12-23",
+      "eligible_quantity_by_cutoff": 40,
+      "recorded_quantity_in_2025": 40,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-005",
+        "LEDGER-005",
+        "DELIVERY-005"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 2.3e-05
+  },
+  {
+    "transaction_id": "TEST-006",
+    "result": {
+      "transaction_id": "TEST-006",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": "2025-12-28",
+      "recorded_accounting_date": "2025-12-28",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-006",
+        "LEDGER-006",
+        "DELIVERY-006"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.9e-05
+  },
+  {
+    "transaction_id": "TEST-007",
+    "result": {
+      "transaction_id": "TEST-007",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": "2026-01-08",
+      "recorded_accounting_date": "2026-01-08",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-007",
+        "LEDGER-007",
+        "DELIVERY-007"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.8e-05
+  },
+  {
+    "transaction_id": "TEST-008",
+    "result": {
+      "transaction_id": "TEST-008",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": "2025-12-27",
+      "recorded_accounting_date": "2025-12-27",
+      "eligible_quantity_by_cutoff": 60,
+      "recorded_quantity_in_2025": 60,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-008",
+        "LEDGER-008",
+        "DELIVERY-008"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.6e-05
+  },
+  {
+    "transaction_id": "TEST-009",
+    "result": {
+      "transaction_id": "TEST-009",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": null,
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 120,
+      "conclusion": "Additional evidence required",
+      "difference_cny": null,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-009",
+        "LEDGER-009",
+        "DELIVERY-009"
+      ],
+      "additional_evidence_requested": [
+        "Provide an unambiguous recognition condition and its actual event date."
+      ]
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.6e-05
+  },
+  {
+    "transaction_id": "TEST-010",
+    "result": {
+      "transaction_id": "TEST-010",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": "2026-01-05",
+      "recorded_accounting_date": "2026-01-05",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-010",
+        "LEDGER-010",
+        "DELIVERY-010"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.6e-05
+  },
+  {
+    "transaction_id": "TEST-011",
+    "result": {
+      "transaction_id": "TEST-011",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": "2026-01-01",
+      "recorded_accounting_date": "2025-12-29",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 40,
+      "conclusion": "Premature recognition",
+      "difference_cny": 2400,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-011",
+        "LEDGER-011",
+        "DELIVERY-011"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.6e-05
+  },
+  {
+    "transaction_id": "TEST-012",
+    "result": {
+      "transaction_id": "TEST-012",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_acceptance_date.",
+      "qualifying_event_date": null,
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 40,
+      "conclusion": "Additional evidence required",
+      "difference_cny": null,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-012",
+        "LEDGER-012",
+        "DELIVERY-012"
+      ],
+      "additional_evidence_requested": [
+        "Provide an unambiguous recognition condition and its actual event date."
+      ]
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.7e-05
+  },
+  {
+    "transaction_id": "TEST-013",
+    "result": {
+      "transaction_id": "TEST-013",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_acceptance_date.",
+      "qualifying_event_date": "2026-01-05",
+      "recorded_accounting_date": "2026-01-05",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-013",
+        "LEDGER-013",
+        "DELIVERY-013"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 2e-05
+  },
+  {
+    "transaction_id": "TEST-014",
+    "result": {
+      "transaction_id": "TEST-014",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": "2026-01-01",
+      "recorded_accounting_date": "2026-01-01",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-014",
+        "LEDGER-014",
+        "DELIVERY-014"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.9e-05
+  },
+  {
+    "transaction_id": "TEST-015",
+    "result": {
+      "transaction_id": "TEST-015",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": null,
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 40,
+      "conclusion": "Additional evidence required",
+      "difference_cny": null,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-015",
+        "LEDGER-015",
+        "DELIVERY-015"
+      ],
+      "additional_evidence_requested": [
+        "Provide an unambiguous recognition condition and its actual event date."
+      ]
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.9e-05
+  },
+  {
+    "transaction_id": "TEST-016",
+    "result": {
+      "transaction_id": "TEST-016",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": "2026-01-03",
+      "recorded_accounting_date": "2026-01-03",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-016",
+        "LEDGER-016",
+        "DELIVERY-016"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.9e-05
+  },
+  {
+    "transaction_id": "TEST-017",
+    "result": {
+      "transaction_id": "TEST-017",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": "2025-12-25",
+      "recorded_accounting_date": "2025-12-25",
+      "eligible_quantity_by_cutoff": 25,
+      "recorded_quantity_in_2025": 25,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-017",
+        "LEDGER-017",
+        "DELIVERY-017"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.8e-05
+  },
+  {
+    "transaction_id": "TEST-018",
+    "result": {
+      "transaction_id": "TEST-018",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": "2025-12-31",
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": 120,
+      "recorded_quantity_in_2025": 120,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-018",
+        "LEDGER-018",
+        "DELIVERY-018"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.8e-05
+  },
+  {
+    "transaction_id": "TEST-019",
+    "result": {
+      "transaction_id": "TEST-019",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": "2025-12-31",
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-019",
+        "LEDGER-019",
+        "DELIVERY-019"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 2.9e-05
+  },
+  {
+    "transaction_id": "TEST-020",
+    "result": {
+      "transaction_id": "TEST-020",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": "2025-12-25",
+      "recorded_accounting_date": "2025-12-25",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-020",
+        "LEDGER-020",
+        "DELIVERY-020"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 2.2e-05
+  },
+  {
+    "transaction_id": "TEST-021",
+    "result": {
+      "transaction_id": "TEST-021",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": "2025-12-28",
+      "recorded_accounting_date": "2025-12-28",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-021",
+        "LEDGER-021",
+        "DELIVERY-021"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 2.1e-05
+  },
+  {
+    "transaction_id": "TEST-022",
+    "result": {
+      "transaction_id": "TEST-022",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": "2026-01-09",
+      "recorded_accounting_date": "2026-01-09",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-022",
+        "LEDGER-022",
+        "DELIVERY-022"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 2e-05
+  },
+  {
+    "transaction_id": "TEST-023",
+    "result": {
+      "transaction_id": "TEST-023",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": "2026-01-07",
+      "recorded_accounting_date": "2026-01-07",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-023",
+        "LEDGER-023",
+        "DELIVERY-023"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 2.1e-05
+  },
+  {
+    "transaction_id": "TEST-024",
+    "result": {
+      "transaction_id": "TEST-024",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_acceptance_date.",
+      "qualifying_event_date": "2025-12-30",
+      "recorded_accounting_date": "2025-12-30",
+      "eligible_quantity_by_cutoff": 120,
+      "recorded_quantity_in_2025": 120,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-024",
+        "LEDGER-024",
+        "DELIVERY-024"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 2.1e-05
+  },
+  {
+    "transaction_id": "TEST-025",
+    "result": {
+      "transaction_id": "TEST-025",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_acceptance_date.",
+      "qualifying_event_date": "2026-01-04",
+      "recorded_accounting_date": "2026-01-04",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-025",
+        "LEDGER-025",
+        "DELIVERY-025"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.7e-05
+  },
+  {
+    "transaction_id": "TEST-026",
+    "result": {
+      "transaction_id": "TEST-026",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_acceptance_date.",
+      "qualifying_event_date": "2026-01-02",
+      "recorded_accounting_date": "2026-01-02",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-026",
+        "LEDGER-026",
+        "DELIVERY-026"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.6e-05
+  },
+  {
+    "transaction_id": "TEST-027",
+    "result": {
+      "transaction_id": "TEST-027",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_acceptance_date.",
+      "qualifying_event_date": "2025-12-30",
+      "recorded_accounting_date": "2025-12-30",
+      "eligible_quantity_by_cutoff": 150,
+      "recorded_quantity_in_2025": 150,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-027",
+        "LEDGER-027",
+        "DELIVERY-027"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.6e-05
+  },
+  {
+    "transaction_id": "TEST-028",
+    "result": {
+      "transaction_id": "TEST-028",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_acceptance_date.",
+      "qualifying_event_date": "2026-01-06",
+      "recorded_accounting_date": "2026-01-06",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-028",
+        "LEDGER-028",
+        "DELIVERY-028"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.7e-05
+  },
+  {
+    "transaction_id": "TEST-029",
+    "result": {
+      "transaction_id": "TEST-029",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": "2025-12-31",
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": 40,
+      "recorded_quantity_in_2025": 40,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-029",
+        "LEDGER-029",
+        "DELIVERY-029"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.6e-05
+  },
+  {
+    "transaction_id": "TEST-030",
+    "result": {
+      "transaction_id": "TEST-030",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": "2025-12-28",
+      "recorded_accounting_date": "2025-12-28",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-030",
+        "LEDGER-030",
+        "DELIVERY-030"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.6e-05
+  },
+  {
+    "transaction_id": "TEST-031",
+    "result": {
+      "transaction_id": "TEST-031",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_acceptance_date.",
+      "qualifying_event_date": "2025-12-24",
+      "recorded_accounting_date": "2025-12-24",
+      "eligible_quantity_by_cutoff": 120,
+      "recorded_quantity_in_2025": 120,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-031",
+        "LEDGER-031",
+        "DELIVERY-031"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.6e-05
+  },
+  {
+    "transaction_id": "TEST-032",
+    "result": {
+      "transaction_id": "TEST-032",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": "2025-12-26",
+      "recorded_accounting_date": "2026-01-04",
+      "eligible_quantity_by_cutoff": 25,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "Delayed or omitted recognition",
+      "difference_cny": 6000,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-032",
+        "LEDGER-032",
+        "DELIVERY-032"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.6e-05
+  },
+  {
+    "transaction_id": "TEST-033",
+    "result": {
+      "transaction_id": "TEST-033",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": null,
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 25,
+      "conclusion": "Additional evidence required",
+      "difference_cny": null,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-033",
+        "LEDGER-033",
+        "DELIVERY-033"
+      ],
+      "additional_evidence_requested": [
+        "Provide an unambiguous recognition condition and its actual event date."
+      ]
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.6e-05
+  },
+  {
+    "transaction_id": "TEST-034",
+    "result": {
+      "transaction_id": "TEST-034",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": "2025-12-22",
+      "recorded_accounting_date": "2025-12-22",
+      "eligible_quantity_by_cutoff": 150,
+      "recorded_quantity_in_2025": 150,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-034",
+        "LEDGER-034",
+        "DELIVERY-034"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 3e-05
+  },
+  {
+    "transaction_id": "TEST-035",
+    "result": {
+      "transaction_id": "TEST-035",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": "2025-12-28",
+      "recorded_accounting_date": "2025-12-28",
+      "eligible_quantity_by_cutoff": 80,
+      "recorded_quantity_in_2025": 80,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-035",
+        "LEDGER-035",
+        "DELIVERY-035"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 2.6e-05
+  },
+  {
+    "transaction_id": "TEST-036",
+    "result": {
+      "transaction_id": "TEST-036",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": "2026-01-07",
+      "recorded_accounting_date": "2026-01-07",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-036",
+        "LEDGER-036",
+        "DELIVERY-036"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 2.3e-05
+  },
+  {
+    "transaction_id": "TEST-037",
+    "result": {
+      "transaction_id": "TEST-037",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_acceptance_date.",
+      "qualifying_event_date": "2026-01-05",
+      "recorded_accounting_date": "2025-12-27",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 120,
+      "conclusion": "Premature recognition",
+      "difference_cny": 7200,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-037",
+        "LEDGER-037",
+        "DELIVERY-037"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 2e-05
+  },
+  {
+    "transaction_id": "TEST-038",
+    "result": {
+      "transaction_id": "TEST-038",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": "2026-01-08",
+      "recorded_accounting_date": "2026-01-08",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-038",
+        "LEDGER-038",
+        "DELIVERY-038"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.8e-05
+  },
+  {
+    "transaction_id": "TEST-039",
+    "result": {
+      "transaction_id": "TEST-039",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": "2026-01-05",
+      "recorded_accounting_date": "2026-01-05",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-039",
+        "LEDGER-039",
+        "DELIVERY-039"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.7e-05
+  },
+  {
+    "transaction_id": "TEST-040",
+    "result": {
+      "transaction_id": "TEST-040",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": "2025-12-21",
+      "recorded_accounting_date": "2026-01-03",
+      "eligible_quantity_by_cutoff": 120,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "Delayed or omitted recognition",
+      "difference_cny": 19200,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-040",
+        "LEDGER-040",
+        "DELIVERY-040"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.8e-05
+  },
+  {
+    "transaction_id": "TEST-041",
+    "result": {
+      "transaction_id": "TEST-041",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_acceptance_date.",
+      "qualifying_event_date": null,
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 60,
+      "conclusion": "Additional evidence required",
+      "difference_cny": null,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-041",
+        "LEDGER-041",
+        "DELIVERY-041"
+      ],
+      "additional_evidence_requested": [
+        "Provide an unambiguous recognition condition and its actual event date."
+      ]
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.8e-05
+  },
+  {
+    "transaction_id": "TEST-042",
+    "result": {
+      "transaction_id": "TEST-042",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": "2026-01-08",
+      "recorded_accounting_date": "2026-01-08",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-042",
+        "LEDGER-042",
+        "DELIVERY-042"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.7e-05
+  },
+  {
+    "transaction_id": "TEST-043",
+    "result": {
+      "transaction_id": "TEST-043",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_acceptance_date.",
+      "qualifying_event_date": "2026-01-02",
+      "recorded_accounting_date": "2026-01-02",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-043",
+        "LEDGER-043",
+        "DELIVERY-043"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.7e-05
+  },
+  {
+    "transaction_id": "TEST-044",
+    "result": {
+      "transaction_id": "TEST-044",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_acceptance_date.",
+      "qualifying_event_date": "2025-12-22",
+      "recorded_accounting_date": "2026-01-07",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "Delayed or omitted recognition",
+      "difference_cny": 25000,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-044",
+        "LEDGER-044",
+        "DELIVERY-044"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 2e-05
+  },
+  {
+    "transaction_id": "TEST-045",
+    "result": {
+      "transaction_id": "TEST-045",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": "2025-12-25",
+      "recorded_accounting_date": "2025-12-25",
+      "eligible_quantity_by_cutoff": 80,
+      "recorded_quantity_in_2025": 80,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-045",
+        "LEDGER-045",
+        "DELIVERY-045"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.7e-05
+  },
+  {
+    "transaction_id": "TEST-046",
+    "result": {
+      "transaction_id": "TEST-046",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_acceptance_date.",
+      "qualifying_event_date": "2026-01-02",
+      "recorded_accounting_date": "2026-01-02",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-046",
+        "LEDGER-046",
+        "DELIVERY-046"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.7e-05
+  },
+  {
+    "transaction_id": "TEST-047",
+    "result": {
+      "transaction_id": "TEST-047",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_acceptance_date.",
+      "qualifying_event_date": "2025-12-24",
+      "recorded_accounting_date": "2025-12-24",
+      "eligible_quantity_by_cutoff": 120,
+      "recorded_quantity_in_2025": 120,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-047",
+        "LEDGER-047",
+        "DELIVERY-047"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.7e-05
+  },
+  {
+    "transaction_id": "TEST-048",
+    "result": {
+      "transaction_id": "TEST-048",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": "2026-01-07",
+      "recorded_accounting_date": "2026-01-07",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-048",
+        "LEDGER-048",
+        "DELIVERY-048"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.6e-05
+  },
+  {
+    "transaction_id": "TEST-049",
+    "result": {
+      "transaction_id": "TEST-049",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": "2026-01-01",
+      "recorded_accounting_date": "2025-12-27",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 80,
+      "conclusion": "Premature recognition",
+      "difference_cny": 10000,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-049",
+        "LEDGER-049",
+        "DELIVERY-049"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.6e-05
+  },
+  {
+    "transaction_id": "TEST-050",
+    "result": {
+      "transaction_id": "TEST-050",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": "2026-01-09",
+      "recorded_accounting_date": "2026-01-09",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-050",
+        "LEDGER-050",
+        "DELIVERY-050"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.6e-05
+  },
+  {
+    "transaction_id": "TEST-051",
+    "result": {
+      "transaction_id": "TEST-051",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": "2025-12-31",
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": 120,
+      "recorded_quantity_in_2025": 120,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-051",
+        "LEDGER-051",
+        "DELIVERY-051"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.6e-05
+  },
+  {
+    "transaction_id": "TEST-052",
+    "result": {
+      "transaction_id": "TEST-052",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": null,
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 120,
+      "conclusion": "Additional evidence required",
+      "difference_cny": null,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-052",
+        "LEDGER-052",
+        "DELIVERY-052"
+      ],
+      "additional_evidence_requested": [
+        "Provide an unambiguous recognition condition and its actual event date."
+      ]
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.6e-05
+  },
+  {
+    "transaction_id": "TEST-053",
+    "result": {
+      "transaction_id": "TEST-053",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_acceptance_date.",
+      "qualifying_event_date": "2026-01-09",
+      "recorded_accounting_date": "2026-01-09",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-053",
+        "LEDGER-053",
+        "DELIVERY-053"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.7e-05
+  },
+  {
+    "transaction_id": "TEST-054",
+    "result": {
+      "transaction_id": "TEST-054",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_acceptance_date.",
+      "qualifying_event_date": "2025-12-28",
+      "recorded_accounting_date": "2026-01-01",
+      "eligible_quantity_by_cutoff": 60,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "Delayed or omitted recognition",
+      "difference_cny": 7500,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-054",
+        "LEDGER-054",
+        "DELIVERY-054"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.7e-05
+  },
+  {
+    "transaction_id": "TEST-055",
+    "result": {
+      "transaction_id": "TEST-055",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": "2026-01-06",
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 120,
+      "conclusion": "Premature recognition",
+      "difference_cny": 15000,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-055",
+        "LEDGER-055",
+        "DELIVERY-055"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.6e-05
+  },
+  {
+    "transaction_id": "TEST-056",
+    "result": {
+      "transaction_id": "TEST-056",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_acceptance_date.",
+      "qualifying_event_date": "2026-01-07",
+      "recorded_accounting_date": "2026-01-07",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-056",
+        "LEDGER-056",
+        "DELIVERY-056"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.7e-05
+  },
+  {
+    "transaction_id": "TEST-057",
+    "result": {
+      "transaction_id": "TEST-057",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": "2026-01-06",
+      "recorded_accounting_date": "2026-01-06",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-057",
+        "LEDGER-057",
+        "DELIVERY-057"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.6e-05
+  },
+  {
+    "transaction_id": "TEST-058",
+    "result": {
+      "transaction_id": "TEST-058",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": "2026-01-08",
+      "recorded_accounting_date": "2026-01-08",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-058",
+        "LEDGER-058",
+        "DELIVERY-058"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.6e-05
+  },
+  {
+    "transaction_id": "TEST-059",
+    "result": {
+      "transaction_id": "TEST-059",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_acceptance_date.",
+      "qualifying_event_date": "2025-12-31",
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": 25,
+      "recorded_quantity_in_2025": 25,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-059",
+        "LEDGER-059",
+        "DELIVERY-059"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.6e-05
+  },
+  {
+    "transaction_id": "TEST-060",
+    "result": {
+      "transaction_id": "TEST-060",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": "2025-12-22",
+      "recorded_accounting_date": "2026-01-04",
+      "eligible_quantity_by_cutoff": 60,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "Delayed or omitted recognition",
+      "difference_cny": 5100,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-060",
+        "LEDGER-060",
+        "DELIVERY-060"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.7e-05
+  },
+  {
+    "transaction_id": "TEST-061",
+    "result": {
+      "transaction_id": "TEST-061",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_acceptance_date.",
+      "qualifying_event_date": "2026-01-04",
+      "recorded_accounting_date": "2026-01-04",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-061",
+        "LEDGER-061",
+        "DELIVERY-061"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.5e-05
+  },
+  {
+    "transaction_id": "TEST-062",
+    "result": {
+      "transaction_id": "TEST-062",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_acceptance_date.",
+      "qualifying_event_date": "2025-12-28",
+      "recorded_accounting_date": "2025-12-28",
+      "eligible_quantity_by_cutoff": 80,
+      "recorded_quantity_in_2025": 80,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-062",
+        "LEDGER-062",
+        "DELIVERY-062"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 2.5e-05
+  },
+  {
+    "transaction_id": "TEST-063",
+    "result": {
+      "transaction_id": "TEST-063",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": "2025-12-23",
+      "recorded_accounting_date": "2025-12-23",
+      "eligible_quantity_by_cutoff": 150,
+      "recorded_quantity_in_2025": 150,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-063",
+        "LEDGER-063",
+        "DELIVERY-063"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 2.5e-05
+  },
+  {
+    "transaction_id": "TEST-064",
+    "result": {
+      "transaction_id": "TEST-064",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_acceptance_date.",
+      "qualifying_event_date": "2025-12-31",
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": 25,
+      "recorded_quantity_in_2025": 25,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-064",
+        "LEDGER-064",
+        "DELIVERY-064"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.7e-05
+  },
+  {
+    "transaction_id": "TEST-065",
+    "result": {
+      "transaction_id": "TEST-065",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": "2025-12-29",
+      "recorded_accounting_date": "2025-12-29",
+      "eligible_quantity_by_cutoff": 80,
+      "recorded_quantity_in_2025": 80,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-065",
+        "LEDGER-065",
+        "DELIVERY-065"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 2.2e-05
+  },
+  {
+    "transaction_id": "TEST-066",
+    "result": {
+      "transaction_id": "TEST-066",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": "2026-01-07",
+      "recorded_accounting_date": "2026-01-07",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-066",
+        "LEDGER-066",
+        "DELIVERY-066"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.9e-05
+  },
+  {
+    "transaction_id": "TEST-067",
+    "result": {
+      "transaction_id": "TEST-067",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": "2026-01-03",
+      "recorded_accounting_date": "2026-01-03",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-067",
+        "LEDGER-067",
+        "DELIVERY-067"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.8e-05
+  },
+  {
+    "transaction_id": "TEST-068",
+    "result": {
+      "transaction_id": "TEST-068",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": "2026-01-06",
+      "recorded_accounting_date": "2025-12-30",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 200,
+      "conclusion": "Premature recognition",
+      "difference_cny": 32000,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-068",
+        "LEDGER-068",
+        "DELIVERY-068"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.7e-05
+  },
+  {
+    "transaction_id": "TEST-069",
+    "result": {
+      "transaction_id": "TEST-069",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": "2026-01-04",
+      "recorded_accounting_date": "2026-01-04",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-069",
+        "LEDGER-069",
+        "DELIVERY-069"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.7e-05
+  },
+  {
+    "transaction_id": "TEST-070",
+    "result": {
+      "transaction_id": "TEST-070",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": "2025-12-29",
+      "recorded_accounting_date": "2025-12-29",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-070",
+        "LEDGER-070",
+        "DELIVERY-070"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.7e-05
+  },
+  {
+    "transaction_id": "TEST-071",
+    "result": {
+      "transaction_id": "TEST-071",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_acceptance_date.",
+      "qualifying_event_date": "2025-12-25",
+      "recorded_accounting_date": "2025-12-25",
+      "eligible_quantity_by_cutoff": 60,
+      "recorded_quantity_in_2025": 60,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-071",
+        "LEDGER-071",
+        "DELIVERY-071"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.8e-05
+  },
+  {
+    "transaction_id": "TEST-072",
+    "result": {
+      "transaction_id": "TEST-072",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_acceptance_date.",
+      "qualifying_event_date": "2025-12-29",
+      "recorded_accounting_date": "2025-12-29",
+      "eligible_quantity_by_cutoff": 25,
+      "recorded_quantity_in_2025": 25,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-072",
+        "LEDGER-072",
+        "DELIVERY-072"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.7e-05
+  },
+  {
+    "transaction_id": "TEST-073",
+    "result": {
+      "transaction_id": "TEST-073",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": "2025-12-25",
+      "recorded_accounting_date": "2025-12-25",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-073",
+        "LEDGER-073",
+        "DELIVERY-073"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.6e-05
+  },
+  {
+    "transaction_id": "TEST-074",
+    "result": {
+      "transaction_id": "TEST-074",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": "2026-01-04",
+      "recorded_accounting_date": "2026-01-04",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-074",
+        "LEDGER-074",
+        "DELIVERY-074"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.6e-05
+  },
+  {
+    "transaction_id": "TEST-075",
+    "result": {
+      "transaction_id": "TEST-075",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": "2026-01-08",
+      "recorded_accounting_date": "2026-01-08",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-075",
+        "LEDGER-075",
+        "DELIVERY-075"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.6e-05
+  },
+  {
+    "transaction_id": "TEST-076",
+    "result": {
+      "transaction_id": "TEST-076",
+      "recognition_condition": "Fixed keyword rule selected actual_dispatch_date.",
+      "qualifying_event_date": null,
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 200,
+      "conclusion": "Additional evidence required",
+      "difference_cny": null,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-076",
+        "LEDGER-076",
+        "DELIVERY-076"
+      ],
+      "additional_evidence_requested": [
+        "Provide an unambiguous recognition condition and its actual event date."
+      ]
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.6e-05
+  },
+  {
+    "transaction_id": "TEST-077",
+    "result": {
+      "transaction_id": "TEST-077",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_acceptance_date.",
+      "qualifying_event_date": "2026-01-02",
+      "recorded_accounting_date": "2025-12-29",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 60,
+      "conclusion": "Premature recognition",
+      "difference_cny": 2100,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-077",
+        "LEDGER-077",
+        "DELIVERY-077"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.7e-05
+  },
+  {
+    "transaction_id": "TEST-078",
+    "result": {
+      "transaction_id": "TEST-078",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_receipt_date.",
+      "qualifying_event_date": "2025-12-21",
+      "recorded_accounting_date": "2025-12-21",
+      "eligible_quantity_by_cutoff": 60,
+      "recorded_quantity_in_2025": 60,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-078",
+        "LEDGER-078",
+        "DELIVERY-078"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.6e-05
+  },
+  {
+    "transaction_id": "TEST-079",
+    "result": {
+      "transaction_id": "TEST-079",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_acceptance_date.",
+      "qualifying_event_date": "2025-12-26",
+      "recorded_accounting_date": "2025-12-26",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-079",
+        "LEDGER-079",
+        "DELIVERY-079"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.7e-05
+  },
+  {
+    "transaction_id": "TEST-080",
+    "result": {
+      "transaction_id": "TEST-080",
+      "recognition_condition": "Fixed keyword rule selected actual_customer_acceptance_date.",
+      "qualifying_event_date": "2026-01-04",
+      "recorded_accounting_date": "2026-01-04",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "Contract keywords select one event; dates are compared with the cut-off and quantity differences are multiplied by the fixed price. No learned model is used.",
+      "evidence_references": [
+        "CONTRACT-080",
+        "LEDGER-080",
+        "DELIVERY-080"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0,
+    "elapsed_seconds": 1.6e-05
+  }
+]

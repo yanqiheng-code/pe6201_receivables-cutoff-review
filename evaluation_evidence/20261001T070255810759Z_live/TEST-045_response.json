@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790838330-zqnrZoipo6cbKTSWGJry",
+  "object": "chat.completion",
+  "created": 1790838330,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"TEST-045\",\"recognition_condition\":\"Control transfers when the goods are collected by the customer at the factory, recorded as actual dispatch date per contract terms (CONTRACT-045).\",\"qualifying_event_date\":\"2025-12-25\",\"recorded_accounting_date\":\"2025-12-25\",\"eligible_quantity_by_cutoff\":80,\"recorded_quantity_in_2025\":80,\"conclusion\":\"No cut-off exception identified\",\"difference_cny\":0,\"explanation\":\"The contract specifies recognition upon customer collection at the factory, evidenced by the actual dispatch date of 2025-12-25, which is on the cut-off date. The ledger records the sale and accounts receivable on the same date for the full quantity of 80 units at the agreed price. Invoice date is after cut-off but is administrative only. Therefore, recognition timing aligns with the contract and delivery facts, with no cut-off error.\",\"evidence_references\":[\"CONTRACT-045\",\"LEDGER-045\",\"DELIVERY-045\",\"INVOICE-045\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2540,
+    "completion_tokens": 224,
+    "total_tokens": 2764,
+    "cost": 0.0007984,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007984,
+      "upstream_inference_prompt_cost": 0.00044,
+      "upstream_inference_completions_cost": 0.0003584
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

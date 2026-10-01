@@ -1,0 +1,1285 @@
+{
+  "purpose": "Evaluator only; never pass to a predictor.",
+  "answers": [
+    {
+      "transaction_id": "TEST-001",
+      "contract_category": "Delivery-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-30",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "difference_cny": 0,
+      "reason": "Apply the R contractual event. Qualifying date: 2025-12-30; accounting date: 2025-12-30. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-001",
+        "LEDGER-001",
+        "INVOICE-001",
+        "DELIVERY-001"
+      ]
+    },
+    {
+      "transaction_id": "TEST-002",
+      "contract_category": "Delivery-based",
+      "conclusion": "Delayed or omitted recognition",
+      "qualifying_event_date": "2025-12-25",
+      "eligible_quantity_by_cutoff": 150,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 18750,
+      "reason": "Apply the R contractual event. Qualifying date: 2025-12-25; accounting date: 2026-01-02. The expected annual cut-off classification is Delayed or omitted recognition.",
+      "source_references": [
+        "CONTRACT-002",
+        "LEDGER-002",
+        "INVOICE-002",
+        "DELIVERY-002"
+      ]
+    },
+    {
+      "transaction_id": "TEST-003",
+      "contract_category": "Delivery-based",
+      "conclusion": "Additional evidence required",
+      "qualifying_event_date": null,
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 40,
+      "difference_cny": null,
+      "reason": "Apply the R contractual event. Qualifying date: unknown; accounting date: 2025-12-31. Evidence is insufficient to locate recognition before or after the cut-off.",
+      "source_references": [
+        "CONTRACT-003",
+        "LEDGER-003",
+        "INVOICE-003",
+        "DELIVERY-003"
+      ]
+    },
+    {
+      "transaction_id": "TEST-004",
+      "contract_category": "Dispatch-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-03",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the D contractual event. Qualifying date: 2026-01-03; accounting date: 2026-01-03. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-004",
+        "LEDGER-004",
+        "INVOICE-004",
+        "DELIVERY-004"
+      ]
+    },
+    {
+      "transaction_id": "TEST-005",
+      "contract_category": "Dispatch-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-23",
+      "eligible_quantity_by_cutoff": 40,
+      "recorded_quantity_in_2025": 40,
+      "difference_cny": 0,
+      "reason": "Apply the D contractual event. Qualifying date: 2025-12-23; accounting date: 2025-12-23. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-005",
+        "LEDGER-005",
+        "INVOICE-005",
+        "DELIVERY-005"
+      ]
+    },
+    {
+      "transaction_id": "TEST-006",
+      "contract_category": "Delivery-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-28",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "difference_cny": 0,
+      "reason": "Apply the R contractual event. Qualifying date: 2025-12-28; accounting date: 2025-12-28. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-006",
+        "LEDGER-006",
+        "INVOICE-006",
+        "DELIVERY-006"
+      ]
+    },
+    {
+      "transaction_id": "TEST-007",
+      "contract_category": "Delivery-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-08",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the R contractual event. Qualifying date: 2026-01-08; accounting date: 2026-01-08. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-007",
+        "LEDGER-007",
+        "INVOICE-007",
+        "DELIVERY-007"
+      ]
+    },
+    {
+      "transaction_id": "TEST-008",
+      "contract_category": "Dispatch-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-27",
+      "eligible_quantity_by_cutoff": 60,
+      "recorded_quantity_in_2025": 60,
+      "difference_cny": 0,
+      "reason": "Apply the D contractual event. Qualifying date: 2025-12-27; accounting date: 2025-12-27. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-008",
+        "LEDGER-008",
+        "INVOICE-008",
+        "DELIVERY-008"
+      ]
+    },
+    {
+      "transaction_id": "TEST-009",
+      "contract_category": "Dispatch-based",
+      "conclusion": "Additional evidence required",
+      "qualifying_event_date": null,
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 120,
+      "difference_cny": null,
+      "reason": "Apply the D contractual event. Qualifying date: unknown; accounting date: 2025-12-31. Evidence is insufficient to locate recognition before or after the cut-off.",
+      "source_references": [
+        "CONTRACT-009",
+        "LEDGER-009",
+        "INVOICE-009",
+        "DELIVERY-009"
+      ]
+    },
+    {
+      "transaction_id": "TEST-010",
+      "contract_category": "Delivery-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-05",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the R contractual event. Qualifying date: 2026-01-05; accounting date: 2026-01-05. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-010",
+        "LEDGER-010",
+        "INVOICE-010",
+        "DELIVERY-010"
+      ]
+    },
+    {
+      "transaction_id": "TEST-011",
+      "contract_category": "Dispatch-based",
+      "conclusion": "Premature recognition",
+      "qualifying_event_date": "2026-01-01",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 40,
+      "difference_cny": 2400,
+      "reason": "Apply the D contractual event. Qualifying date: 2026-01-01; accounting date: 2025-12-29. The expected annual cut-off classification is Premature recognition.",
+      "source_references": [
+        "CONTRACT-011",
+        "LEDGER-011",
+        "INVOICE-011",
+        "DELIVERY-011"
+      ]
+    },
+    {
+      "transaction_id": "TEST-012",
+      "contract_category": "Acceptance-based",
+      "conclusion": "Additional evidence required",
+      "qualifying_event_date": null,
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 40,
+      "difference_cny": null,
+      "reason": "Apply the A contractual event. Qualifying date: unknown; accounting date: 2025-12-31. Evidence is insufficient to locate recognition before or after the cut-off.",
+      "source_references": [
+        "CONTRACT-012",
+        "LEDGER-012",
+        "INVOICE-012",
+        "DELIVERY-012"
+      ]
+    },
+    {
+      "transaction_id": "TEST-013",
+      "contract_category": "Acceptance-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-05",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the A contractual event. Qualifying date: 2026-01-05; accounting date: 2026-01-05. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-013",
+        "LEDGER-013",
+        "INVOICE-013",
+        "DELIVERY-013"
+      ]
+    },
+    {
+      "transaction_id": "TEST-014",
+      "contract_category": "Delivery-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-01",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the R contractual event. Qualifying date: 2026-01-01; accounting date: 2026-01-01. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-014",
+        "LEDGER-014",
+        "INVOICE-014",
+        "DELIVERY-014"
+      ]
+    },
+    {
+      "transaction_id": "TEST-015",
+      "contract_category": "Dispatch-based",
+      "conclusion": "Additional evidence required",
+      "qualifying_event_date": null,
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 40,
+      "difference_cny": null,
+      "reason": "Apply the D contractual event. Qualifying date: unknown; accounting date: 2025-12-31. Evidence is insufficient to locate recognition before or after the cut-off.",
+      "source_references": [
+        "CONTRACT-015",
+        "LEDGER-015",
+        "INVOICE-015",
+        "DELIVERY-015"
+      ]
+    },
+    {
+      "transaction_id": "TEST-016",
+      "contract_category": "Delivery-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-03",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the R contractual event. Qualifying date: 2026-01-03; accounting date: 2026-01-03. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-016",
+        "LEDGER-016",
+        "INVOICE-016",
+        "DELIVERY-016"
+      ]
+    },
+    {
+      "transaction_id": "TEST-017",
+      "contract_category": "Delivery-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-25",
+      "eligible_quantity_by_cutoff": 25,
+      "recorded_quantity_in_2025": 25,
+      "difference_cny": 0,
+      "reason": "Apply the R contractual event. Qualifying date: 2025-12-25; accounting date: 2025-12-25. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-017",
+        "LEDGER-017",
+        "INVOICE-017",
+        "DELIVERY-017"
+      ]
+    },
+    {
+      "transaction_id": "TEST-018",
+      "contract_category": "Dispatch-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": 120,
+      "recorded_quantity_in_2025": 120,
+      "difference_cny": 0,
+      "reason": "Apply the D contractual event. Qualifying date: 2025-12-31; accounting date: 2025-12-31. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-018",
+        "LEDGER-018",
+        "INVOICE-018",
+        "DELIVERY-018"
+      ]
+    },
+    {
+      "transaction_id": "TEST-019",
+      "contract_category": "Delivery-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "difference_cny": 0,
+      "reason": "Apply the R contractual event. Qualifying date: 2025-12-31; accounting date: 2025-12-31. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-019",
+        "LEDGER-019",
+        "INVOICE-019",
+        "DELIVERY-019"
+      ]
+    },
+    {
+      "transaction_id": "TEST-020",
+      "contract_category": "Delivery-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-25",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "difference_cny": 0,
+      "reason": "Apply the R contractual event. Qualifying date: 2025-12-25; accounting date: 2025-12-25. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-020",
+        "LEDGER-020",
+        "INVOICE-020",
+        "DELIVERY-020"
+      ]
+    },
+    {
+      "transaction_id": "TEST-021",
+      "contract_category": "Dispatch-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-28",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "difference_cny": 0,
+      "reason": "Apply the D contractual event. Qualifying date: 2025-12-28; accounting date: 2025-12-28. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-021",
+        "LEDGER-021",
+        "INVOICE-021",
+        "DELIVERY-021"
+      ]
+    },
+    {
+      "transaction_id": "TEST-022",
+      "contract_category": "Dispatch-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-09",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the D contractual event. Qualifying date: 2026-01-09; accounting date: 2026-01-09. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-022",
+        "LEDGER-022",
+        "INVOICE-022",
+        "DELIVERY-022"
+      ]
+    },
+    {
+      "transaction_id": "TEST-023",
+      "contract_category": "Delivery-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-07",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the R contractual event. Qualifying date: 2026-01-07; accounting date: 2026-01-07. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-023",
+        "LEDGER-023",
+        "INVOICE-023",
+        "DELIVERY-023"
+      ]
+    },
+    {
+      "transaction_id": "TEST-024",
+      "contract_category": "Acceptance-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-30",
+      "eligible_quantity_by_cutoff": 120,
+      "recorded_quantity_in_2025": 120,
+      "difference_cny": 0,
+      "reason": "Apply the A contractual event. Qualifying date: 2025-12-30; accounting date: 2025-12-30. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-024",
+        "LEDGER-024",
+        "INVOICE-024",
+        "DELIVERY-024"
+      ]
+    },
+    {
+      "transaction_id": "TEST-025",
+      "contract_category": "Acceptance-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-04",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the A contractual event. Qualifying date: 2026-01-04; accounting date: 2026-01-04. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-025",
+        "LEDGER-025",
+        "INVOICE-025",
+        "DELIVERY-025"
+      ]
+    },
+    {
+      "transaction_id": "TEST-026",
+      "contract_category": "Acceptance-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-02",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the A contractual event. Qualifying date: 2026-01-02; accounting date: 2026-01-02. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-026",
+        "LEDGER-026",
+        "INVOICE-026",
+        "DELIVERY-026"
+      ]
+    },
+    {
+      "transaction_id": "TEST-027",
+      "contract_category": "Acceptance-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-30",
+      "eligible_quantity_by_cutoff": 150,
+      "recorded_quantity_in_2025": 150,
+      "difference_cny": 0,
+      "reason": "Apply the A contractual event. Qualifying date: 2025-12-30; accounting date: 2025-12-30. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-027",
+        "LEDGER-027",
+        "INVOICE-027",
+        "DELIVERY-027"
+      ]
+    },
+    {
+      "transaction_id": "TEST-028",
+      "contract_category": "Acceptance-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-06",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the A contractual event. Qualifying date: 2026-01-06; accounting date: 2026-01-06. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-028",
+        "LEDGER-028",
+        "INVOICE-028",
+        "DELIVERY-028"
+      ]
+    },
+    {
+      "transaction_id": "TEST-029",
+      "contract_category": "Dispatch-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": 40,
+      "recorded_quantity_in_2025": 40,
+      "difference_cny": 0,
+      "reason": "Apply the D contractual event. Qualifying date: 2025-12-31; accounting date: 2025-12-31. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-029",
+        "LEDGER-029",
+        "INVOICE-029",
+        "DELIVERY-029"
+      ]
+    },
+    {
+      "transaction_id": "TEST-030",
+      "contract_category": "Delivery-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-28",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "difference_cny": 0,
+      "reason": "Apply the R contractual event. Qualifying date: 2025-12-28; accounting date: 2025-12-28. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-030",
+        "LEDGER-030",
+        "INVOICE-030",
+        "DELIVERY-030"
+      ]
+    },
+    {
+      "transaction_id": "TEST-031",
+      "contract_category": "Acceptance-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-24",
+      "eligible_quantity_by_cutoff": 120,
+      "recorded_quantity_in_2025": 120,
+      "difference_cny": 0,
+      "reason": "Apply the A contractual event. Qualifying date: 2025-12-24; accounting date: 2025-12-24. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-031",
+        "LEDGER-031",
+        "INVOICE-031",
+        "DELIVERY-031"
+      ]
+    },
+    {
+      "transaction_id": "TEST-032",
+      "contract_category": "Delivery-based",
+      "conclusion": "Delayed or omitted recognition",
+      "qualifying_event_date": "2025-12-26",
+      "eligible_quantity_by_cutoff": 25,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 6000,
+      "reason": "Apply the R contractual event. Qualifying date: 2025-12-26; accounting date: 2026-01-04. The expected annual cut-off classification is Delayed or omitted recognition.",
+      "source_references": [
+        "CONTRACT-032",
+        "LEDGER-032",
+        "INVOICE-032",
+        "DELIVERY-032"
+      ]
+    },
+    {
+      "transaction_id": "TEST-033",
+      "contract_category": "Delivery-based",
+      "conclusion": "Additional evidence required",
+      "qualifying_event_date": null,
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 25,
+      "difference_cny": null,
+      "reason": "Apply the R contractual event. Qualifying date: unknown; accounting date: 2025-12-31. Evidence is insufficient to locate recognition before or after the cut-off.",
+      "source_references": [
+        "CONTRACT-033",
+        "LEDGER-033",
+        "INVOICE-033",
+        "DELIVERY-033"
+      ]
+    },
+    {
+      "transaction_id": "TEST-034",
+      "contract_category": "Dispatch-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-22",
+      "eligible_quantity_by_cutoff": 150,
+      "recorded_quantity_in_2025": 150,
+      "difference_cny": 0,
+      "reason": "Apply the D contractual event. Qualifying date: 2025-12-22; accounting date: 2025-12-22. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-034",
+        "LEDGER-034",
+        "INVOICE-034",
+        "DELIVERY-034"
+      ]
+    },
+    {
+      "transaction_id": "TEST-035",
+      "contract_category": "Dispatch-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-28",
+      "eligible_quantity_by_cutoff": 80,
+      "recorded_quantity_in_2025": 80,
+      "difference_cny": 0,
+      "reason": "Apply the D contractual event. Qualifying date: 2025-12-28; accounting date: 2025-12-28. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-035",
+        "LEDGER-035",
+        "INVOICE-035",
+        "DELIVERY-035"
+      ]
+    },
+    {
+      "transaction_id": "TEST-036",
+      "contract_category": "Dispatch-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-07",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the D contractual event. Qualifying date: 2026-01-07; accounting date: 2026-01-07. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-036",
+        "LEDGER-036",
+        "INVOICE-036",
+        "DELIVERY-036"
+      ]
+    },
+    {
+      "transaction_id": "TEST-037",
+      "contract_category": "Acceptance-based",
+      "conclusion": "Premature recognition",
+      "qualifying_event_date": "2026-01-05",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 120,
+      "difference_cny": 7200,
+      "reason": "Apply the A contractual event. Qualifying date: 2026-01-05; accounting date: 2025-12-27. The expected annual cut-off classification is Premature recognition.",
+      "source_references": [
+        "CONTRACT-037",
+        "LEDGER-037",
+        "INVOICE-037",
+        "DELIVERY-037"
+      ]
+    },
+    {
+      "transaction_id": "TEST-038",
+      "contract_category": "Dispatch-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-08",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the D contractual event. Qualifying date: 2026-01-08; accounting date: 2026-01-08. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-038",
+        "LEDGER-038",
+        "INVOICE-038",
+        "DELIVERY-038"
+      ]
+    },
+    {
+      "transaction_id": "TEST-039",
+      "contract_category": "Delivery-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-05",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the R contractual event. Qualifying date: 2026-01-05; accounting date: 2026-01-05. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-039",
+        "LEDGER-039",
+        "INVOICE-039",
+        "DELIVERY-039"
+      ]
+    },
+    {
+      "transaction_id": "TEST-040",
+      "contract_category": "Dispatch-based",
+      "conclusion": "Delayed or omitted recognition",
+      "qualifying_event_date": "2025-12-21",
+      "eligible_quantity_by_cutoff": 120,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 19200,
+      "reason": "Apply the D contractual event. Qualifying date: 2025-12-21; accounting date: 2026-01-03. The expected annual cut-off classification is Delayed or omitted recognition.",
+      "source_references": [
+        "CONTRACT-040",
+        "LEDGER-040",
+        "INVOICE-040",
+        "DELIVERY-040"
+      ]
+    },
+    {
+      "transaction_id": "TEST-041",
+      "contract_category": "Acceptance-based",
+      "conclusion": "Additional evidence required",
+      "qualifying_event_date": null,
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 60,
+      "difference_cny": null,
+      "reason": "Apply the A contractual event. Qualifying date: unknown; accounting date: 2025-12-31. Evidence is insufficient to locate recognition before or after the cut-off.",
+      "source_references": [
+        "CONTRACT-041",
+        "LEDGER-041",
+        "INVOICE-041",
+        "DELIVERY-041"
+      ]
+    },
+    {
+      "transaction_id": "TEST-042",
+      "contract_category": "Delivery-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-08",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the R contractual event. Qualifying date: 2026-01-08; accounting date: 2026-01-08. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-042",
+        "LEDGER-042",
+        "INVOICE-042",
+        "DELIVERY-042"
+      ]
+    },
+    {
+      "transaction_id": "TEST-043",
+      "contract_category": "Acceptance-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-02",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the A contractual event. Qualifying date: 2026-01-02; accounting date: 2026-01-02. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-043",
+        "LEDGER-043",
+        "INVOICE-043",
+        "DELIVERY-043"
+      ]
+    },
+    {
+      "transaction_id": "TEST-044",
+      "contract_category": "Acceptance-based",
+      "conclusion": "Delayed or omitted recognition",
+      "qualifying_event_date": "2025-12-22",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 25000,
+      "reason": "Apply the A contractual event. Qualifying date: 2025-12-22; accounting date: 2026-01-07. The expected annual cut-off classification is Delayed or omitted recognition.",
+      "source_references": [
+        "CONTRACT-044",
+        "LEDGER-044",
+        "INVOICE-044",
+        "DELIVERY-044"
+      ]
+    },
+    {
+      "transaction_id": "TEST-045",
+      "contract_category": "Dispatch-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-25",
+      "eligible_quantity_by_cutoff": 80,
+      "recorded_quantity_in_2025": 80,
+      "difference_cny": 0,
+      "reason": "Apply the D contractual event. Qualifying date: 2025-12-25; accounting date: 2025-12-25. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-045",
+        "LEDGER-045",
+        "INVOICE-045",
+        "DELIVERY-045"
+      ]
+    },
+    {
+      "transaction_id": "TEST-046",
+      "contract_category": "Acceptance-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-02",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the A contractual event. Qualifying date: 2026-01-02; accounting date: 2026-01-02. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-046",
+        "LEDGER-046",
+        "INVOICE-046",
+        "DELIVERY-046"
+      ]
+    },
+    {
+      "transaction_id": "TEST-047",
+      "contract_category": "Acceptance-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-24",
+      "eligible_quantity_by_cutoff": 120,
+      "recorded_quantity_in_2025": 120,
+      "difference_cny": 0,
+      "reason": "Apply the A contractual event. Qualifying date: 2025-12-24; accounting date: 2025-12-24. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-047",
+        "LEDGER-047",
+        "INVOICE-047",
+        "DELIVERY-047"
+      ]
+    },
+    {
+      "transaction_id": "TEST-048",
+      "contract_category": "Dispatch-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-07",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the D contractual event. Qualifying date: 2026-01-07; accounting date: 2026-01-07. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-048",
+        "LEDGER-048",
+        "INVOICE-048",
+        "DELIVERY-048"
+      ]
+    },
+    {
+      "transaction_id": "TEST-049",
+      "contract_category": "Delivery-based",
+      "conclusion": "Premature recognition",
+      "qualifying_event_date": "2026-01-01",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 80,
+      "difference_cny": 10000,
+      "reason": "Apply the R contractual event. Qualifying date: 2026-01-01; accounting date: 2025-12-27. The expected annual cut-off classification is Premature recognition.",
+      "source_references": [
+        "CONTRACT-049",
+        "LEDGER-049",
+        "INVOICE-049",
+        "DELIVERY-049"
+      ]
+    },
+    {
+      "transaction_id": "TEST-050",
+      "contract_category": "Dispatch-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-09",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the D contractual event. Qualifying date: 2026-01-09; accounting date: 2026-01-09. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-050",
+        "LEDGER-050",
+        "INVOICE-050",
+        "DELIVERY-050"
+      ]
+    },
+    {
+      "transaction_id": "TEST-051",
+      "contract_category": "Delivery-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": 120,
+      "recorded_quantity_in_2025": 120,
+      "difference_cny": 0,
+      "reason": "Apply the R contractual event. Qualifying date: 2025-12-31; accounting date: 2025-12-31. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-051",
+        "LEDGER-051",
+        "INVOICE-051",
+        "DELIVERY-051"
+      ]
+    },
+    {
+      "transaction_id": "TEST-052",
+      "contract_category": "Delivery-based",
+      "conclusion": "Additional evidence required",
+      "qualifying_event_date": null,
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 120,
+      "difference_cny": null,
+      "reason": "Apply the R contractual event. Qualifying date: unknown; accounting date: 2025-12-31. Evidence is insufficient to locate recognition before or after the cut-off.",
+      "source_references": [
+        "CONTRACT-052",
+        "LEDGER-052",
+        "INVOICE-052",
+        "DELIVERY-052"
+      ]
+    },
+    {
+      "transaction_id": "TEST-053",
+      "contract_category": "Acceptance-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-09",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the A contractual event. Qualifying date: 2026-01-09; accounting date: 2026-01-09. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-053",
+        "LEDGER-053",
+        "INVOICE-053",
+        "DELIVERY-053"
+      ]
+    },
+    {
+      "transaction_id": "TEST-054",
+      "contract_category": "Acceptance-based",
+      "conclusion": "Delayed or omitted recognition",
+      "qualifying_event_date": "2025-12-28",
+      "eligible_quantity_by_cutoff": 60,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 7500,
+      "reason": "Apply the A contractual event. Qualifying date: 2025-12-28; accounting date: 2026-01-01. The expected annual cut-off classification is Delayed or omitted recognition.",
+      "source_references": [
+        "CONTRACT-054",
+        "LEDGER-054",
+        "INVOICE-054",
+        "DELIVERY-054"
+      ]
+    },
+    {
+      "transaction_id": "TEST-055",
+      "contract_category": "Delivery-based",
+      "conclusion": "Premature recognition",
+      "qualifying_event_date": "2026-01-06",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 120,
+      "difference_cny": 15000,
+      "reason": "Apply the R contractual event. Qualifying date: 2026-01-06; accounting date: 2025-12-31. The expected annual cut-off classification is Premature recognition.",
+      "source_references": [
+        "CONTRACT-055",
+        "LEDGER-055",
+        "INVOICE-055",
+        "DELIVERY-055"
+      ]
+    },
+    {
+      "transaction_id": "TEST-056",
+      "contract_category": "Acceptance-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-07",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the A contractual event. Qualifying date: 2026-01-07; accounting date: 2026-01-07. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-056",
+        "LEDGER-056",
+        "INVOICE-056",
+        "DELIVERY-056"
+      ]
+    },
+    {
+      "transaction_id": "TEST-057",
+      "contract_category": "Dispatch-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-06",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the D contractual event. Qualifying date: 2026-01-06; accounting date: 2026-01-06. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-057",
+        "LEDGER-057",
+        "INVOICE-057",
+        "DELIVERY-057"
+      ]
+    },
+    {
+      "transaction_id": "TEST-058",
+      "contract_category": "Dispatch-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-08",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the D contractual event. Qualifying date: 2026-01-08; accounting date: 2026-01-08. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-058",
+        "LEDGER-058",
+        "INVOICE-058",
+        "DELIVERY-058"
+      ]
+    },
+    {
+      "transaction_id": "TEST-059",
+      "contract_category": "Acceptance-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": 25,
+      "recorded_quantity_in_2025": 25,
+      "difference_cny": 0,
+      "reason": "Apply the A contractual event. Qualifying date: 2025-12-31; accounting date: 2025-12-31. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-059",
+        "LEDGER-059",
+        "INVOICE-059",
+        "DELIVERY-059"
+      ]
+    },
+    {
+      "transaction_id": "TEST-060",
+      "contract_category": "Dispatch-based",
+      "conclusion": "Delayed or omitted recognition",
+      "qualifying_event_date": "2025-12-22",
+      "eligible_quantity_by_cutoff": 60,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 5100,
+      "reason": "Apply the D contractual event. Qualifying date: 2025-12-22; accounting date: 2026-01-04. The expected annual cut-off classification is Delayed or omitted recognition.",
+      "source_references": [
+        "CONTRACT-060",
+        "LEDGER-060",
+        "INVOICE-060",
+        "DELIVERY-060"
+      ]
+    },
+    {
+      "transaction_id": "TEST-061",
+      "contract_category": "Acceptance-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-04",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the A contractual event. Qualifying date: 2026-01-04; accounting date: 2026-01-04. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-061",
+        "LEDGER-061",
+        "INVOICE-061",
+        "DELIVERY-061"
+      ]
+    },
+    {
+      "transaction_id": "TEST-062",
+      "contract_category": "Acceptance-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-28",
+      "eligible_quantity_by_cutoff": 80,
+      "recorded_quantity_in_2025": 80,
+      "difference_cny": 0,
+      "reason": "Apply the A contractual event. Qualifying date: 2025-12-28; accounting date: 2025-12-28. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-062",
+        "LEDGER-062",
+        "INVOICE-062",
+        "DELIVERY-062"
+      ]
+    },
+    {
+      "transaction_id": "TEST-063",
+      "contract_category": "Delivery-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-23",
+      "eligible_quantity_by_cutoff": 150,
+      "recorded_quantity_in_2025": 150,
+      "difference_cny": 0,
+      "reason": "Apply the R contractual event. Qualifying date: 2025-12-23; accounting date: 2025-12-23. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-063",
+        "LEDGER-063",
+        "INVOICE-063",
+        "DELIVERY-063"
+      ]
+    },
+    {
+      "transaction_id": "TEST-064",
+      "contract_category": "Acceptance-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": 25,
+      "recorded_quantity_in_2025": 25,
+      "difference_cny": 0,
+      "reason": "Apply the A contractual event. Qualifying date: 2025-12-31; accounting date: 2025-12-31. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-064",
+        "LEDGER-064",
+        "INVOICE-064",
+        "DELIVERY-064"
+      ]
+    },
+    {
+      "transaction_id": "TEST-065",
+      "contract_category": "Delivery-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-29",
+      "eligible_quantity_by_cutoff": 80,
+      "recorded_quantity_in_2025": 80,
+      "difference_cny": 0,
+      "reason": "Apply the R contractual event. Qualifying date: 2025-12-29; accounting date: 2025-12-29. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-065",
+        "LEDGER-065",
+        "INVOICE-065",
+        "DELIVERY-065"
+      ]
+    },
+    {
+      "transaction_id": "TEST-066",
+      "contract_category": "Delivery-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-07",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the R contractual event. Qualifying date: 2026-01-07; accounting date: 2026-01-07. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-066",
+        "LEDGER-066",
+        "INVOICE-066",
+        "DELIVERY-066"
+      ]
+    },
+    {
+      "transaction_id": "TEST-067",
+      "contract_category": "Dispatch-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-03",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the D contractual event. Qualifying date: 2026-01-03; accounting date: 2026-01-03. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-067",
+        "LEDGER-067",
+        "INVOICE-067",
+        "DELIVERY-067"
+      ]
+    },
+    {
+      "transaction_id": "TEST-068",
+      "contract_category": "Dispatch-based",
+      "conclusion": "Premature recognition",
+      "qualifying_event_date": "2026-01-06",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 200,
+      "difference_cny": 32000,
+      "reason": "Apply the D contractual event. Qualifying date: 2026-01-06; accounting date: 2025-12-30. The expected annual cut-off classification is Premature recognition.",
+      "source_references": [
+        "CONTRACT-068",
+        "LEDGER-068",
+        "INVOICE-068",
+        "DELIVERY-068"
+      ]
+    },
+    {
+      "transaction_id": "TEST-069",
+      "contract_category": "Dispatch-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-04",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the D contractual event. Qualifying date: 2026-01-04; accounting date: 2026-01-04. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-069",
+        "LEDGER-069",
+        "INVOICE-069",
+        "DELIVERY-069"
+      ]
+    },
+    {
+      "transaction_id": "TEST-070",
+      "contract_category": "Dispatch-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-29",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "difference_cny": 0,
+      "reason": "Apply the D contractual event. Qualifying date: 2025-12-29; accounting date: 2025-12-29. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-070",
+        "LEDGER-070",
+        "INVOICE-070",
+        "DELIVERY-070"
+      ]
+    },
+    {
+      "transaction_id": "TEST-071",
+      "contract_category": "Acceptance-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-25",
+      "eligible_quantity_by_cutoff": 60,
+      "recorded_quantity_in_2025": 60,
+      "difference_cny": 0,
+      "reason": "Apply the A contractual event. Qualifying date: 2025-12-25; accounting date: 2025-12-25. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-071",
+        "LEDGER-071",
+        "INVOICE-071",
+        "DELIVERY-071"
+      ]
+    },
+    {
+      "transaction_id": "TEST-072",
+      "contract_category": "Acceptance-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-29",
+      "eligible_quantity_by_cutoff": 25,
+      "recorded_quantity_in_2025": 25,
+      "difference_cny": 0,
+      "reason": "Apply the A contractual event. Qualifying date: 2025-12-29; accounting date: 2025-12-29. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-072",
+        "LEDGER-072",
+        "INVOICE-072",
+        "DELIVERY-072"
+      ]
+    },
+    {
+      "transaction_id": "TEST-073",
+      "contract_category": "Dispatch-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-25",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "difference_cny": 0,
+      "reason": "Apply the D contractual event. Qualifying date: 2025-12-25; accounting date: 2025-12-25. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-073",
+        "LEDGER-073",
+        "INVOICE-073",
+        "DELIVERY-073"
+      ]
+    },
+    {
+      "transaction_id": "TEST-074",
+      "contract_category": "Delivery-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-04",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the R contractual event. Qualifying date: 2026-01-04; accounting date: 2026-01-04. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-074",
+        "LEDGER-074",
+        "INVOICE-074",
+        "DELIVERY-074"
+      ]
+    },
+    {
+      "transaction_id": "TEST-075",
+      "contract_category": "Delivery-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-08",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the R contractual event. Qualifying date: 2026-01-08; accounting date: 2026-01-08. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-075",
+        "LEDGER-075",
+        "INVOICE-075",
+        "DELIVERY-075"
+      ]
+    },
+    {
+      "transaction_id": "TEST-076",
+      "contract_category": "Dispatch-based",
+      "conclusion": "Additional evidence required",
+      "qualifying_event_date": null,
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 200,
+      "difference_cny": null,
+      "reason": "Apply the D contractual event. Qualifying date: unknown; accounting date: 2025-12-31. Evidence is insufficient to locate recognition before or after the cut-off.",
+      "source_references": [
+        "CONTRACT-076",
+        "LEDGER-076",
+        "INVOICE-076",
+        "DELIVERY-076"
+      ]
+    },
+    {
+      "transaction_id": "TEST-077",
+      "contract_category": "Acceptance-based",
+      "conclusion": "Premature recognition",
+      "qualifying_event_date": "2026-01-02",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 60,
+      "difference_cny": 2100,
+      "reason": "Apply the A contractual event. Qualifying date: 2026-01-02; accounting date: 2025-12-29. The expected annual cut-off classification is Premature recognition.",
+      "source_references": [
+        "CONTRACT-077",
+        "LEDGER-077",
+        "INVOICE-077",
+        "DELIVERY-077"
+      ]
+    },
+    {
+      "transaction_id": "TEST-078",
+      "contract_category": "Delivery-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-21",
+      "eligible_quantity_by_cutoff": 60,
+      "recorded_quantity_in_2025": 60,
+      "difference_cny": 0,
+      "reason": "Apply the R contractual event. Qualifying date: 2025-12-21; accounting date: 2025-12-21. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-078",
+        "LEDGER-078",
+        "INVOICE-078",
+        "DELIVERY-078"
+      ]
+    },
+    {
+      "transaction_id": "TEST-079",
+      "contract_category": "Acceptance-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2025-12-26",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "difference_cny": 0,
+      "reason": "Apply the A contractual event. Qualifying date: 2025-12-26; accounting date: 2025-12-26. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-079",
+        "LEDGER-079",
+        "INVOICE-079",
+        "DELIVERY-079"
+      ]
+    },
+    {
+      "transaction_id": "TEST-080",
+      "contract_category": "Acceptance-based",
+      "conclusion": "No cut-off exception identified",
+      "qualifying_event_date": "2026-01-04",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "difference_cny": 0,
+      "reason": "Apply the A contractual event. Qualifying date: 2026-01-04; accounting date: 2026-01-04. The expected annual cut-off classification is No cut-off exception identified.",
+      "source_references": [
+        "CONTRACT-080",
+        "LEDGER-080",
+        "INVOICE-080",
+        "DELIVERY-080"
+      ]
+    }
+  ]
+}

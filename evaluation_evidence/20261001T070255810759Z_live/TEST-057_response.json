@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790838368-1HO3gSG1ad1jkjIcpNdi",
+  "object": "chat.completion",
+  "created": 1790838368,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"TEST-057\",\"recognition_condition\":\"Control passes when the goods are handed to the buyer-authorised carrier at the loading point, as stated in CONTRACT-057. Payment becomes unconditional at that event.\",\"qualifying_event_date\":\"2026-01-06\",\"recorded_accounting_date\":\"2026-01-06\",\"eligible_quantity_by_cutoff\":null,\"recorded_quantity_in_2025\":null,\"conclusion\":\"Additional evidence required\",\"difference_cny\":null,\"explanation\":\"The contract specifies recognition upon handover to the buyer-authorised carrier at dispatch. The actual dispatch date is 2026-01-06, after the 2025-12-31 cut-off date. Therefore, the qualifying event occurred after the reporting period. However, the accounting entry is also dated 2026-01-06, outside the reporting period, so no premature recognition is evident. Since the qualifying event date is after the cut-off, no revenue should be recognized in 2025. The eligible quantity by the cut-off date cannot be determined as the dispatch date is after the cut-off. The recorded accounting date is also after the cut-off, so no cut-off exception is identified. However, the eligible quantity by the cut-off date is unknown (null) because the dispatch date is after the cut-off, and the quantity dispatched before the cut-off is not provided. This missing information prevents a definitive conclusion on cut-off compliance. Additional evidence is requested to confirm if any part of the goods was dispatched on or before 2025-12-31 to determine if any premature recognition occurred.\",\"evidence_references\":[\"CONTRACT-057\",\"LEDGER-057\",\"INVOICE-057\",\"DELIVERY-057\"],\"additional_evidence_requested\":[\"Please provide evidence or confirmation whether any quantity of the goods was dispatched to the buyer-authorised carrier on or before 2025-12-31, as the current dispatch date is after the cut-off. This is necessary to determine if any revenue was prematurely recognized in the 2025 reporting period.\"]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2535,
+    "completion_tokens": 420,
+    "total_tokens": 2955,
+    "cost": 0.00111,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00111,
+      "upstream_inference_prompt_cost": 0.000438,
+      "upstream_inference_completions_cost": 0.000672
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790759401-NVlKZhklbB2hNbqMBiPm",
+  "object": "chat.completion",
+  "created": 1790759401,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"DEV-10\",\"recognition_condition\":\"Delivery-based transfer: Control transfers when the goods reach the customer warehouse and the customer signs for receipt. No further acceptance is required.\",\"qualifying_event_date\":\"2025-12-31\",\"recorded_accounting_date\":\"2025-12-31\",\"eligible_quantity_by_cutoff\":100,\"recorded_quantity_in_2025\":100,\"conclusion\":\"No cut-off exception identified\",\"difference_cny\":0,\"explanation\":\"The contract requires delivery to the customer warehouse and customer signature for receipt as the recognition event. The delivery records show the goods were received by the customer on 2025-12-31, the cut-off date, meeting the recognition condition within the reporting period. The ledger records the full quantity and amount on 2025-12-31, consistent with the qualifying event timing. The invoice date is after the cut-off but does not affect recognition. Therefore, no cut-off exception is identified.\",\"evidence_references\":[\"CON-10\",\"LED-10\",\"INV-10\",\"DEL-10\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2309,
+    "completion_tokens": 227,
+    "total_tokens": 2536,
+    "cost": 0.0012868,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0012868,
+      "upstream_inference_prompt_cost": 0.0009236,
+      "upstream_inference_completions_cost": 0.0003632
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

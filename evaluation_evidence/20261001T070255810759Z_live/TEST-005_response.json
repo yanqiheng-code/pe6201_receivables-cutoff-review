@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790838190-Jn11LhZ0LD0b7NxupE5q",
+  "object": "chat.completion",
+  "created": 1790838190,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"TEST-005\",\"recognition_condition\":\"Control passes on handover to the carrier appointed by the buyer, as per CONTRACT-005. Payment becomes unconditional at that event.\",\"qualifying_event_date\":\"2025-12-23\",\"recorded_accounting_date\":\"2025-12-23\",\"eligible_quantity_by_cutoff\":40,\"recorded_quantity_in_2025\":40,\"conclusion\":\"No cut-off exception identified\",\"difference_cny\":0,\"explanation\":\"The contract specifies recognition upon handover to the buyer's appointed carrier. The delivery record confirms dispatch on 2025-12-23, with carrier authorized by customer, meeting the recognition condition on the cut-off date. The ledger records the sale and receivable on the same date for the full quantity and amount. Invoice date after cut-off does not affect recognition timing. Therefore, recognition is appropriate and timely with no cut-off difference.\",\"evidence_references\":[\"CONTRACT-005\",\"LEDGER-005\",\"DELIVERY-005\",\"INVOICE-005\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2536,
+    "completion_tokens": 219,
+    "total_tokens": 2755,
+    "cost": 0.0013648,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0013648,
+      "upstream_inference_prompt_cost": 0.0010144,
+      "upstream_inference_completions_cost": 0.0003504
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

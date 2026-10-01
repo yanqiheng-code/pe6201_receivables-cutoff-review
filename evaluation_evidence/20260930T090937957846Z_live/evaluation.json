@@ -1,0 +1,221 @@
+{
+  "selected_cases": 20,
+  "valid_predictions": 20,
+  "technical_failures_or_not_run": 0,
+  "exact_label_correct": 20,
+  "amount_correct": 14,
+  "amount_field_accuracy": 0.7,
+  "error_amount_correct": 6,
+  "error_amount_accuracy": 1.0,
+  "planted_errors": 6,
+  "errors_flagged": 6,
+  "errors_not_flagged_including_abstentions_and_failures": 0,
+  "error_recall": 1.0,
+  "false_flags_on_normal_cases": 0,
+  "abstentions": 2,
+  "missing_evidence_cases_correct": 2,
+  "rows": [
+    {
+      "transaction_id": "DEV-01",
+      "expected": "No cut-off exception identified",
+      "predicted": "No cut-off exception identified",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": 0,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": true
+    },
+    {
+      "transaction_id": "DEV-02",
+      "expected": "No cut-off exception identified",
+      "predicted": "No cut-off exception identified",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "DEV-03",
+      "expected": "Premature recognition",
+      "predicted": "Premature recognition",
+      "expected_difference_cny": 10000,
+      "predicted_difference_cny": 10000,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": true
+    },
+    {
+      "transaction_id": "DEV-04",
+      "expected": "Delayed or omitted recognition",
+      "predicted": "Delayed or omitted recognition",
+      "expected_difference_cny": 10000,
+      "predicted_difference_cny": 10000,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": true
+    },
+    {
+      "transaction_id": "DEV-05",
+      "expected": "No cut-off exception identified",
+      "predicted": "No cut-off exception identified",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "DEV-06",
+      "expected": "No cut-off exception identified",
+      "predicted": "No cut-off exception identified",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "DEV-07",
+      "expected": "No cut-off exception identified",
+      "predicted": "No cut-off exception identified",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": 0,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": true
+    },
+    {
+      "transaction_id": "DEV-08",
+      "expected": "Premature recognition",
+      "predicted": "Premature recognition",
+      "expected_difference_cny": 10000,
+      "predicted_difference_cny": 10000,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": true
+    },
+    {
+      "transaction_id": "DEV-09",
+      "expected": "Delayed or omitted recognition",
+      "predicted": "Delayed or omitted recognition",
+      "expected_difference_cny": 10000,
+      "predicted_difference_cny": 10000,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": true
+    },
+    {
+      "transaction_id": "DEV-10",
+      "expected": "No cut-off exception identified",
+      "predicted": "No cut-off exception identified",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": 0,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": true
+    },
+    {
+      "transaction_id": "DEV-11",
+      "expected": "No cut-off exception identified",
+      "predicted": "No cut-off exception identified",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "DEV-12",
+      "expected": "Additional evidence required",
+      "predicted": "Additional evidence required",
+      "expected_difference_cny": null,
+      "predicted_difference_cny": null,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": true
+    },
+    {
+      "transaction_id": "DEV-13",
+      "expected": "No cut-off exception identified",
+      "predicted": "No cut-off exception identified",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": 0,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": true
+    },
+    {
+      "transaction_id": "DEV-14",
+      "expected": "No cut-off exception identified",
+      "predicted": "No cut-off exception identified",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "DEV-15",
+      "expected": "Premature recognition",
+      "predicted": "Premature recognition",
+      "expected_difference_cny": 10000,
+      "predicted_difference_cny": 10000,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": true
+    },
+    {
+      "transaction_id": "DEV-16",
+      "expected": "Delayed or omitted recognition",
+      "predicted": "Delayed or omitted recognition",
+      "expected_difference_cny": 10000,
+      "predicted_difference_cny": 10000,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": true
+    },
+    {
+      "transaction_id": "DEV-17",
+      "expected": "No cut-off exception identified",
+      "predicted": "No cut-off exception identified",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": 0,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": true
+    },
+    {
+      "transaction_id": "DEV-18",
+      "expected": "No cut-off exception identified",
+      "predicted": "No cut-off exception identified",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": null,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": false
+    },
+    {
+      "transaction_id": "DEV-19",
+      "expected": "Additional evidence required",
+      "predicted": "Additional evidence required",
+      "expected_difference_cny": null,
+      "predicted_difference_cny": null,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": true
+    },
+    {
+      "transaction_id": "DEV-20",
+      "expected": "No cut-off exception identified",
+      "predicted": "No cut-off exception identified",
+      "expected_difference_cny": 0,
+      "predicted_difference_cny": 0,
+      "prediction_available": true,
+      "label_correct": true,
+      "amount_correct": true
+    }
+  ],
+  "known_usage_reported_cost_usd": 0.024425999999999996,
+  "cost_incomplete": false
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790826787-OyIWyHJIK8UBn9zEBCki",
+  "object": "chat.completion",
+  "created": 1790826787,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"DEV-10\",\"recognition_condition\":\"Delivery-based transfer: Control transfers when the goods reach the customer warehouse and the customer signs for receipt. No further acceptance is required.\",\"qualifying_event_date\":\"2025-12-31\",\"recorded_accounting_date\":\"2025-12-31\",\"eligible_quantity_by_cutoff\":100,\"recorded_quantity_in_2025\":100,\"conclusion\":\"No cut-off exception identified\",\"difference_cny\":0,\"explanation\":\"The contract requires delivery to the customer warehouse and customer signature for receipt as the recognition event. The delivery record shows the customer receipt date as 2025-12-31, which is on the cut-off date, and the full quantity of 100 was received. The ledger records the sale and receivable on 2025-12-31 for the full quantity. The invoice date is after the cut-off but does not affect recognition. Therefore, recognition timing is correct with no cut-off difference.\",\"evidence_references\":[\"CON-10\",\"LED-10\",\"INV-10\",\"DEL-10\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2390,
+    "completion_tokens": 228,
+    "total_tokens": 2618,
+    "cost": 0.0007448,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007448,
+      "upstream_inference_prompt_cost": 0.00038,
+      "upstream_inference_completions_cost": 0.0003648
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

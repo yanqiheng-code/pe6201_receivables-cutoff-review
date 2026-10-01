@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790838385-Ik0kC9g0RcDvYkGdWZ6G",
+  "object": "chat.completion",
+  "created": 1790838385,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"TEST-061\",\"recognition_condition\":\"Customer obtains control upon substantive inspection sign-off and acceptance, as stated in CONTRACT-061. Earlier delivery to premises is insufficient for recognition.\",\"qualifying_event_date\":\"2026-01-04\",\"recorded_accounting_date\":\"2026-01-04\",\"eligible_quantity_by_cutoff\":0,\"recorded_quantity_in_2025\":0,\"conclusion\":\"No cut-off exception identified\",\"difference_cny\":0,\"explanation\":\"The contract requires substantive acceptance for control transfer, which occurred on 2026-01-04, after the 2025-12-31 cut-off. The ledger records recognition on 2026-01-04, matching the qualifying event date. Although the invoice was issued on 2025-12-30, this is administrative only and does not create an earlier payment right. Therefore, no premature recognition occurred.\",\"evidence_references\":[\"CONTRACT-061\",\"LEDGER-061\",\"INVOICE-061\",\"DELIVERY-061\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2537,
+    "completion_tokens": 218,
+    "total_tokens": 2755,
+    "cost": 0.0007876,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007876,
+      "upstream_inference_prompt_cost": 0.0004388,
+      "upstream_inference_completions_cost": 0.0003488
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

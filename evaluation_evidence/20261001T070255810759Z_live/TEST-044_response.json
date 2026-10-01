@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790838327-RxFX4qtpxSsJx3PkkY51",
+  "object": "chat.completion",
+  "created": 1790838327,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"TEST-044\",\"recognition_condition\":\"Control passes only after substantive customer acceptance following inspection. Physical receipt alone is insufficient. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment. (CONTRACT-044)\",\"qualifying_event_date\":\"2025-12-22\",\"recorded_accounting_date\":\"2026-01-07\",\"eligible_quantity_by_cutoff\":200,\"recorded_quantity_in_2025\":0,\"conclusion\":\"Delayed or omitted recognition\",\"difference_cny\":25000,\"explanation\":\"The contract requires substantive customer acceptance for revenue recognition. Acceptance occurred on 2025-12-22, before the cut-off date 2025-12-31, so recognition should be in 2025. However, the ledger records the sale and receivable on 2026-01-07, after the reporting period, indicating delayed recognition. The full quantity of 200 units was accepted and eligible for recognition by the cut-off date.\",\"evidence_references\":[\"CONTRACT-044\",\"LEDGER-044\",\"INVOICE-044\",\"DELIVERY-044\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2531,
+    "completion_tokens": 246,
+    "total_tokens": 2777,
+    "cost": 0.00083,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00083,
+      "upstream_inference_prompt_cost": 0.0004364,
+      "upstream_inference_completions_cost": 0.0003936
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

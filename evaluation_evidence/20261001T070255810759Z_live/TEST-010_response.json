@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790838207-qlydI363ZTHZfqqrJLvS",
+  "object": "chat.completion",
+  "created": 1790838207,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"TEST-010\",\"recognition_condition\":\"Control transfers when the customer receives the shipment and signs the warehouse receipt, as stated in CONTRACT-010. Dispatch alone does not complete performance.\",\"qualifying_event_date\":\"2026-01-05\",\"recorded_accounting_date\":\"2026-01-05\",\"eligible_quantity_by_cutoff\":0,\"recorded_quantity_in_2025\":0,\"conclusion\":\"No cut-off exception identified\",\"difference_cny\":0,\"explanation\":\"The contract requires customer receipt and signed warehouse receipt for control transfer, which occurred on 2026-01-05, after the 2025-12-31 cut-off date. The accounting entry was recorded on 2026-01-05, consistent with the qualifying event timing. Therefore, no premature recognition occurred and no cut-off difference exists.\",\"evidence_references\":[\"CONTRACT-010\",\"LEDGER-010\",\"INVOICE-010\",\"DELIVERY-010\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2529,
+    "completion_tokens": 205,
+    "total_tokens": 2734,
+    "cost": 0.0007636,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007636,
+      "upstream_inference_prompt_cost": 0.0004356,
+      "upstream_inference_completions_cost": 0.000328
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

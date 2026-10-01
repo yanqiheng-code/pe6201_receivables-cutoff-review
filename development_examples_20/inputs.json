@@ -1,0 +1,900 @@
+{
+  "dataset": "Simple synthetic development examples v1.0",
+  "reporting_period_start": "2025-01-01",
+  "cutoff_date": "2025-12-31",
+  "records_available_through": "2026-01-10",
+  "currency": "CNY",
+  "assumptions": [
+    "All contracts are valid, approved and unchanged. Collection was probable at contract inception.",
+    "Each case is one separate contract, invoice, delivery batch and accounting entry.",
+    "All goods have a fixed price. All amounts exclude tax. There are no discounts, returns, reversals, financing components or service obligations.",
+    "There are no opening balances or other entries for these transactions. No payments have been received through 10 January 2026.",
+    "Ledger records are complete for these transactions through 10 January 2026. Delivery table values supplied are verified synthetic facts; null required fields are missing evidence, not proof of non-performance.",
+    "A null acceptance field in a contract without substantive acceptance is not a missing required event.",
+    "Payment rights become unconditional at the qualifying contractual event.",
+    "Invoice issuance before the qualifying event is administrative only; it does not create an earlier unconditional payment right.",
+    "Only annual cut-off is tested. These are development cases and must not be reported as an unseen final evaluation set."
+  ],
+  "cases": [
+    {
+      "transaction_id": "DEV-01",
+      "contract": {
+        "document_id": "CON-01",
+        "customer": "Customer 01",
+        "goods": "Standard steel brackets",
+        "quantity": 100,
+        "unit_price_cny": 100,
+        "total_price_cny": 10000,
+        "terms": "Control transfers when the goods are physically handed to the carrier authorised by the customer. The customer can direct the goods from that point, and the seller retains no substantive control. Payment is due 30 days after handover."
+      },
+      "ledger": {
+        "document_id": "LED-01",
+        "transaction_id": "DEV-01",
+        "accounting_date": "2025-12-28",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 10000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 10000
+        }
+      },
+      "invoice": {
+        "document_id": "INV-01",
+        "transaction_id": "DEV-01",
+        "invoice_date": "2025-12-28",
+        "quantity": 100,
+        "amount_cny": 10000
+      },
+      "delivery": {
+        "document_id": "DEL-01",
+        "transaction_id": "DEV-01",
+        "batch_id": "BATCH-01",
+        "actual_dispatch_date": "2025-12-28",
+        "actual_customer_receipt_date": "2025-12-30",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 100,
+        "received_quantity": 100,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "Dates describe actual events. A null required date means the available records do not establish whether or when the event occurred."
+      }
+    },
+    {
+      "transaction_id": "DEV-02",
+      "contract": {
+        "document_id": "CON-02",
+        "customer": "Customer 02",
+        "goods": "Standard steel brackets",
+        "quantity": 100,
+        "unit_price_cny": 100,
+        "total_price_cny": 10000,
+        "terms": "Control transfers when the goods are physically handed to the carrier authorised by the customer. The customer can direct the goods from that point, and the seller retains no substantive control. Payment is due 30 days after handover."
+      },
+      "ledger": {
+        "document_id": "LED-02",
+        "transaction_id": "DEV-02",
+        "accounting_date": "2025-12-31",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 10000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 10000
+        }
+      },
+      "invoice": {
+        "document_id": "INV-02",
+        "transaction_id": "DEV-02",
+        "invoice_date": "2025-12-31",
+        "quantity": 100,
+        "amount_cny": 10000
+      },
+      "delivery": {
+        "document_id": "DEL-02",
+        "transaction_id": "DEV-02",
+        "batch_id": "BATCH-02",
+        "actual_dispatch_date": "2025-12-31",
+        "actual_customer_receipt_date": "2026-01-02",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 100,
+        "received_quantity": 100,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "Dates describe actual events. A null required date means the available records do not establish whether or when the event occurred."
+      }
+    },
+    {
+      "transaction_id": "DEV-03",
+      "contract": {
+        "document_id": "CON-03",
+        "customer": "Customer 03",
+        "goods": "Standard steel brackets",
+        "quantity": 100,
+        "unit_price_cny": 100,
+        "total_price_cny": 10000,
+        "terms": "Control transfers when the goods are physically handed to the carrier authorised by the customer. The customer can direct the goods from that point, and the seller retains no substantive control. Payment is due 30 days after handover."
+      },
+      "ledger": {
+        "document_id": "LED-03",
+        "transaction_id": "DEV-03",
+        "accounting_date": "2025-12-30",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 10000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 10000
+        }
+      },
+      "invoice": {
+        "document_id": "INV-03",
+        "transaction_id": "DEV-03",
+        "invoice_date": "2025-12-30",
+        "quantity": 100,
+        "amount_cny": 10000
+      },
+      "delivery": {
+        "document_id": "DEL-03",
+        "transaction_id": "DEV-03",
+        "batch_id": "BATCH-03",
+        "actual_dispatch_date": "2026-01-02",
+        "actual_customer_receipt_date": "2026-01-04",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 100,
+        "received_quantity": 100,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "Dates describe actual events. A null required date means the available records do not establish whether or when the event occurred."
+      }
+    },
+    {
+      "transaction_id": "DEV-04",
+      "contract": {
+        "document_id": "CON-04",
+        "customer": "Customer 04",
+        "goods": "Standard steel brackets",
+        "quantity": 100,
+        "unit_price_cny": 100,
+        "total_price_cny": 10000,
+        "terms": "Control transfers when the goods are physically handed to the carrier authorised by the customer. The customer can direct the goods from that point, and the seller retains no substantive control. Payment is due 30 days after handover."
+      },
+      "ledger": {
+        "document_id": "LED-04",
+        "transaction_id": "DEV-04",
+        "accounting_date": "2026-01-02",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 10000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 10000
+        }
+      },
+      "invoice": {
+        "document_id": "INV-04",
+        "transaction_id": "DEV-04",
+        "invoice_date": "2026-01-02",
+        "quantity": 100,
+        "amount_cny": 10000
+      },
+      "delivery": {
+        "document_id": "DEL-04",
+        "transaction_id": "DEV-04",
+        "batch_id": "BATCH-04",
+        "actual_dispatch_date": "2025-12-30",
+        "actual_customer_receipt_date": "2026-01-02",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 100,
+        "received_quantity": 100,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "Dates describe actual events. A null required date means the available records do not establish whether or when the event occurred."
+      }
+    },
+    {
+      "transaction_id": "DEV-05",
+      "contract": {
+        "document_id": "CON-05",
+        "customer": "Customer 05",
+        "goods": "Standard steel brackets",
+        "quantity": 100,
+        "unit_price_cny": 100,
+        "total_price_cny": 10000,
+        "terms": "Control transfers when the goods are physically handed to the carrier authorised by the customer. The customer can direct the goods from that point, and the seller retains no substantive control. Payment is due 30 days after handover."
+      },
+      "ledger": {
+        "document_id": "LED-05",
+        "transaction_id": "DEV-05",
+        "accounting_date": "2026-01-03",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 10000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 10000
+        }
+      },
+      "invoice": {
+        "document_id": "INV-05",
+        "transaction_id": "DEV-05",
+        "invoice_date": "2025-12-29",
+        "quantity": 100,
+        "amount_cny": 10000
+      },
+      "delivery": {
+        "document_id": "DEL-05",
+        "transaction_id": "DEV-05",
+        "batch_id": "BATCH-05",
+        "actual_dispatch_date": "2026-01-03",
+        "actual_customer_receipt_date": "2026-01-05",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 100,
+        "received_quantity": 100,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "Dates describe actual events. A null required date means the available records do not establish whether or when the event occurred."
+      }
+    },
+    {
+      "transaction_id": "DEV-06",
+      "contract": {
+        "document_id": "CON-06",
+        "customer": "Customer 06",
+        "goods": "Standard steel brackets",
+        "quantity": 100,
+        "unit_price_cny": 100,
+        "total_price_cny": 10000,
+        "terms": "Control transfers when the goods are physically handed to the carrier authorised by the customer. The customer can direct the goods from that point, and the seller retains no substantive control. Payment is due 30 days after handover."
+      },
+      "ledger": {
+        "document_id": "LED-06",
+        "transaction_id": "DEV-06",
+        "accounting_date": "2025-12-29",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 10000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 10000
+        }
+      },
+      "invoice": {
+        "document_id": "INV-06",
+        "transaction_id": "DEV-06",
+        "invoice_date": "2026-01-03",
+        "quantity": 100,
+        "amount_cny": 10000
+      },
+      "delivery": {
+        "document_id": "DEL-06",
+        "transaction_id": "DEV-06",
+        "batch_id": "BATCH-06",
+        "actual_dispatch_date": "2025-12-29",
+        "actual_customer_receipt_date": "2025-12-31",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 100,
+        "received_quantity": 100,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": true,
+        "note": "Dates describe actual events. A null required date means the available records do not establish whether or when the event occurred."
+      }
+    },
+    {
+      "transaction_id": "DEV-07",
+      "contract": {
+        "document_id": "CON-07",
+        "customer": "Customer 07",
+        "goods": "Standard steel brackets",
+        "quantity": 100,
+        "unit_price_cny": 100,
+        "total_price_cny": 10000,
+        "terms": "Control transfers when the goods reach the customer warehouse and the customer signs for receipt. No further acceptance is required. Payment is due 30 days after receipt."
+      },
+      "ledger": {
+        "document_id": "LED-07",
+        "transaction_id": "DEV-07",
+        "accounting_date": "2025-12-29",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 10000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 10000
+        }
+      },
+      "invoice": {
+        "document_id": "INV-07",
+        "transaction_id": "DEV-07",
+        "invoice_date": "2025-12-29",
+        "quantity": 100,
+        "amount_cny": 10000
+      },
+      "delivery": {
+        "document_id": "DEL-07",
+        "transaction_id": "DEV-07",
+        "batch_id": "BATCH-07",
+        "actual_dispatch_date": "2025-12-27",
+        "actual_customer_receipt_date": "2025-12-29",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 100,
+        "received_quantity": 100,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "Dates describe actual events. A null required date means the available records do not establish whether or when the event occurred."
+      }
+    },
+    {
+      "transaction_id": "DEV-08",
+      "contract": {
+        "document_id": "CON-08",
+        "customer": "Customer 08",
+        "goods": "Standard steel brackets",
+        "quantity": 100,
+        "unit_price_cny": 100,
+        "total_price_cny": 10000,
+        "terms": "Control transfers when the goods reach the customer warehouse and the customer signs for receipt. No further acceptance is required. Payment is due 30 days after receipt."
+      },
+      "ledger": {
+        "document_id": "LED-08",
+        "transaction_id": "DEV-08",
+        "accounting_date": "2025-12-29",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 10000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 10000
+        }
+      },
+      "invoice": {
+        "document_id": "INV-08",
+        "transaction_id": "DEV-08",
+        "invoice_date": "2025-12-29",
+        "quantity": 100,
+        "amount_cny": 10000
+      },
+      "delivery": {
+        "document_id": "DEL-08",
+        "transaction_id": "DEV-08",
+        "batch_id": "BATCH-08",
+        "actual_dispatch_date": "2025-12-29",
+        "actual_customer_receipt_date": "2026-01-02",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 100,
+        "received_quantity": 100,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "Dates describe actual events. A null required date means the available records do not establish whether or when the event occurred."
+      }
+    },
+    {
+      "transaction_id": "DEV-09",
+      "contract": {
+        "document_id": "CON-09",
+        "customer": "Customer 09",
+        "goods": "Standard steel brackets",
+        "quantity": 100,
+        "unit_price_cny": 100,
+        "total_price_cny": 10000,
+        "terms": "Control transfers when the goods reach the customer warehouse and the customer signs for receipt. No further acceptance is required. Payment is due 30 days after receipt."
+      },
+      "ledger": {
+        "document_id": "LED-09",
+        "transaction_id": "DEV-09",
+        "accounting_date": "2026-01-03",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 10000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 10000
+        }
+      },
+      "invoice": {
+        "document_id": "INV-09",
+        "transaction_id": "DEV-09",
+        "invoice_date": "2026-01-03",
+        "quantity": 100,
+        "amount_cny": 10000
+      },
+      "delivery": {
+        "document_id": "DEL-09",
+        "transaction_id": "DEV-09",
+        "batch_id": "BATCH-09",
+        "actual_dispatch_date": "2025-12-28",
+        "actual_customer_receipt_date": "2025-12-30",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 100,
+        "received_quantity": 100,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "Dates describe actual events. A null required date means the available records do not establish whether or when the event occurred."
+      }
+    },
+    {
+      "transaction_id": "DEV-10",
+      "contract": {
+        "document_id": "CON-10",
+        "customer": "Customer 10",
+        "goods": "Standard steel brackets",
+        "quantity": 100,
+        "unit_price_cny": 100,
+        "total_price_cny": 10000,
+        "terms": "Control transfers when the goods reach the customer warehouse and the customer signs for receipt. No further acceptance is required. Payment is due 30 days after receipt."
+      },
+      "ledger": {
+        "document_id": "LED-10",
+        "transaction_id": "DEV-10",
+        "accounting_date": "2025-12-31",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 10000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 10000
+        }
+      },
+      "invoice": {
+        "document_id": "INV-10",
+        "transaction_id": "DEV-10",
+        "invoice_date": "2026-01-02",
+        "quantity": 100,
+        "amount_cny": 10000
+      },
+      "delivery": {
+        "document_id": "DEL-10",
+        "transaction_id": "DEV-10",
+        "batch_id": "BATCH-10",
+        "actual_dispatch_date": "2025-12-29",
+        "actual_customer_receipt_date": "2025-12-31",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 100,
+        "received_quantity": 100,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "Dates describe actual events. A null required date means the available records do not establish whether or when the event occurred."
+      }
+    },
+    {
+      "transaction_id": "DEV-11",
+      "contract": {
+        "document_id": "CON-11",
+        "customer": "Customer 11",
+        "goods": "Standard steel brackets",
+        "quantity": 100,
+        "unit_price_cny": 100,
+        "total_price_cny": 10000,
+        "terms": "Control transfers when the goods reach the customer warehouse and the customer signs for receipt. No further acceptance is required. Payment is due 30 days after receipt."
+      },
+      "ledger": {
+        "document_id": "LED-11",
+        "transaction_id": "DEV-11",
+        "accounting_date": "2026-01-04",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 10000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 10000
+        }
+      },
+      "invoice": {
+        "document_id": "INV-11",
+        "transaction_id": "DEV-11",
+        "invoice_date": "2025-12-30",
+        "quantity": 100,
+        "amount_cny": 10000
+      },
+      "delivery": {
+        "document_id": "DEL-11",
+        "transaction_id": "DEV-11",
+        "batch_id": "BATCH-11",
+        "actual_dispatch_date": "2026-01-02",
+        "actual_customer_receipt_date": "2026-01-04",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 100,
+        "received_quantity": 100,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "Dates describe actual events. A null required date means the available records do not establish whether or when the event occurred."
+      }
+    },
+    {
+      "transaction_id": "DEV-12",
+      "contract": {
+        "document_id": "CON-12",
+        "customer": "Customer 12",
+        "goods": "Standard steel brackets",
+        "quantity": 100,
+        "unit_price_cny": 100,
+        "total_price_cny": 10000,
+        "terms": "Control transfers when the goods reach the customer warehouse and the customer signs for receipt. No further acceptance is required. Payment is due 30 days after receipt."
+      },
+      "ledger": {
+        "document_id": "LED-12",
+        "transaction_id": "DEV-12",
+        "accounting_date": "2025-12-31",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 10000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 10000
+        }
+      },
+      "invoice": {
+        "document_id": "INV-12",
+        "transaction_id": "DEV-12",
+        "invoice_date": "2025-12-31",
+        "quantity": 100,
+        "amount_cny": 10000
+      },
+      "delivery": {
+        "document_id": "DEL-12",
+        "transaction_id": "DEV-12",
+        "batch_id": "BATCH-12",
+        "actual_dispatch_date": "2025-12-30",
+        "actual_customer_receipt_date": null,
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 100,
+        "received_quantity": null,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "Dates describe actual events. A null required date means the available records do not establish whether or when the event occurred."
+      }
+    },
+    {
+      "transaction_id": "DEV-13",
+      "contract": {
+        "document_id": "CON-13",
+        "customer": "Customer 13",
+        "goods": "Standard steel brackets",
+        "quantity": 100,
+        "unit_price_cny": 100,
+        "total_price_cny": 10000,
+        "terms": "Control transfers when the goods reach the customer warehouse and the customer signs for receipt. No further acceptance is required. Payment is due 30 days after receipt."
+      },
+      "ledger": {
+        "document_id": "LED-13",
+        "transaction_id": "DEV-13",
+        "accounting_date": "2025-12-28",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 10000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 10000
+        }
+      },
+      "invoice": {
+        "document_id": "INV-13",
+        "transaction_id": "DEV-13",
+        "invoice_date": "2025-12-26",
+        "quantity": 100,
+        "amount_cny": 10000
+      },
+      "delivery": {
+        "document_id": "DEL-13",
+        "transaction_id": "DEV-13",
+        "batch_id": "BATCH-13",
+        "actual_dispatch_date": "2025-12-26",
+        "actual_customer_receipt_date": "2025-12-28",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 100,
+        "received_quantity": 100,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "Dates describe actual events. A null required date means the available records do not establish whether or when the event occurred."
+      }
+    },
+    {
+      "transaction_id": "DEV-14",
+      "contract": {
+        "document_id": "CON-14",
+        "customer": "Customer 14",
+        "goods": "Standard steel brackets",
+        "quantity": 100,
+        "unit_price_cny": 100,
+        "total_price_cny": 10000,
+        "terms": "Control transfers only after the customer completes a substantive inspection and accepts the goods. Delivery alone does not complete performance. Payment is due 30 days after acceptance."
+      },
+      "ledger": {
+        "document_id": "LED-14",
+        "transaction_id": "DEV-14",
+        "accounting_date": "2025-12-29",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 10000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 10000
+        }
+      },
+      "invoice": {
+        "document_id": "INV-14",
+        "transaction_id": "DEV-14",
+        "invoice_date": "2025-12-29",
+        "quantity": 100,
+        "amount_cny": 10000
+      },
+      "delivery": {
+        "document_id": "DEL-14",
+        "transaction_id": "DEV-14",
+        "batch_id": "BATCH-14",
+        "actual_dispatch_date": "2025-12-24",
+        "actual_customer_receipt_date": "2025-12-26",
+        "actual_customer_acceptance_date": "2025-12-29",
+        "dispatched_quantity": 100,
+        "received_quantity": 100,
+        "accepted_quantity": 100,
+        "carrier_authorised_by_customer": null,
+        "note": "Dates describe actual events. A null required date means the available records do not establish whether or when the event occurred."
+      }
+    },
+    {
+      "transaction_id": "DEV-15",
+      "contract": {
+        "document_id": "CON-15",
+        "customer": "Customer 15",
+        "goods": "Standard steel brackets",
+        "quantity": 100,
+        "unit_price_cny": 100,
+        "total_price_cny": 10000,
+        "terms": "Control transfers only after the customer completes a substantive inspection and accepts the goods. Delivery alone does not complete performance. Payment is due 30 days after acceptance."
+      },
+      "ledger": {
+        "document_id": "LED-15",
+        "transaction_id": "DEV-15",
+        "accounting_date": "2025-12-29",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 10000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 10000
+        }
+      },
+      "invoice": {
+        "document_id": "INV-15",
+        "transaction_id": "DEV-15",
+        "invoice_date": "2025-12-29",
+        "quantity": 100,
+        "amount_cny": 10000
+      },
+      "delivery": {
+        "document_id": "DEL-15",
+        "transaction_id": "DEV-15",
+        "batch_id": "BATCH-15",
+        "actual_dispatch_date": "2025-12-27",
+        "actual_customer_receipt_date": "2025-12-29",
+        "actual_customer_acceptance_date": "2026-01-03",
+        "dispatched_quantity": 100,
+        "received_quantity": 100,
+        "accepted_quantity": 100,
+        "carrier_authorised_by_customer": null,
+        "note": "Dates describe actual events. A null required date means the available records do not establish whether or when the event occurred."
+      }
+    },
+    {
+      "transaction_id": "DEV-16",
+      "contract": {
+        "document_id": "CON-16",
+        "customer": "Customer 16",
+        "goods": "Standard steel brackets",
+        "quantity": 100,
+        "unit_price_cny": 100,
+        "total_price_cny": 10000,
+        "terms": "Control transfers only after the customer completes a substantive inspection and accepts the goods. Delivery alone does not complete performance. Payment is due 30 days after acceptance."
+      },
+      "ledger": {
+        "document_id": "LED-16",
+        "transaction_id": "DEV-16",
+        "accounting_date": "2026-01-03",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 10000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 10000
+        }
+      },
+      "invoice": {
+        "document_id": "INV-16",
+        "transaction_id": "DEV-16",
+        "invoice_date": "2026-01-03",
+        "quantity": 100,
+        "amount_cny": 10000
+      },
+      "delivery": {
+        "document_id": "DEL-16",
+        "transaction_id": "DEV-16",
+        "batch_id": "BATCH-16",
+        "actual_dispatch_date": "2025-12-24",
+        "actual_customer_receipt_date": "2025-12-27",
+        "actual_customer_acceptance_date": "2025-12-30",
+        "dispatched_quantity": 100,
+        "received_quantity": 100,
+        "accepted_quantity": 100,
+        "carrier_authorised_by_customer": null,
+        "note": "Dates describe actual events. A null required date means the available records do not establish whether or when the event occurred."
+      }
+    },
+    {
+      "transaction_id": "DEV-17",
+      "contract": {
+        "document_id": "CON-17",
+        "customer": "Customer 17",
+        "goods": "Standard steel brackets",
+        "quantity": 100,
+        "unit_price_cny": 100,
+        "total_price_cny": 10000,
+        "terms": "Control transfers only after the customer completes a substantive inspection and accepts the goods. Delivery alone does not complete performance. Payment is due 30 days after acceptance."
+      },
+      "ledger": {
+        "document_id": "LED-17",
+        "transaction_id": "DEV-17",
+        "accounting_date": "2025-12-31",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 10000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 10000
+        }
+      },
+      "invoice": {
+        "document_id": "INV-17",
+        "transaction_id": "DEV-17",
+        "invoice_date": "2025-12-28",
+        "quantity": 100,
+        "amount_cny": 10000
+      },
+      "delivery": {
+        "document_id": "DEL-17",
+        "transaction_id": "DEV-17",
+        "batch_id": "BATCH-17",
+        "actual_dispatch_date": "2025-12-27",
+        "actual_customer_receipt_date": "2025-12-29",
+        "actual_customer_acceptance_date": "2025-12-31",
+        "dispatched_quantity": 100,
+        "received_quantity": 100,
+        "accepted_quantity": 100,
+        "carrier_authorised_by_customer": null,
+        "note": "Dates describe actual events. A null required date means the available records do not establish whether or when the event occurred."
+      }
+    },
+    {
+      "transaction_id": "DEV-18",
+      "contract": {
+        "document_id": "CON-18",
+        "customer": "Customer 18",
+        "goods": "Standard steel brackets",
+        "quantity": 100,
+        "unit_price_cny": 100,
+        "total_price_cny": 10000,
+        "terms": "Control transfers only after the customer completes a substantive inspection and accepts the goods. Delivery alone does not complete performance. Payment is due 30 days after acceptance."
+      },
+      "ledger": {
+        "document_id": "LED-18",
+        "transaction_id": "DEV-18",
+        "accounting_date": "2026-01-04",
+        "accounting_period": "2026-01",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 10000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 10000
+        }
+      },
+      "invoice": {
+        "document_id": "INV-18",
+        "transaction_id": "DEV-18",
+        "invoice_date": "2025-12-31",
+        "quantity": 100,
+        "amount_cny": 10000
+      },
+      "delivery": {
+        "document_id": "DEL-18",
+        "transaction_id": "DEV-18",
+        "batch_id": "BATCH-18",
+        "actual_dispatch_date": "2025-12-29",
+        "actual_customer_receipt_date": "2025-12-31",
+        "actual_customer_acceptance_date": "2026-01-04",
+        "dispatched_quantity": 100,
+        "received_quantity": 100,
+        "accepted_quantity": 100,
+        "carrier_authorised_by_customer": null,
+        "note": "Dates describe actual events. A null required date means the available records do not establish whether or when the event occurred."
+      }
+    },
+    {
+      "transaction_id": "DEV-19",
+      "contract": {
+        "document_id": "CON-19",
+        "customer": "Customer 19",
+        "goods": "Standard steel brackets",
+        "quantity": 100,
+        "unit_price_cny": 100,
+        "total_price_cny": 10000,
+        "terms": "Control transfers only after the customer completes a substantive inspection and accepts the goods. Delivery alone does not complete performance. Payment is due 30 days after acceptance."
+      },
+      "ledger": {
+        "document_id": "LED-19",
+        "transaction_id": "DEV-19",
+        "accounting_date": "2025-12-31",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 10000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 10000
+        }
+      },
+      "invoice": {
+        "document_id": "INV-19",
+        "transaction_id": "DEV-19",
+        "invoice_date": "2025-12-31",
+        "quantity": 100,
+        "amount_cny": 10000
+      },
+      "delivery": {
+        "document_id": "DEL-19",
+        "transaction_id": "DEV-19",
+        "batch_id": "BATCH-19",
+        "actual_dispatch_date": "2025-12-27",
+        "actual_customer_receipt_date": "2025-12-29",
+        "actual_customer_acceptance_date": null,
+        "dispatched_quantity": 100,
+        "received_quantity": 100,
+        "accepted_quantity": null,
+        "carrier_authorised_by_customer": null,
+        "note": "Dates describe actual events. A null required date means the available records do not establish whether or when the event occurred."
+      }
+    },
+    {
+      "transaction_id": "DEV-20",
+      "contract": {
+        "document_id": "CON-20",
+        "customer": "Customer 20",
+        "goods": "Standard steel brackets",
+        "quantity": 100,
+        "unit_price_cny": 100,
+        "total_price_cny": 10000,
+        "terms": "Control transfers only after the customer completes a substantive inspection and accepts the goods. Delivery alone does not complete performance. Payment is due 30 days after acceptance."
+      },
+      "ledger": {
+        "document_id": "LED-20",
+        "transaction_id": "DEV-20",
+        "accounting_date": "2025-12-28",
+        "accounting_period": "2025-12",
+        "entry": {
+          "debit_account": "Accounts receivable",
+          "debit_cny": 10000,
+          "credit_account": "Sales revenue",
+          "credit_cny": 10000
+        }
+      },
+      "invoice": {
+        "document_id": "INV-20",
+        "transaction_id": "DEV-20",
+        "invoice_date": "2026-01-02",
+        "quantity": 100,
+        "amount_cny": 10000
+      },
+      "delivery": {
+        "document_id": "DEL-20",
+        "transaction_id": "DEV-20",
+        "batch_id": "BATCH-20",
+        "actual_dispatch_date": "2025-12-23",
+        "actual_customer_receipt_date": "2025-12-26",
+        "actual_customer_acceptance_date": "2025-12-28",
+        "dispatched_quantity": 100,
+        "received_quantity": 100,
+        "accepted_quantity": 100,
+        "carrier_authorised_by_customer": null,
+        "note": "Dates describe actual events. A null required date means the available records do not establish whether or when the event occurred."
+      }
+    }
+  ]
+}

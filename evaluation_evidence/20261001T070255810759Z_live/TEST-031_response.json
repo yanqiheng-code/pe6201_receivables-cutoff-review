@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790838279-6QeW43zZiMrynfJ6SYIy",
+  "object": "chat.completion",
+  "created": 1790838279,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"TEST-031\",\"recognition_condition\":\"Control passes only after substantive customer acceptance following inspection, as stated in CONTRACT-031. Physical receipt alone is insufficient; payment becomes unconditional at acceptance.\",\"qualifying_event_date\":\"2025-12-24\",\"recorded_accounting_date\":\"2025-12-24\",\"eligible_quantity_by_cutoff\":120,\"recorded_quantity_in_2025\":120,\"conclusion\":\"No cut-off exception identified\",\"difference_cny\":0,\"explanation\":\"The contract requires substantive customer acceptance for recognition. The acceptance occurred on 2025-12-24, which is on or before the cut-off date. The ledger records the sale and receivable on 2025-12-24 for the full quantity of 120 units at the agreed price. Therefore, recognition timing and quantities are correct with no cut-off error.\",\"evidence_references\":[\"CONTRACT-031\",\"LEDGER-031\",\"INVOICE-031\",\"DELIVERY-031\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2531,
+    "completion_tokens": 209,
+    "total_tokens": 2740,
+    "cost": 0.0007708,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007708,
+      "upstream_inference_prompt_cost": 0.0004364,
+      "upstream_inference_completions_cost": 0.0003344
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

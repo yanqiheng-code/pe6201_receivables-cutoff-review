@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790826808-9zXq4WkmoyEMhSHByFsZ",
+  "object": "chat.completion",
+  "created": 1790826808,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"DEV-17\",\"recognition_condition\":\"Customer completes a substantive inspection and accepts the goods; delivery alone does not complete performance. Payment is due 30 days after acceptance. Source: CON-17\",\"qualifying_event_date\":\"2025-12-31\",\"recorded_accounting_date\":\"2025-12-31\",\"eligible_quantity_by_cutoff\":100,\"recorded_quantity_in_2025\":100,\"conclusion\":\"No cut-off exception identified\",\"difference_cny\":0,\"explanation\":\"The contract requires customer acceptance for control transfer. Acceptance occurred on 2025-12-31, the cut-off date, so recognition in 2025 is appropriate. The ledger records the full quantity and amount on 2025-12-31, matching the accepted quantity and contract terms.\",\"evidence_references\":[\"CON-17\",\"LED-17\",\"INV-17\",\"DEL-17\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2397,
+    "completion_tokens": 193,
+    "total_tokens": 2590,
+    "cost": 0.0006916,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0006916,
+      "upstream_inference_prompt_cost": 0.0003828,
+      "upstream_inference_completions_cost": 0.0003088
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

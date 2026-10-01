@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790838211-w9Msc2bxn6moyVKJhfFG",
+  "object": "chat.completion",
+  "created": 1790838211,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"TEST-011\",\"recognition_condition\":\"Control transfers when the goods are collected by the customer at the factory, as recorded by the actual dispatch date (collection).\",\"qualifying_event_date\":\"2026-01-01\",\"recorded_accounting_date\":\"2025-12-29\",\"eligible_quantity_by_cutoff\":0,\"recorded_quantity_in_2025\":40,\"conclusion\":\"Premature recognition\",\"difference_cny\":2400,\"explanation\":\"The contract specifies that revenue and receivable recognition occur when the customer collects the goods at the factory, evidenced by the actual dispatch date. The actual dispatch (collection) occurred on 2026-01-01, after the 2025-12-31 cut-off date. However, the ledger recorded the sale and receivable on 2025-12-29 for the full quantity of 40 units. This indicates premature recognition of revenue and receivables by 2400 CNY (40 units × 60 CNY/unit).\",\"evidence_references\":[\"CONTRACT-011\",\"LEDGER-011\",\"INVOICE-011\",\"DELIVERY-011\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2539,
+    "completion_tokens": 240,
+    "total_tokens": 2779,
+    "cost": 0.0008236,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0008236,
+      "upstream_inference_prompt_cost": 0.0004396,
+      "upstream_inference_completions_cost": 0.000384
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

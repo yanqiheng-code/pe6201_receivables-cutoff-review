@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790759423-lbwGIX4tnEBJLEJBD3vo",
+  "object": "chat.completion",
+  "created": 1790759423,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"DEV-19\",\"recognition_condition\":\"Acceptance-based transfer: Control transfers only after the customer completes a substantive inspection and accepts the goods, as stated in contract CON-19.\",\"qualifying_event_date\":null,\"recorded_accounting_date\":\"2025-12-31\",\"eligible_quantity_by_cutoff\":null,\"recorded_quantity_in_2025\":100,\"conclusion\":\"Additional evidence required\",\"difference_cny\":null,\"explanation\":\"The contract requires customer acceptance as the recognition event. Delivery and receipt occurred before the cut-off date, but the acceptance date is missing (null). Without evidence of acceptance by 31 December 2025, it cannot be established that the recognition condition was met. However, the ledger records recognition on 31 December 2025 for 100 units. This discrepancy requires additional evidence to determine if recognition was premature or appropriate.\",\"evidence_references\":[\"CON-19\",\"LED-19\",\"INV-19\",\"DEL-19\"],\"additional_evidence_requested\":[\"Please provide the customer acceptance date or evidence of substantive acceptance procedure completion. This is necessary to confirm whether the recognition condition was met by 31 December 2025, as required by the contract.\"]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2309,
+    "completion_tokens": 246,
+    "total_tokens": 2555,
+    "cost": 0.0013172,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0013172,
+      "upstream_inference_prompt_cost": 0.0009236,
+      "upstream_inference_completions_cost": 0.0003936
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

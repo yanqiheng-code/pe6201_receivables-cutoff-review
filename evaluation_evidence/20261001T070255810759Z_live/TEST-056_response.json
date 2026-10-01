@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790838365-GzoiSKMhWfJNKong91s1",
+  "object": "chat.completion",
+  "created": 1790838365,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"TEST-056\",\"recognition_condition\":\"Control passes only after substantive customer acceptance following inspection, as stated in CONTRACT-056. Physical receipt alone is insufficient; payment becomes unconditional at acceptance.\",\"qualifying_event_date\":\"2026-01-07\",\"recorded_accounting_date\":\"2026-01-07\",\"eligible_quantity_by_cutoff\":0,\"recorded_quantity_in_2025\":40,\"conclusion\":\"Premature recognition\",\"difference_cny\":2400,\"explanation\":\"The contract requires substantive customer acceptance for control transfer, which occurred on 2026-01-07, after the 2025-12-31 cut-off. However, the ledger recorded the sale and receivable on 2026-01-07, matching the acceptance date, but the invoice was issued earlier on 2025-12-28. Since recognition depends on acceptance, recording before acceptance is premature. The entire quantity of 40 units was recorded in 2025 accounting period, which is premature as acceptance was in 2026.\",\"evidence_references\":[\"CONTRACT-056\",\"LEDGER-056\",\"INVOICE-056\",\"DELIVERY-056\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2530,
+    "completion_tokens": 245,
+    "total_tokens": 2775,
+    "cost": 0.000828,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000828,
+      "upstream_inference_prompt_cost": 0.000436,
+      "upstream_inference_completions_cost": 0.000392
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

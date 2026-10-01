@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790826790-u4mzTeSP3TXOI4yCB72J",
+  "object": "chat.completion",
+  "created": 1790826790,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"DEV-11\",\"recognition_condition\":\"Control transfers when the goods reach the customer warehouse and the customer signs for receipt. No further acceptance is required. Payment is due 30 days after receipt. Source: CON-11\",\"qualifying_event_date\":\"2026-01-04\",\"recorded_accounting_date\":\"2026-01-04\",\"eligible_quantity_by_cutoff\":0,\"recorded_quantity_in_2025\":0,\"conclusion\":\"No cut-off exception identified\",\"difference_cny\":0,\"explanation\":\"The contract requires control transfer upon customer receipt and signature, which occurred on 2026-01-04, after the 2025-12-31 cut-off date. The accounting entry was recorded on 2026-01-04, consistent with the qualifying event date. Therefore, no premature recognition occurred and no cut-off difference exists.\",\"evidence_references\":[\"CON-11\",\"LED-11\",\"INV-11\",\"DEL-11\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2390,
+    "completion_tokens": 208,
+    "total_tokens": 2598,
+    "cost": 0.0007128,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007128,
+      "upstream_inference_prompt_cost": 0.00038,
+      "upstream_inference_completions_cost": 0.0003328
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

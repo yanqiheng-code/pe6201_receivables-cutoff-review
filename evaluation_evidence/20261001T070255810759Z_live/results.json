@@ -1,0 +1,3940 @@
+[
+  {
+    "transaction_id": "TEST-001",
+    "result": {
+      "transaction_id": "TEST-001",
+      "recognition_condition": "Control transfers when the customer receives the shipment and signs the warehouse receipt, as stated in CONTRACT-001. Dispatch alone does not complete performance.",
+      "qualifying_event_date": "2025-12-30",
+      "recorded_accounting_date": "2025-12-30",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires customer receipt and signed warehouse receipt for control transfer. The actual customer receipt date is 2025-12-30, on or before the cut-off date. The ledger records the sale and receivable on 2025-12-30 for the full quantity of 200 units at the agreed price. Invoice date is after cut-off but is administrative only. Therefore, recognition timing is appropriate with no cut-off error.",
+      "evidence_references": [
+        "CONTRACT-001",
+        "LEDGER-001",
+        "INVOICE-001",
+        "DELIVERY-001"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0013652,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838176-7hZzo6wbYUPmGTux8Lhd",
+    "usage": {
+      "prompt_tokens": 2529,
+      "completion_tokens": 221,
+      "total_tokens": 2750,
+      "cost": 0.0013652,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0013652,
+        "upstream_inference_prompt_cost": 0.0010116,
+        "upstream_inference_completions_cost": 0.0003536
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 2.957
+  },
+  {
+    "transaction_id": "TEST-002",
+    "result": {
+      "transaction_id": "TEST-002",
+      "recognition_condition": "Control transfers when the customer receives the shipment and signs the warehouse receipt, as stated in CONTRACT-002. Dispatch alone does not complete performance.",
+      "qualifying_event_date": "2025-12-25",
+      "recorded_accounting_date": "2026-01-02",
+      "eligible_quantity_by_cutoff": 150,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "Delayed or omitted recognition",
+      "difference_cny": 18750,
+      "explanation": "The contract requires customer receipt and signed warehouse receipt for control transfer, which occurred on 2025-12-25, before the cut-off date. However, the accounting entry was recorded on 2026-01-02, after the reporting period, indicating delayed recognition of the sale and receivable for the full quantity of 150 units at the agreed unit price of 125 CNY.",
+      "evidence_references": [
+        "CONTRACT-002",
+        "LEDGER-002",
+        "INVOICE-002",
+        "DELIVERY-002"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007764,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838178-0Lelwe9x5i4mt8Bg1U2Q",
+    "usage": {
+      "prompt_tokens": 2529,
+      "completion_tokens": 213,
+      "total_tokens": 2742,
+      "cost": 0.0007764,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007764,
+        "upstream_inference_prompt_cost": 0.0004356,
+        "upstream_inference_completions_cost": 0.0003408
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 2.894
+  },
+  {
+    "transaction_id": "TEST-003",
+    "result": {
+      "transaction_id": "TEST-003",
+      "recognition_condition": "Transfer of control occurs on signed delivery at the buyer warehouse. The seller remains responsible during transit. No additional acceptance procedure applies. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment. (CONTRACT-003)",
+      "qualifying_event_date": null,
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 40,
+      "conclusion": "Additional evidence required",
+      "difference_cny": null,
+      "explanation": "The contract requires signed delivery at the buyer warehouse as the recognition event. The actual customer receipt date, which would confirm this event, is missing (null). Without this date, it cannot be determined if the recognition condition was met by the cut-off date. The ledger records recognition on 2025-12-31 for 40 units, but the qualifying event date and eligible quantity cannot be confirmed from the evidence.",
+      "evidence_references": [
+        "CONTRACT-003",
+        "LEDGER-003",
+        "INVOICE-003",
+        "DELIVERY-003"
+      ],
+      "additional_evidence_requested": [
+        "Please provide the actual customer receipt date or signed delivery confirmation date for transaction TEST-003. This is necessary to verify whether the transfer of control occurred on or before the cut-off date 2025-12-31, as required by the contract."
+      ]
+    },
+    "reported_cost_usd": 0.0009016,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838181-qaZPTyzTCdbTnYZ7wXnm",
+    "usage": {
+      "prompt_tokens": 2526,
+      "completion_tokens": 292,
+      "total_tokens": 2818,
+      "cost": 0.0009016,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0009016,
+        "upstream_inference_prompt_cost": 0.0004344,
+        "upstream_inference_completions_cost": 0.0004672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 4.136
+  },
+  {
+    "transaction_id": "TEST-004",
+    "result": {
+      "transaction_id": "TEST-004",
+      "recognition_condition": "Control transfers when the goods are collected by the customer at the factory, as recorded by the actual dispatch date (CONTRACT-004).",
+      "qualifying_event_date": "2026-01-03",
+      "recorded_accounting_date": "2026-01-03",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "Delayed or omitted recognition",
+      "difference_cny": 4800,
+      "explanation": "The contract specifies that control transfers upon customer collection at the factory, evidenced by the actual dispatch date. The actual dispatch occurred on 2026-01-03, after the 2025-12-31 cut-off date, so no revenue or receivable should be recognized in 2025. However, the ledger shows recognition on 2026-01-03, consistent with the event date, indicating no premature recognition. Since the qualifying event was after the cut-off, and no recognition occurred in 2025, there is no cut-off exception. But because the recognition occurred only after the cut-off, the eligible quantity for 2025 is zero, and the recorded quantity in 2025 is also zero, so no difference arises for 2025. The conclusion is delayed or omitted recognition for 2025, with the full amount recognized in 2026.",
+      "evidence_references": [
+        "CONTRACT-004",
+        "LEDGER-004",
+        "INVOICE-004",
+        "DELIVERY-004"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.000936,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838185-WIE9F5ns1NhpEiHjIS50",
+    "usage": {
+      "prompt_tokens": 2540,
+      "completion_tokens": 310,
+      "total_tokens": 2850,
+      "cost": 0.000936,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000936,
+        "upstream_inference_prompt_cost": 0.00044,
+        "upstream_inference_completions_cost": 0.000496
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 4.444
+  },
+  {
+    "transaction_id": "TEST-005",
+    "result": {
+      "transaction_id": "TEST-005",
+      "recognition_condition": "Control passes on handover to the carrier appointed by the buyer, as per CONTRACT-005. Payment becomes unconditional at that event.",
+      "qualifying_event_date": "2025-12-23",
+      "recorded_accounting_date": "2025-12-23",
+      "eligible_quantity_by_cutoff": 40,
+      "recorded_quantity_in_2025": 40,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract specifies recognition upon handover to the buyer's appointed carrier. The delivery record confirms dispatch on 2025-12-23, with carrier authorized by customer, meeting the recognition condition on the cut-off date. The ledger records the sale and receivable on the same date for the full quantity and amount. Invoice date after cut-off does not affect recognition timing. Therefore, recognition is appropriate and timely with no cut-off difference.",
+      "evidence_references": [
+        "CONTRACT-005",
+        "LEDGER-005",
+        "DELIVERY-005",
+        "INVOICE-005"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0013648,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838190-Jn11LhZ0LD0b7NxupE5q",
+    "usage": {
+      "prompt_tokens": 2536,
+      "completion_tokens": 219,
+      "total_tokens": 2755,
+      "cost": 0.0013648,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0013648,
+        "upstream_inference_prompt_cost": 0.0010144,
+        "upstream_inference_completions_cost": 0.0003504
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 2.951
+  },
+  {
+    "transaction_id": "TEST-006",
+    "result": {
+      "transaction_id": "TEST-006",
+      "recognition_condition": "Transfer of control occurs on signed delivery at the buyer warehouse as per CONTRACT-006. No additional acceptance procedure applies. Payment becomes unconditional at that event.",
+      "qualifying_event_date": "2025-12-28",
+      "recorded_accounting_date": "2025-12-28",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires signed delivery at the buyer warehouse for recognition. The actual customer receipt date is 2025-12-28, which is on or before the cut-off date. The ledger records the sale and receivable on 2025-12-28 for the full quantity of 200 units at the agreed price. Therefore, recognition timing and quantity are correct with no cut-off error.",
+      "evidence_references": [
+        "CONTRACT-006",
+        "LEDGER-006",
+        "INVOICE-006",
+        "DELIVERY-006"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007812,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838193-viZRcwZNm8jWtVLpj4di",
+    "usage": {
+      "prompt_tokens": 2533,
+      "completion_tokens": 215,
+      "total_tokens": 2748,
+      "cost": 0.0007812,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007812,
+        "upstream_inference_prompt_cost": 0.0004372,
+        "upstream_inference_completions_cost": 0.000344
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.365
+  },
+  {
+    "transaction_id": "TEST-007",
+    "result": {
+      "transaction_id": "TEST-007",
+      "recognition_condition": "Transfer of control occurs on signed delivery at the buyer warehouse. The seller remains responsible during transit. No additional acceptance procedure applies. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment. (CONTRACT-007)",
+      "qualifying_event_date": "2026-01-08",
+      "recorded_accounting_date": "2026-01-08",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires signed delivery at the buyer warehouse for recognition. The actual customer receipt (signed delivery) occurred on 2026-01-08, after the 2025-12-31 cut-off date. The ledger entry was recorded on 2026-01-08, consistent with the qualifying event date. No recognition occurred prematurely in 2025. Therefore, no cut-off exception is identified and no difference arises.",
+      "evidence_references": [
+        "CONTRACT-007",
+        "LEDGER-007",
+        "INVOICE-007",
+        "DELIVERY-007"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0014144,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838196-oDdutNrcC4JETucOMlvC",
+    "usage": {
+      "prompt_tokens": 2532,
+      "completion_tokens": 251,
+      "total_tokens": 2783,
+      "cost": 0.0014144,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0014144,
+        "upstream_inference_prompt_cost": 0.0010128,
+        "upstream_inference_completions_cost": 0.0004016
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.709
+  },
+  {
+    "transaction_id": "TEST-008",
+    "result": {
+      "transaction_id": "TEST-008",
+      "recognition_condition": "Control passes when the goods are handed to the buyer-authorised carrier at the loading point, as stated in CONTRACT-008. Payment becomes unconditional at that event.",
+      "qualifying_event_date": "2025-12-27",
+      "recorded_accounting_date": "2025-12-27",
+      "eligible_quantity_by_cutoff": 60,
+      "recorded_quantity_in_2025": 60,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract specifies that control transfers at dispatch to the buyer-authorised carrier. The actual dispatch date is 2025-12-27, before the cut-off date 2025-12-31. The ledger records the sale and receivable on 2025-12-27 for the full quantity of 60 units at the agreed price. Therefore, recognition timing and quantities are correct with no cut-off error.",
+      "evidence_references": [
+        "CONTRACT-008",
+        "LEDGER-008",
+        "INVOICE-008",
+        "DELIVERY-008"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007932,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838200-Nlu5YpxKXS1mnSvLeAga",
+    "usage": {
+      "prompt_tokens": 2535,
+      "completion_tokens": 222,
+      "total_tokens": 2757,
+      "cost": 0.0007932,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007932,
+        "upstream_inference_prompt_cost": 0.000438,
+        "upstream_inference_completions_cost": 0.0003552
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.574
+  },
+  {
+    "transaction_id": "TEST-009",
+    "result": {
+      "transaction_id": "TEST-009",
+      "recognition_condition": "Control transfers when the goods are collected by the customer at the factory, recorded in the actual dispatch date as per CONTRACT-009.",
+      "qualifying_event_date": null,
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 120,
+      "conclusion": "Additional evidence required",
+      "difference_cny": null,
+      "explanation": "The contract specifies that recognition occurs upon customer collection, recorded as the actual dispatch date. However, the actual dispatch date and quantities are missing, preventing determination of whether the recognition condition was met by the 2025-12-31 cut-off. The ledger records the full quantity as receivable in 2025, but without evidence of the qualifying event date, no cut-off conclusion can be made.",
+      "evidence_references": [
+        "CONTRACT-009",
+        "LEDGER-009",
+        "INVOICE-009",
+        "DELIVERY-009"
+      ],
+      "additional_evidence_requested": [
+        "Please provide the actual dispatch date confirming customer collection as required by the contract. This date is necessary to determine if the recognition condition was met on or before 2025-12-31."
+      ]
+    },
+    "reported_cost_usd": 0.0008244,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838204-xWuZvZe1Zebjl4nGhWv3",
+    "usage": {
+      "prompt_tokens": 2525,
+      "completion_tokens": 244,
+      "total_tokens": 2769,
+      "cost": 0.0008244,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008244,
+        "upstream_inference_prompt_cost": 0.000434,
+        "upstream_inference_completions_cost": 0.0003904
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.616
+  },
+  {
+    "transaction_id": "TEST-010",
+    "result": {
+      "transaction_id": "TEST-010",
+      "recognition_condition": "Control transfers when the customer receives the shipment and signs the warehouse receipt, as stated in CONTRACT-010. Dispatch alone does not complete performance.",
+      "qualifying_event_date": "2026-01-05",
+      "recorded_accounting_date": "2026-01-05",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires customer receipt and signed warehouse receipt for control transfer, which occurred on 2026-01-05, after the 2025-12-31 cut-off date. The accounting entry was recorded on 2026-01-05, consistent with the qualifying event timing. Therefore, no premature recognition occurred and no cut-off difference exists.",
+      "evidence_references": [
+        "CONTRACT-010",
+        "LEDGER-010",
+        "INVOICE-010",
+        "DELIVERY-010"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007636,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838207-qlydI363ZTHZfqqrJLvS",
+    "usage": {
+      "prompt_tokens": 2529,
+      "completion_tokens": 205,
+      "total_tokens": 2734,
+      "cost": 0.0007636,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007636,
+        "upstream_inference_prompt_cost": 0.0004356,
+        "upstream_inference_completions_cost": 0.000328
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.615
+  },
+  {
+    "transaction_id": "TEST-011",
+    "result": {
+      "transaction_id": "TEST-011",
+      "recognition_condition": "Control transfers when the goods are collected by the customer at the factory, as recorded by the actual dispatch date (collection).",
+      "qualifying_event_date": "2026-01-01",
+      "recorded_accounting_date": "2025-12-29",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 40,
+      "conclusion": "Premature recognition",
+      "difference_cny": 2400,
+      "explanation": "The contract specifies that revenue and receivable recognition occur when the customer collects the goods at the factory, evidenced by the actual dispatch date. The actual dispatch (collection) occurred on 2026-01-01, after the 2025-12-31 cut-off date. However, the ledger recorded the sale and receivable on 2025-12-29 for the full quantity of 40 units. This indicates premature recognition of revenue and receivables by 2400 CNY (40 units × 60 CNY/unit).",
+      "evidence_references": [
+        "CONTRACT-011",
+        "LEDGER-011",
+        "INVOICE-011",
+        "DELIVERY-011"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0008236,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838211-w9Msc2bxn6moyVKJhfFG",
+    "usage": {
+      "prompt_tokens": 2539,
+      "completion_tokens": 240,
+      "total_tokens": 2779,
+      "cost": 0.0008236,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008236,
+        "upstream_inference_prompt_cost": 0.0004396,
+        "upstream_inference_completions_cost": 0.000384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.852
+  },
+  {
+    "transaction_id": "TEST-012",
+    "result": {
+      "transaction_id": "TEST-012",
+      "recognition_condition": "Control transfers only upon customer inspection approval and acceptance, which is a substantive condition per contract CONTRACT-012.",
+      "qualifying_event_date": null,
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 40,
+      "conclusion": "Additional evidence required",
+      "difference_cny": null,
+      "explanation": "The contract requires customer acceptance as the qualifying event for revenue recognition. The actual customer acceptance date is missing (null), so it cannot be determined if the acceptance occurred on or before the cut-off date 2025-12-31. Although goods were dispatched and received before cut-off, acceptance is the substantive condition. The ledger records recognition on 2025-12-31, but without acceptance evidence, the timing cannot be confirmed.",
+      "evidence_references": [
+        "CONTRACT-012",
+        "LEDGER-012",
+        "INVOICE-012",
+        "DELIVERY-012"
+      ],
+      "additional_evidence_requested": [
+        "Please provide the actual customer acceptance date or evidence of substantive acceptance approval. This is required to determine if the recognition condition was met on or before 2025-12-31 as per contract terms."
+      ]
+    },
+    "reported_cost_usd": 0.0008324,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838215-eUwpHTLYRH0JfHEgHKnQ",
+    "usage": {
+      "prompt_tokens": 2529,
+      "completion_tokens": 248,
+      "total_tokens": 2777,
+      "cost": 0.0008324,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008324,
+        "upstream_inference_prompt_cost": 0.0004356,
+        "upstream_inference_completions_cost": 0.0003968
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 2.951
+  },
+  {
+    "transaction_id": "TEST-013",
+    "result": {
+      "transaction_id": "TEST-013",
+      "recognition_condition": "Control passes only after substantive customer acceptance following inspection, as stated in CONTRACT-013. Physical receipt alone is insufficient; payment becomes unconditional at acceptance.",
+      "qualifying_event_date": "2026-01-05",
+      "recorded_accounting_date": "2026-01-05",
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "Additional evidence required",
+      "difference_cny": null,
+      "explanation": "The contract requires substantive customer acceptance for recognition, which occurred on 2026-01-05, after the cut-off date of 2025-12-31. The ledger records the sale on 2026-01-05, outside the reporting period. However, the qualifying event date is after the cut-off, so no recognition should occur in 2025. Since the accounting entry is in 2026, no premature recognition in 2025 is evident. The eligible quantity by the cut-off date cannot be determined as the acceptance date is after the cut-off, but the delivery and receipt occurred after the cut-off as well. The recorded quantity in 2025 is zero. The case requires confirmation that the acceptance date is correct and that no earlier acceptance or recognition occurred. Additional evidence is requested to confirm no earlier acceptance or recognition.",
+      "evidence_references": [
+        "CONTRACT-013",
+        "LEDGER-013",
+        "INVOICE-013",
+        "DELIVERY-013"
+      ],
+      "additional_evidence_requested": [
+        "Please confirm that no earlier customer acceptance or recognition event occurred before 2026-01-05."
+      ]
+    },
+    "reported_cost_usd": 0.0009544,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838218-TOXfVFwuQ0PxewmezgYI",
+    "usage": {
+      "prompt_tokens": 2530,
+      "completion_tokens": 324,
+      "total_tokens": 2854,
+      "cost": 0.0009544,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0009544,
+        "upstream_inference_prompt_cost": 0.000436,
+        "upstream_inference_completions_cost": 0.0005184
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 4.154
+  },
+  {
+    "transaction_id": "TEST-014",
+    "result": {
+      "transaction_id": "TEST-014",
+      "recognition_condition": "Control transfers when the customer receives the shipment and signs the warehouse receipt, as stated in CONTRACT-014. Dispatch alone does not complete performance.",
+      "qualifying_event_date": "2026-01-01",
+      "recorded_accounting_date": "2026-01-01",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires customer receipt and signed warehouse receipt for control transfer. The actual customer receipt date is 2026-01-01, after the 2025-12-31 cut-off. The ledger records the sale on 2026-01-01, matching the qualifying event date. Therefore, recognition is timely with no cut-off error.",
+      "evidence_references": [
+        "CONTRACT-014",
+        "LEDGER-014",
+        "INVOICE-014",
+        "DELIVERY-014"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007616,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838222-IOGwnfepKnNQh1bWxzbx",
+    "usage": {
+      "prompt_tokens": 2528,
+      "completion_tokens": 204,
+      "total_tokens": 2732,
+      "cost": 0.0007616,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007616,
+        "upstream_inference_prompt_cost": 0.0004352,
+        "upstream_inference_completions_cost": 0.0003264
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 2.808
+  },
+  {
+    "transaction_id": "TEST-015",
+    "result": {
+      "transaction_id": "TEST-015",
+      "recognition_condition": "Control passes on handover to the carrier appointed by the buyer, as stated in CONTRACT-015. Payment becomes unconditional at that event.",
+      "qualifying_event_date": null,
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 40,
+      "conclusion": "Additional evidence required",
+      "difference_cny": null,
+      "explanation": "The contract requires control transfer upon handover to the buyer-appointed carrier, which is the qualifying event for revenue recognition. However, the actual dispatch date and dispatched quantity are missing, so it cannot be determined if the qualifying event occurred on or before the 2025-12-31 cut-off date. The ledger records recognition on 2025-12-31 for 40 units, but without evidence of the qualifying event date, the timing of recognition cannot be confirmed.",
+      "evidence_references": [
+        "CONTRACT-015",
+        "LEDGER-015",
+        "INVOICE-015",
+        "DELIVERY-015"
+      ],
+      "additional_evidence_requested": [
+        "Please provide the actual dispatch date and dispatched quantity to the buyer-appointed carrier. This information is necessary to confirm whether the control transfer event occurred on or before 2025-12-31, which affects the cut-off conclusion."
+      ]
+    },
+    "reported_cost_usd": 0.000858,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838225-cr7OdjAhr2fgQDvV7HMr",
+    "usage": {
+      "prompt_tokens": 2521,
+      "completion_tokens": 266,
+      "total_tokens": 2787,
+      "cost": 0.000858,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000858,
+        "upstream_inference_prompt_cost": 0.0004324,
+        "upstream_inference_completions_cost": 0.0004256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.442
+  },
+  {
+    "transaction_id": "TEST-016",
+    "result": {
+      "transaction_id": "TEST-016",
+      "recognition_condition": "Control passes on customer receipt at the agreed warehouse, evidenced by signed delivery. No separate acceptance test is required. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment. (CONTRACT-016)",
+      "qualifying_event_date": "2026-01-03",
+      "recorded_accounting_date": "2026-01-03",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires customer receipt at the agreed warehouse as the recognition event. Actual customer receipt occurred on 2026-01-03, after the 2025-12-31 cut-off date. The ledger entry was recorded on 2026-01-03, consistent with the qualifying event date. Although the invoice was issued on 2025-12-31, invoicing is administrative only and does not create earlier recognition. Therefore, no premature recognition occurred and no cut-off exception is identified.",
+      "evidence_references": [
+        "CONTRACT-016",
+        "LEDGER-016",
+        "INVOICE-016",
+        "DELIVERY-016"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0014328,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838228-JGmmCj68fgMVUEVRlsd5",
+    "usage": {
+      "prompt_tokens": 2530,
+      "completion_tokens": 263,
+      "total_tokens": 2793,
+      "cost": 0.0014328,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0014328,
+        "upstream_inference_prompt_cost": 0.001012,
+        "upstream_inference_completions_cost": 0.0004208
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.457
+  },
+  {
+    "transaction_id": "TEST-017",
+    "result": {
+      "transaction_id": "TEST-017",
+      "recognition_condition": "Control transfers when the customer receives the shipment and signs the warehouse receipt, as stated in CONTRACT-017. Dispatch alone does not complete performance.",
+      "qualifying_event_date": "2025-12-25",
+      "recorded_accounting_date": "2025-12-25",
+      "eligible_quantity_by_cutoff": 25,
+      "recorded_quantity_in_2025": 25,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires customer receipt and signed warehouse receipt for control transfer. The actual customer receipt date is 2025-12-25, which is on the cut-off date. The ledger records the sale on 2025-12-25 for the full quantity of 25 units at the agreed price. Therefore, recognition timing and quantity are correct with no cut-off error.",
+      "evidence_references": [
+        "CONTRACT-017",
+        "LEDGER-017",
+        "INVOICE-017",
+        "DELIVERY-017"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.00077,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838231-Jalv5FpWfMcwICkKC8k5",
+    "usage": {
+      "prompt_tokens": 2529,
+      "completion_tokens": 209,
+      "total_tokens": 2738,
+      "cost": 0.00077,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00077,
+        "upstream_inference_prompt_cost": 0.0004356,
+        "upstream_inference_completions_cost": 0.0003344
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 2.804
+  },
+  {
+    "transaction_id": "TEST-018",
+    "result": {
+      "transaction_id": "TEST-018",
+      "recognition_condition": "Control passes on handover to the carrier appointed by the buyer, as per CONTRACT-018. Payment becomes unconditional at that event.",
+      "qualifying_event_date": "2025-12-31",
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": 120,
+      "recorded_quantity_in_2025": 120,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract specifies that control transfers when goods are handed over to the buyer's appointed carrier, which occurred on 2025-12-31, the cut-off date. The ledger records the sale and accounts receivable on the same date for the full quantity of 120 units at the agreed price. The customer receipt date is after the cut-off but is not the recognition event. Therefore, recognition timing is appropriate with no cut-off error.",
+      "evidence_references": [
+        "CONTRACT-018",
+        "LEDGER-018",
+        "INVOICE-018",
+        "DELIVERY-018"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007904,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838234-8pmH0EMXjp7MXiIRf3nk",
+    "usage": {
+      "prompt_tokens": 2536,
+      "completion_tokens": 220,
+      "total_tokens": 2756,
+      "cost": 0.0007904,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007904,
+        "upstream_inference_prompt_cost": 0.0004384,
+        "upstream_inference_completions_cost": 0.000352
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.184
+  },
+  {
+    "transaction_id": "TEST-019",
+    "result": {
+      "transaction_id": "TEST-019",
+      "recognition_condition": "Control passes on customer receipt at the agreed warehouse, evidenced by signed delivery. No separate acceptance test is required. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment. (CONTRACT-019)",
+      "qualifying_event_date": "2025-12-31",
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires control transfer upon customer receipt at the agreed warehouse, evidenced by signed delivery. The actual customer receipt date is 2025-12-31, which is on the cut-off date. The ledger records the sale and accounts receivable on 2025-12-31 for the full quantity of 200 units at the agreed price. Therefore, recognition timing aligns with the contractual condition and cut-off date, with no discrepancy in quantity or amount.",
+      "evidence_references": [
+        "CONTRACT-019",
+        "LEDGER-019",
+        "INVOICE-019",
+        "DELIVERY-019"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0008424,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838237-lBmcFIkpnfaxG7I8aTlB",
+    "usage": {
+      "prompt_tokens": 2530,
+      "completion_tokens": 254,
+      "total_tokens": 2784,
+      "cost": 0.0008424,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008424,
+        "upstream_inference_prompt_cost": 0.000436,
+        "upstream_inference_completions_cost": 0.0004064
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.19
+  },
+  {
+    "transaction_id": "TEST-020",
+    "result": {
+      "transaction_id": "TEST-020",
+      "recognition_condition": "Control transfers when the customer receives the shipment and signs the warehouse receipt. Dispatch alone does not complete performance. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment. (CONTRACT-020)",
+      "qualifying_event_date": "2025-12-25",
+      "recorded_accounting_date": "2025-12-25",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires customer receipt and signed warehouse receipt for control transfer. The actual customer receipt date is 2025-12-25, on the cut-off date, meeting the recognition condition. The ledger records the sale and accounts receivable on 2025-12-25 for the full quantity of 200 units at the agreed price. The invoice date is after the cut-off but does not affect recognition. Therefore, recognition timing is correct with no cut-off difference.",
+      "evidence_references": [
+        "CONTRACT-020",
+        "LEDGER-020",
+        "INVOICE-020",
+        "DELIVERY-020"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0008436,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838241-KqQy4dlDt8AySE0YCEEB",
+    "usage": {
+      "prompt_tokens": 2529,
+      "completion_tokens": 255,
+      "total_tokens": 2784,
+      "cost": 0.0008436,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008436,
+        "upstream_inference_prompt_cost": 0.0004356,
+        "upstream_inference_completions_cost": 0.000408
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 4.053
+  },
+  {
+    "transaction_id": "TEST-021",
+    "result": {
+      "transaction_id": "TEST-021",
+      "recognition_condition": "Control transfers when the goods are collected by the customer at the factory, evidenced by the actual dispatch date as per CONTRACT-021.",
+      "qualifying_event_date": "2025-12-28",
+      "recorded_accounting_date": "2025-12-28",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract specifies that control transfers upon customer collection at the factory, recorded as the actual dispatch date. The delivery record shows dispatch on 2025-12-28, before the 2025-12-31 cut-off. The ledger records the sale and accounts receivable on 2025-12-28 for the full quantity of 200 units at the agreed price. The invoice date is after the cut-off but is administrative only. Therefore, recognition timing aligns with the contractual condition and delivery facts, with no cut-off error.",
+      "evidence_references": [
+        "CONTRACT-021",
+        "LEDGER-021",
+        "INVOICE-021",
+        "DELIVERY-021"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.000824,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838245-ve2qWUwtr4tQlKeTXknr",
+    "usage": {
+      "prompt_tokens": 2540,
+      "completion_tokens": 240,
+      "total_tokens": 2780,
+      "cost": 0.000824,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000824,
+        "upstream_inference_prompt_cost": 0.00044,
+        "upstream_inference_completions_cost": 0.000384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.897
+  },
+  {
+    "transaction_id": "TEST-022",
+    "result": {
+      "transaction_id": "TEST-022",
+      "recognition_condition": "Control transfers when the goods are collected by the customer at the factory, as recorded by the actual dispatch date in the delivery record (DELIVERY-022).",
+      "qualifying_event_date": "2026-01-09",
+      "recorded_accounting_date": "2026-01-09",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract specifies that control transfers upon customer collection at the factory, evidenced by the actual dispatch date. The actual dispatch occurred on 2026-01-09, which is after the reporting cut-off date of 2025-12-31. The ledger records the sale and receivable on 2026-01-09, consistent with the qualifying event date. Therefore, no premature recognition occurred and no cut-off exception is identified.",
+      "evidence_references": [
+        "CONTRACT-022",
+        "LEDGER-022",
+        "INVOICE-022",
+        "DELIVERY-022"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0008016,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838249-1iyDAUM8te5PGNWC6o85",
+    "usage": {
+      "prompt_tokens": 2540,
+      "completion_tokens": 226,
+      "total_tokens": 2766,
+      "cost": 0.0008016,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008016,
+        "upstream_inference_prompt_cost": 0.00044,
+        "upstream_inference_completions_cost": 0.0003616
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 2.789
+  },
+  {
+    "transaction_id": "TEST-023",
+    "result": {
+      "transaction_id": "TEST-023",
+      "recognition_condition": "Control transfers when the customer receives the shipment and signs the warehouse receipt, as stated in CONTRACT-023. Dispatch alone does not complete performance.",
+      "qualifying_event_date": "2026-01-07",
+      "recorded_accounting_date": "2026-01-07",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires customer receipt and signed warehouse receipt for control transfer. The actual customer receipt date is 2026-01-07, after the 2025-12-31 cut-off. The ledger records the sale on 2026-01-07, consistent with the qualifying event date. Therefore, no premature recognition occurred.",
+      "evidence_references": [
+        "CONTRACT-023",
+        "LEDGER-023",
+        "INVOICE-023",
+        "DELIVERY-023"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007572,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838251-yGHC34o1uVKN5ewa1I74",
+    "usage": {
+      "prompt_tokens": 2529,
+      "completion_tokens": 201,
+      "total_tokens": 2730,
+      "cost": 0.0007572,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007572,
+        "upstream_inference_prompt_cost": 0.0004356,
+        "upstream_inference_completions_cost": 0.0003216
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 2.746
+  },
+  {
+    "transaction_id": "TEST-024",
+    "result": {
+      "transaction_id": "TEST-024",
+      "recognition_condition": "Control passes only after substantive customer acceptance following inspection, as stated in CONTRACT-024. Physical receipt alone is insufficient; payment becomes unconditional at acceptance.",
+      "qualifying_event_date": "2025-12-30",
+      "recorded_accounting_date": "2025-12-30",
+      "eligible_quantity_by_cutoff": 120,
+      "recorded_quantity_in_2025": 120,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires substantive customer acceptance for recognition. The acceptance occurred on 2025-12-30, which is on or before the cut-off date. The ledger records the sale and receivable on 2025-12-30 for the full quantity of 120 units at the agreed price. Therefore, recognition timing and quantity are correct, with no cut-off error.",
+      "evidence_references": [
+        "CONTRACT-024",
+        "LEDGER-024",
+        "DELIVERY-024",
+        "INVOICE-024"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007724,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838254-IsEqrKJCs0nz5wKS9mO7",
+    "usage": {
+      "prompt_tokens": 2531,
+      "completion_tokens": 210,
+      "total_tokens": 2741,
+      "cost": 0.0007724,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007724,
+        "upstream_inference_prompt_cost": 0.0004364,
+        "upstream_inference_completions_cost": 0.000336
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 2.987
+  },
+  {
+    "transaction_id": "TEST-025",
+    "result": {
+      "transaction_id": "TEST-025",
+      "recognition_condition": "Control passes only after substantive customer acceptance following inspection, as stated in CONTRACT-025. Physical receipt alone is insufficient; payment becomes unconditional at acceptance.",
+      "qualifying_event_date": "2026-01-04",
+      "recorded_accounting_date": "2026-01-04",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires substantive customer acceptance for recognition. Acceptance occurred on 2026-01-04, after the 2025-12-31 cut-off date. The ledger records the sale on 2026-01-04, matching the qualifying event date. Therefore, no premature recognition occurred and no cut-off difference exists.",
+      "evidence_references": [
+        "CONTRACT-025",
+        "LEDGER-025",
+        "INVOICE-025",
+        "DELIVERY-025"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.000758,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838257-nYhQpyK869d10qr2rvJ3",
+    "usage": {
+      "prompt_tokens": 2531,
+      "completion_tokens": 201,
+      "total_tokens": 2732,
+      "cost": 0.000758,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000758,
+        "upstream_inference_prompt_cost": 0.0004364,
+        "upstream_inference_completions_cost": 0.0003216
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 2.815
+  },
+  {
+    "transaction_id": "TEST-026",
+    "result": {
+      "transaction_id": "TEST-026",
+      "recognition_condition": "Customer acceptance is the qualifying event for revenue recognition, as per contract CONTRACT-026: 'The customer does not obtain control until substantive inspection sign-off and acceptance. Earlier delivery to its premises is insufficient. Payment becomes unconditional at that event.'",
+      "qualifying_event_date": "2026-01-02",
+      "recorded_accounting_date": "2026-01-02",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires substantive customer acceptance for recognition. Although delivery and receipt occurred before the cut-off date (2025-12-31), acceptance occurred on 2026-01-02, after the cut-off. The accounting entry was recorded on 2026-01-02, matching the acceptance date. Therefore, no premature recognition occurred and no cut-off exception is identified.",
+      "evidence_references": [
+        "CONTRACT-026",
+        "LEDGER-026",
+        "INVOICE-026",
+        "DELIVERY-026"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0008064,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838260-xC7IyzlchpTsdHximHMQ",
+    "usage": {
+      "prompt_tokens": 2536,
+      "completion_tokens": 230,
+      "total_tokens": 2766,
+      "cost": 0.0008064,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008064,
+        "upstream_inference_prompt_cost": 0.0004384,
+        "upstream_inference_completions_cost": 0.000368
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 2.82
+  },
+  {
+    "transaction_id": "TEST-027",
+    "result": {
+      "transaction_id": "TEST-027",
+      "recognition_condition": "Customer obtains control upon substantive inspection sign-off and acceptance, as stated in CONTRACT-027. Earlier delivery or receipt is insufficient for recognition.",
+      "qualifying_event_date": "2025-12-30",
+      "recorded_accounting_date": "2025-12-30",
+      "eligible_quantity_by_cutoff": 150,
+      "recorded_quantity_in_2025": 150,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires substantive acceptance for control transfer. The acceptance occurred on 2025-12-30, on or before the cut-off date. The ledger records recognition on 2025-12-30 for the full quantity of 150 units at the agreed price, matching the qualifying event and quantity. Invoice date is after cut-off but does not affect recognition timing under contract terms.",
+      "evidence_references": [
+        "CONTRACT-027",
+        "LEDGER-027",
+        "INVOICE-027",
+        "DELIVERY-027"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007748,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838263-0kTbdjrwTlZMi7Kdf0Zj",
+    "usage": {
+      "prompt_tokens": 2537,
+      "completion_tokens": 210,
+      "total_tokens": 2747,
+      "cost": 0.0007748,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007748,
+        "upstream_inference_prompt_cost": 0.0004388,
+        "upstream_inference_completions_cost": 0.000336
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 2.92
+  },
+  {
+    "transaction_id": "TEST-028",
+    "result": {
+      "transaction_id": "TEST-028",
+      "recognition_condition": "Control transfers only upon customer inspection approval and acceptance, which is a substantive condition per contract CONTRACT-028.",
+      "qualifying_event_date": "2026-01-06",
+      "recorded_accounting_date": "2026-01-06",
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": null,
+      "conclusion": "Additional evidence required",
+      "difference_cny": null,
+      "explanation": "The contract requires customer acceptance as the recognition event, which occurred on 2026-01-06, after the reporting cut-off date of 2025-12-31. The accounting entry was recorded on 2026-01-06, consistent with acceptance timing. However, the qualifying event date is after the cut-off, so no revenue should be recognized in 2025. Since the accounting entry is in 2026, no premature recognition is evident. The eligible quantity by cutoff and recorded quantity in 2025 cannot be determined from the evidence because no accounting entries exist in 2025. The absence of accounting entries in 2025 is consistent with the contract terms. However, the qualifying event date is after the cut-off, so no recognition in 2025 is appropriate. The eligible quantity by cutoff is zero, but since no accounting entries exist in 2025, the recorded quantity in 2025 is zero. The conclusion is that no cut-off exception is identified. However, the eligible quantity by cutoff and recorded quantity in 2025 are zero, so difference is zero. But since the eligible quantity by cutoff and recorded quantity in 2025 are not explicitly stated, and the system requires explicit values or null, and the qualifying event date is after cutoff, the eligible quantity by cutoff is zero, recorded quantity in 2025 is zero, difference is zero, conclusion is no cut-off exception identified. The system requires explicit values, so eligible quantity by cutoff is 0, recorded quantity in 2025 is 0, difference is 0, conclusion is no cut-off exception identified.",
+      "evidence_references": [
+        "CONTRACT-028",
+        "LEDGER-028",
+        "INVOICE-028",
+        "DELIVERY-028"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.00116,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838266-K5vHbcorEJaRuKRHQuCJ",
+    "usage": {
+      "prompt_tokens": 2536,
+      "completion_tokens": 451,
+      "total_tokens": 2987,
+      "cost": 0.00116,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00116,
+        "upstream_inference_prompt_cost": 0.0004384,
+        "upstream_inference_completions_cost": 0.0007216
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 6.201
+  },
+  {
+    "transaction_id": "TEST-029",
+    "result": {
+      "transaction_id": "TEST-029",
+      "recognition_condition": "Control passes on handover to the carrier appointed by the buyer, as per CONTRACT-029. Payment becomes unconditional at that event.",
+      "qualifying_event_date": "2025-12-31",
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": 40,
+      "recorded_quantity_in_2025": 40,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract specifies that control transfers when goods are handed over to the buyer's authorised carrier. The delivery record confirms dispatch to the authorised carrier on 2025-12-31, the cut-off date. The ledger records the sale and accounts receivable on the same date for the full quantity and amount. Therefore, recognition timing is appropriate with no cut-off error.",
+      "evidence_references": [
+        "CONTRACT-029",
+        "LEDGER-029",
+        "INVOICE-029",
+        "DELIVERY-029"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.000766,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838272-LxuuoegJVQbmflL3jYNu",
+    "usage": {
+      "prompt_tokens": 2535,
+      "completion_tokens": 205,
+      "total_tokens": 2740,
+      "cost": 0.000766,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000766,
+        "upstream_inference_prompt_cost": 0.000438,
+        "upstream_inference_completions_cost": 0.000328
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.202
+  },
+  {
+    "transaction_id": "TEST-030",
+    "result": {
+      "transaction_id": "TEST-030",
+      "recognition_condition": "Transfer of control occurs on signed delivery at the buyer warehouse. The seller remains responsible during transit. No additional acceptance procedure applies. Payment becomes unconditional at that event and is due 30 days later. Early invoicing is administrative and creates no earlier right to payment. (CONTRACT-030)",
+      "qualifying_event_date": "2025-12-28",
+      "recorded_accounting_date": "2025-12-28",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires signed delivery at the buyer warehouse for recognition. The actual customer receipt date is 2025-12-28, which is on or before the cut-off date. The ledger records the sale and accounts receivable on 2025-12-28 for the full quantity of 200 units at the agreed price. Therefore, recognition timing and quantities are correct with no cut-off error.",
+      "evidence_references": [
+        "CONTRACT-030",
+        "LEDGER-030",
+        "INVOICE-030",
+        "DELIVERY-030"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0008292,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838275-j06K6KbYUD0y2xDEHUnX",
+    "usage": {
+      "prompt_tokens": 2533,
+      "completion_tokens": 245,
+      "total_tokens": 2778,
+      "cost": 0.0008292,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008292,
+        "upstream_inference_prompt_cost": 0.0004372,
+        "upstream_inference_completions_cost": 0.000392
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.946
+  },
+  {
+    "transaction_id": "TEST-031",
+    "result": {
+      "transaction_id": "TEST-031",
+      "recognition_condition": "Control passes only after substantive customer acceptance following inspection, as stated in CONTRACT-031. Physical receipt alone is insufficient; payment becomes unconditional at acceptance.",
+      "qualifying_event_date": "2025-12-24",
+      "recorded_accounting_date": "2025-12-24",
+      "eligible_quantity_by_cutoff": 120,
+      "recorded_quantity_in_2025": 120,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires substantive customer acceptance for recognition. The acceptance occurred on 2025-12-24, which is on or before the cut-off date. The ledger records the sale and receivable on 2025-12-24 for the full quantity of 120 units at the agreed price. Therefore, recognition timing and quantities are correct with no cut-off error.",
+      "evidence_references": [
+        "CONTRACT-031",
+        "LEDGER-031",
+        "INVOICE-031",
+        "DELIVERY-031"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007708,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838279-6QeW43zZiMrynfJ6SYIy",
+    "usage": {
+      "prompt_tokens": 2531,
+      "completion_tokens": 209,
+      "total_tokens": 2740,
+      "cost": 0.0007708,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007708,
+        "upstream_inference_prompt_cost": 0.0004364,
+        "upstream_inference_completions_cost": 0.0003344
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.557
+  },
+  {
+    "transaction_id": "TEST-032",
+    "result": {
+      "transaction_id": "TEST-032",
+      "recognition_condition": "Control passes on customer receipt at the agreed warehouse, evidenced by signed delivery. No separate acceptance test is required. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment. (CONTRACT-032)",
+      "qualifying_event_date": "2025-12-26",
+      "recorded_accounting_date": "2026-01-04",
+      "eligible_quantity_by_cutoff": 25,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "Delayed or omitted recognition",
+      "difference_cny": 6000,
+      "explanation": "The contract requires control transfer upon customer receipt at the warehouse, evidenced by signed delivery, which occurred on 2025-12-26, before the cut-off date 2025-12-31. However, the accounting entry was recorded on 2026-01-04, after the reporting period, resulting in delayed recognition of the full quantity of 25 units. The invoice date is administrative and does not affect recognition timing.",
+      "evidence_references": [
+        "CONTRACT-032",
+        "LEDGER-032",
+        "INVOICE-032",
+        "DELIVERY-032"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0008344,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838283-9ZnL8alFn5xWS5veS9YX",
+    "usage": {
+      "prompt_tokens": 2530,
+      "completion_tokens": 249,
+      "total_tokens": 2779,
+      "cost": 0.0008344,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008344,
+        "upstream_inference_prompt_cost": 0.000436,
+        "upstream_inference_completions_cost": 0.0003984
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.745
+  },
+  {
+    "transaction_id": "TEST-033",
+    "result": {
+      "transaction_id": "TEST-033",
+      "recognition_condition": "Control transfers when the customer receives the shipment and signs the warehouse receipt. Dispatch alone does not complete performance. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment. (CONTRACT-033)",
+      "qualifying_event_date": null,
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 25,
+      "conclusion": "Additional evidence required",
+      "difference_cny": null,
+      "explanation": "The contract requires customer receipt and signed warehouse receipt for revenue recognition. The actual customer receipt date is missing (null), so it cannot be determined if the recognition condition was met by the 2025-12-31 cut-off date. The ledger records recognition on 2025-12-31 for 25 units, but without evidence of receipt, premature recognition cannot be ruled out.",
+      "evidence_references": [
+        "CONTRACT-033",
+        "LEDGER-033",
+        "DELIVERY-033",
+        "INVOICE-033"
+      ],
+      "additional_evidence_requested": [
+        "Please provide the actual customer receipt date or signed warehouse receipt date to confirm when control transferred to the customer. This is necessary to determine if recognition on 2025-12-31 was appropriate."
+      ]
+    },
+    "reported_cost_usd": 0.0008664,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838286-KsJc4Dt0ooIvdfBFmfcK",
+    "usage": {
+      "prompt_tokens": 2522,
+      "completion_tokens": 271,
+      "total_tokens": 2793,
+      "cost": 0.0008664,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008664,
+        "upstream_inference_prompt_cost": 0.0004328,
+        "upstream_inference_completions_cost": 0.0004336
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.56
+  },
+  {
+    "transaction_id": "TEST-034",
+    "result": {
+      "transaction_id": "TEST-034",
+      "recognition_condition": "Control passes when the goods are handed to the buyer-authorised carrier at the loading point, as stated in CONTRACT-034. Payment becomes unconditional at that event.",
+      "qualifying_event_date": "2025-12-22",
+      "recorded_accounting_date": "2025-12-22",
+      "eligible_quantity_by_cutoff": 150,
+      "recorded_quantity_in_2025": 150,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract specifies that control transfers at dispatch to the buyer-authorised carrier. The actual dispatch date is 2025-12-22, before the cut-off date 2025-12-31. The ledger records the sale and receivable on 2025-12-22 for the full quantity of 150 units at the agreed price. Therefore, recognition timing and quantities are correct with no cut-off error.",
+      "evidence_references": [
+        "CONTRACT-034",
+        "LEDGER-034",
+        "INVOICE-034",
+        "DELIVERY-034"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007932,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838290-adLWQ90Q3n5ZBRhGChhC",
+    "usage": {
+      "prompt_tokens": 2535,
+      "completion_tokens": 222,
+      "total_tokens": 2757,
+      "cost": 0.0007932,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007932,
+        "upstream_inference_prompt_cost": 0.000438,
+        "upstream_inference_completions_cost": 0.0003552
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 5.415
+  },
+  {
+    "transaction_id": "TEST-035",
+    "result": {
+      "transaction_id": "TEST-035",
+      "recognition_condition": "Control transfers when the goods are collected by the customer at the factory, as recorded by the actual dispatch date (2025-12-28). Source: CONTRACT-035 terms.",
+      "qualifying_event_date": "2025-12-28",
+      "recorded_accounting_date": "2025-12-28",
+      "eligible_quantity_by_cutoff": 80,
+      "recorded_quantity_in_2025": 80,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract specifies that control transfers upon customer collection at the factory, evidenced by the actual dispatch date of 2025-12-28, which is before the cut-off date 2025-12-31. The ledger records the sale and accounts receivable on 2025-12-28 for the full quantity of 80 units at the agreed unit price. Therefore, recognition timing and quantities are correct with no cut-off error.",
+      "evidence_references": [
+        "CONTRACT-035",
+        "LEDGER-035",
+        "INVOICE-035",
+        "DELIVERY-035"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.000808,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838295-bmgQnhCVfBLM4oZJO0lt",
+    "usage": {
+      "prompt_tokens": 2540,
+      "completion_tokens": 230,
+      "total_tokens": 2770,
+      "cost": 0.000808,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000808,
+        "upstream_inference_prompt_cost": 0.00044,
+        "upstream_inference_completions_cost": 0.000368
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.471
+  },
+  {
+    "transaction_id": "TEST-036",
+    "result": {
+      "transaction_id": "TEST-036",
+      "recognition_condition": "Control transfers when the goods are collected by the customer at the factory, recorded as actual dispatch date (CONTRACT-036).",
+      "qualifying_event_date": "2026-01-07",
+      "recorded_accounting_date": "2026-01-07",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract specifies recognition upon customer collection at the factory, evidenced by the actual dispatch date. The dispatch occurred on 2026-01-07, after the 2025-12-31 cut-off date. The ledger entry is also dated 2026-01-07, consistent with recognition after the reporting period. Therefore, no premature recognition occurred and no cut-off exception is identified.",
+      "evidence_references": [
+        "CONTRACT-036",
+        "LEDGER-036",
+        "INVOICE-036",
+        "DELIVERY-036"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007776,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838299-BMq3ND9OlGm7QI5Otmfy",
+    "usage": {
+      "prompt_tokens": 2540,
+      "completion_tokens": 211,
+      "total_tokens": 2751,
+      "cost": 0.0007776,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007776,
+        "upstream_inference_prompt_cost": 0.00044,
+        "upstream_inference_completions_cost": 0.0003376
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 2.905
+  },
+  {
+    "transaction_id": "TEST-037",
+    "result": {
+      "transaction_id": "TEST-037",
+      "recognition_condition": "Control transfers only upon customer inspection approval and acceptance, which is a substantive condition per contract CONTRACT-037.",
+      "qualifying_event_date": "2026-01-05",
+      "recorded_accounting_date": "2025-12-27",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 120,
+      "conclusion": "Premature recognition",
+      "difference_cny": 7200,
+      "explanation": "The contract requires customer acceptance as the recognition event, which occurred on 2026-01-05, after the 2025-12-31 cut-off date. However, the sale and receivable were recorded on 2025-12-27, before acceptance. Therefore, the revenue and receivable were recognized prematurely for all 120 units at 60 CNY each, totaling 7200 CNY.",
+      "evidence_references": [
+        "CONTRACT-037",
+        "LEDGER-037",
+        "INVOICE-037",
+        "DELIVERY-037"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007744,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838302-1p36iekPvx0VagDhgJza",
+    "usage": {
+      "prompt_tokens": 2536,
+      "completion_tokens": 210,
+      "total_tokens": 2746,
+      "cost": 0.0007744,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007744,
+        "upstream_inference_prompt_cost": 0.0004384,
+        "upstream_inference_completions_cost": 0.000336
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.337
+  },
+  {
+    "transaction_id": "TEST-038",
+    "result": {
+      "transaction_id": "TEST-038",
+      "recognition_condition": "Control transfers when the goods are collected by the customer at the factory, as recorded by the actual dispatch date (DELIVERY-038). Payment becomes unconditional at that event.",
+      "qualifying_event_date": "2026-01-08",
+      "recorded_accounting_date": "2026-01-08",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract specifies that recognition occurs upon customer collection at the factory, evidenced by the actual dispatch date. The actual dispatch occurred on 2026-01-08, which is after the 2025-12-31 cut-off date. The ledger records the sale and receivable on 2026-01-08, consistent with the qualifying event date. Therefore, no premature recognition occurred and no cut-off exception is identified.",
+      "evidence_references": [
+        "CONTRACT-038",
+        "LEDGER-038",
+        "INVOICE-038",
+        "DELIVERY-038"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0008016,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838305-fxkBO7RBdUGoaaCAxjA9",
+    "usage": {
+      "prompt_tokens": 2540,
+      "completion_tokens": 226,
+      "total_tokens": 2766,
+      "cost": 0.0008016,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008016,
+        "upstream_inference_prompt_cost": 0.00044,
+        "upstream_inference_completions_cost": 0.0003616
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.2
+  },
+  {
+    "transaction_id": "TEST-039",
+    "result": {
+      "transaction_id": "TEST-039",
+      "recognition_condition": "Control transfers when the customer receives the shipment and signs the warehouse receipt, as stated in CONTRACT-039. Dispatch alone does not complete performance.",
+      "qualifying_event_date": "2026-01-05",
+      "recorded_accounting_date": "2026-01-05",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires customer receipt and signed warehouse receipt for control transfer. The actual customer receipt date is 2026-01-05, after the 2025-12-31 cut-off. The ledger records the sale on 2026-01-05, consistent with the qualifying event date. Therefore, no premature recognition occurred and no cut-off difference exists.",
+      "evidence_references": [
+        "CONTRACT-039",
+        "LEDGER-039",
+        "INVOICE-039",
+        "DELIVERY-039"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007664,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838308-lbbv1k4aKTBpaYlfybl3",
+    "usage": {
+      "prompt_tokens": 2528,
+      "completion_tokens": 207,
+      "total_tokens": 2735,
+      "cost": 0.0007664,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007664,
+        "upstream_inference_prompt_cost": 0.0004352,
+        "upstream_inference_completions_cost": 0.0003312
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.096
+  },
+  {
+    "transaction_id": "TEST-040",
+    "result": {
+      "transaction_id": "TEST-040",
+      "recognition_condition": "Control passes on handover to the carrier appointed by the buyer, as per CONTRACT-040 terms. Recognition occurs at the actual dispatch date when the buyer's authorised carrier takes possession.",
+      "qualifying_event_date": "2025-12-21",
+      "recorded_accounting_date": "2026-01-03",
+      "eligible_quantity_by_cutoff": 120,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "Delayed or omitted recognition",
+      "difference_cny": 19200,
+      "explanation": "The contract specifies that control transfers when goods are handed over to the buyer's authorised carrier, which occurred on 2025-12-21, before the 2025-12-31 cut-off. However, the sale and receivable were recorded only on 2026-01-03, after the reporting period, indicating delayed recognition. The full quantity of 120 units was eligible for recognition in 2025 but was recorded in 2026, resulting in a cut-off difference of 19200 CNY.",
+      "evidence_references": [
+        "CONTRACT-040",
+        "DELIVERY-040",
+        "LEDGER-040"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0008256,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838311-8hMCwJTpvuDtqcsN4Mxe",
+    "usage": {
+      "prompt_tokens": 2536,
+      "completion_tokens": 242,
+      "total_tokens": 2778,
+      "cost": 0.0008256,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008256,
+        "upstream_inference_prompt_cost": 0.0004384,
+        "upstream_inference_completions_cost": 0.0003872
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.648
+  },
+  {
+    "transaction_id": "TEST-041",
+    "result": {
+      "transaction_id": "TEST-041",
+      "recognition_condition": "Control passes only after substantive customer acceptance following inspection, as stated in CONTRACT-041. Physical receipt alone is insufficient; payment becomes unconditional at acceptance.",
+      "qualifying_event_date": null,
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 60,
+      "conclusion": "Additional evidence required",
+      "difference_cny": null,
+      "explanation": "The contract requires substantive customer acceptance for revenue recognition. Delivery and receipt occurred before the cut-off, but the actual acceptance date is missing (null). The ledger records revenue and receivable on 2025-12-31 for full quantity. Without acceptance evidence, it cannot be confirmed if recognition timing is correct.",
+      "evidence_references": [
+        "CONTRACT-041",
+        "LEDGER-041",
+        "DELIVERY-041",
+        "INVOICE-041"
+      ],
+      "additional_evidence_requested": [
+        "Please provide the actual customer acceptance date or evidence of substantive acceptance as required by the contract. This is necessary to determine if the recognition condition was met on or before 2025-12-31."
+      ]
+    },
+    "reported_cost_usd": 0.0008032,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838315-pQ7EjxbY2N3HFRg6w2A7",
+    "usage": {
+      "prompt_tokens": 2524,
+      "completion_tokens": 231,
+      "total_tokens": 2755,
+      "cost": 0.0008032,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008032,
+        "upstream_inference_prompt_cost": 0.0004336,
+        "upstream_inference_completions_cost": 0.0003696
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.071
+  },
+  {
+    "transaction_id": "TEST-042",
+    "result": {
+      "transaction_id": "TEST-042",
+      "recognition_condition": "Control passes on customer receipt at the agreed warehouse, evidenced by signed delivery. No separate acceptance test is required. Payment becomes unconditional at that event and is due 30 days later. Early invoicing is administrative and creates no earlier right to payment. (CONTRACT-042)",
+      "qualifying_event_date": "2026-01-08",
+      "recorded_accounting_date": "2026-01-08",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires customer receipt at the agreed warehouse as the recognition event. Actual customer receipt occurred on 2026-01-08, after the 2025-12-31 cut-off date. The ledger entry was recorded on 2026-01-08, consistent with the qualifying event date. No quantity met the recognition condition by the cut-off date, and no sales or receivables were recorded prematurely in 2025. Therefore, no cut-off exception is identified.",
+      "evidence_references": [
+        "CONTRACT-042",
+        "LEDGER-042",
+        "INVOICE-042",
+        "DELIVERY-042"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.00085,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838318-X0QCfB31UdKslEPZLrfp",
+    "usage": {
+      "prompt_tokens": 2529,
+      "completion_tokens": 259,
+      "total_tokens": 2788,
+      "cost": 0.00085,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00085,
+        "upstream_inference_prompt_cost": 0.0004356,
+        "upstream_inference_completions_cost": 0.0004144
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 5.553
+  },
+  {
+    "transaction_id": "TEST-043",
+    "result": {
+      "transaction_id": "TEST-043",
+      "recognition_condition": "Control transfers only upon customer inspection approval and acceptance, which is a substantive condition per contract CONTRACT-043.",
+      "qualifying_event_date": "2026-01-02",
+      "recorded_accounting_date": "2026-01-02",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires customer acceptance as the recognition event, which occurred on 2026-01-02, after the 2025-12-31 cut-off date. The ledger records the sale and receivable on 2026-01-02 accordingly. Therefore, no premature recognition occurred and no cut-off difference exists.",
+      "evidence_references": [
+        "CONTRACT-043",
+        "LEDGER-043",
+        "INVOICE-043",
+        "DELIVERY-043"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007456,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838324-9dBxWIxHEl5uekalPonm",
+    "usage": {
+      "prompt_tokens": 2536,
+      "completion_tokens": 192,
+      "total_tokens": 2728,
+      "cost": 0.0007456,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007456,
+        "upstream_inference_prompt_cost": 0.0004384,
+        "upstream_inference_completions_cost": 0.0003072
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.033
+  },
+  {
+    "transaction_id": "TEST-044",
+    "result": {
+      "transaction_id": "TEST-044",
+      "recognition_condition": "Control passes only after substantive customer acceptance following inspection. Physical receipt alone is insufficient. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment. (CONTRACT-044)",
+      "qualifying_event_date": "2025-12-22",
+      "recorded_accounting_date": "2026-01-07",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "Delayed or omitted recognition",
+      "difference_cny": 25000,
+      "explanation": "The contract requires substantive customer acceptance for revenue recognition. Acceptance occurred on 2025-12-22, before the cut-off date 2025-12-31, so recognition should be in 2025. However, the ledger records the sale and receivable on 2026-01-07, after the reporting period, indicating delayed recognition. The full quantity of 200 units was accepted and eligible for recognition by the cut-off date.",
+      "evidence_references": [
+        "CONTRACT-044",
+        "LEDGER-044",
+        "INVOICE-044",
+        "DELIVERY-044"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.00083,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838327-RxFX4qtpxSsJx3PkkY51",
+    "usage": {
+      "prompt_tokens": 2531,
+      "completion_tokens": 246,
+      "total_tokens": 2777,
+      "cost": 0.00083,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00083,
+        "upstream_inference_prompt_cost": 0.0004364,
+        "upstream_inference_completions_cost": 0.0003936
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.009
+  },
+  {
+    "transaction_id": "TEST-045",
+    "result": {
+      "transaction_id": "TEST-045",
+      "recognition_condition": "Control transfers when the goods are collected by the customer at the factory, recorded as actual dispatch date per contract terms (CONTRACT-045).",
+      "qualifying_event_date": "2025-12-25",
+      "recorded_accounting_date": "2025-12-25",
+      "eligible_quantity_by_cutoff": 80,
+      "recorded_quantity_in_2025": 80,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract specifies recognition upon customer collection at the factory, evidenced by the actual dispatch date of 2025-12-25, which is on the cut-off date. The ledger records the sale and accounts receivable on the same date for the full quantity of 80 units at the agreed price. Invoice date is after cut-off but is administrative only. Therefore, recognition timing aligns with the contract and delivery facts, with no cut-off error.",
+      "evidence_references": [
+        "CONTRACT-045",
+        "LEDGER-045",
+        "DELIVERY-045",
+        "INVOICE-045"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007984,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838330-zqnrZoipo6cbKTSWGJry",
+    "usage": {
+      "prompt_tokens": 2540,
+      "completion_tokens": 224,
+      "total_tokens": 2764,
+      "cost": 0.0007984,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007984,
+        "upstream_inference_prompt_cost": 0.00044,
+        "upstream_inference_completions_cost": 0.0003584
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.648
+  },
+  {
+    "transaction_id": "TEST-046",
+    "result": {
+      "transaction_id": "TEST-046",
+      "recognition_condition": "Control transfers only upon customer inspection approval and acceptance, which is a substantive condition per contract CONTRACT-046.",
+      "qualifying_event_date": "2026-01-02",
+      "recorded_accounting_date": "2026-01-02",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 120,
+      "conclusion": "Premature recognition",
+      "difference_cny": 7200,
+      "explanation": "The contract requires customer acceptance as the recognition event, which occurred on 2026-01-02, after the 2025-12-31 cut-off date. However, the ledger recorded the sale and receivable on 2026-01-02, matching the acceptance date, so no premature recognition in 2025. But the invoice was issued on 2025-12-31, which is administrative only and does not create earlier recognition. Since the accounting entry is dated after the acceptance event, there is no premature recognition. However, the question is whether the sale was recorded in 2025 or 2026. The ledger entry is dated 2026-01-02, so no recognition in 2025. Therefore, no cut-off exception identified. The eligible quantity by cut-off is zero because acceptance was after cut-off. Recorded quantity in 2025 is zero, as ledger entry is in 2026. The invoice date does not affect recognition. The conclusion is no cut-off exception identified.",
+      "evidence_references": [
+        "CONTRACT-046",
+        "LEDGER-046",
+        "INVOICE-046",
+        "DELIVERY-046"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0009712,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838333-qNRgHv7glChxsZjCb5z5",
+    "usage": {
+      "prompt_tokens": 2536,
+      "completion_tokens": 333,
+      "total_tokens": 2869,
+      "cost": 0.0009712,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0009712,
+        "upstream_inference_prompt_cost": 0.0004384,
+        "upstream_inference_completions_cost": 0.0005328
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.734
+  },
+  {
+    "transaction_id": "TEST-047",
+    "result": {
+      "transaction_id": "TEST-047",
+      "recognition_condition": "Recognition occurs upon customer inspection approval and acceptance, which is a substantive condition per contract CONTRACT-047.",
+      "qualifying_event_date": "2025-12-24",
+      "recorded_accounting_date": "2025-12-24",
+      "eligible_quantity_by_cutoff": 120,
+      "recorded_quantity_in_2025": 120,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires customer acceptance as the recognition event. The customer acceptance occurred on 2025-12-24, which is on or before the cut-off date 2025-12-31. The ledger records the sale and accounts receivable on 2025-12-24 for the full quantity of 120 units at the agreed price. Therefore, recognition timing and quantities are correct with no cut-off error.",
+      "evidence_references": [
+        "CONTRACT-047",
+        "LEDGER-047",
+        "INVOICE-047",
+        "DELIVERY-047"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007744,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838337-cXV6FdbRdRf1GOgwWCz0",
+    "usage": {
+      "prompt_tokens": 2536,
+      "completion_tokens": 210,
+      "total_tokens": 2746,
+      "cost": 0.0007744,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007744,
+        "upstream_inference_prompt_cost": 0.0004384,
+        "upstream_inference_completions_cost": 0.000336
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.352
+  },
+  {
+    "transaction_id": "TEST-048",
+    "result": {
+      "transaction_id": "TEST-048",
+      "recognition_condition": "Control passes on handover to the carrier appointed by the buyer, as per CONTRACT-048. Payment becomes unconditional at that event.",
+      "qualifying_event_date": "2026-01-07",
+      "recorded_accounting_date": "2026-01-07",
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "Delayed or omitted recognition",
+      "difference_cny": 3125,
+      "explanation": "The contract specifies recognition upon handover to the buyer's authorised carrier, which occurred on 2026-01-07, after the 2025 cut-off date of 2025-12-31. The accounting entry was also recorded on 2026-01-07, not in the 2025 reporting period. Therefore, the sale and receivable were not recognized prematurely but delayed until after the cut-off date, resulting in omitted recognition in 2025 for the full quantity of 25 units at 125 CNY each, totaling 3125 CNY.",
+      "evidence_references": [
+        "CONTRACT-048",
+        "LEDGER-048",
+        "INVOICE-048",
+        "DELIVERY-048"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0008352,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838340-yHdpm4Cg4q7VrRjFZwpC",
+    "usage": {
+      "prompt_tokens": 2536,
+      "completion_tokens": 248,
+      "total_tokens": 2784,
+      "cost": 0.0008352,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008352,
+        "upstream_inference_prompt_cost": 0.0004384,
+        "upstream_inference_completions_cost": 0.0003968
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.029
+  },
+  {
+    "transaction_id": "TEST-049",
+    "result": {
+      "transaction_id": "TEST-049",
+      "recognition_condition": "Control transfers when the customer receives the shipment and signs the warehouse receipt, as stated in CONTRACT-049. Dispatch alone does not complete performance.",
+      "qualifying_event_date": "2026-01-01",
+      "recorded_accounting_date": "2025-12-27",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 80,
+      "conclusion": "Premature recognition",
+      "difference_cny": 10000,
+      "explanation": "The contract requires customer receipt and signed warehouse receipt for control transfer, which occurred on 2026-01-01, after the 2025-12-31 cut-off. However, the sale and receivable were recorded on 2025-12-27, before the qualifying event, indicating premature recognition of the full amount.",
+      "evidence_references": [
+        "CONTRACT-049",
+        "LEDGER-049",
+        "INVOICE-049",
+        "DELIVERY-049"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007556,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838343-6jpRns6kbayfx1d3SWyZ",
+    "usage": {
+      "prompt_tokens": 2529,
+      "completion_tokens": 200,
+      "total_tokens": 2729,
+      "cost": 0.0007556,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007556,
+        "upstream_inference_prompt_cost": 0.0004356,
+        "upstream_inference_completions_cost": 0.00032
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 2.705
+  },
+  {
+    "transaction_id": "TEST-050",
+    "result": {
+      "transaction_id": "TEST-050",
+      "recognition_condition": "Control passes on handover to the carrier appointed by the buyer, as per CONTRACT-050. Payment becomes unconditional at that event.",
+      "qualifying_event_date": "2026-01-09",
+      "recorded_accounting_date": "2026-01-09",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract specifies recognition upon handover to the buyer's carrier, which occurred on 2026-01-09, after the 2025-12-31 cut-off date. The accounting entry was recorded on 2026-01-09, consistent with the qualifying event date. Therefore, no premature recognition occurred within the 2025 reporting period.",
+      "evidence_references": [
+        "CONTRACT-050",
+        "LEDGER-050",
+        "INVOICE-050",
+        "DELIVERY-050"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007644,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838346-piJ1SUdrvGNEkCotU4Oq",
+    "usage": {
+      "prompt_tokens": 2535,
+      "completion_tokens": 204,
+      "total_tokens": 2739,
+      "cost": 0.0007644,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007644,
+        "upstream_inference_prompt_cost": 0.000438,
+        "upstream_inference_completions_cost": 0.0003264
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 2.71
+  },
+  {
+    "transaction_id": "TEST-051",
+    "result": {
+      "transaction_id": "TEST-051",
+      "recognition_condition": "Control passes on customer receipt at the agreed warehouse, evidenced by signed delivery. No separate acceptance test is required. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment. (CONTRACT-051)",
+      "qualifying_event_date": "2025-12-31",
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": 120,
+      "recorded_quantity_in_2025": 120,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract specifies that revenue and receivable recognition occur upon customer receipt at the agreed warehouse, evidenced by signed delivery. The actual customer receipt date is 2025-12-31, which is on the cut-off date. The ledger records the transaction on 2025-12-31 for the full quantity of 120 units at the agreed price. Therefore, recognition timing and quantities align with the contract and delivery facts, indicating no cut-off error.",
+      "evidence_references": [
+        "CONTRACT-051",
+        "LEDGER-051",
+        "INVOICE-051",
+        "DELIVERY-051"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0008408,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838349-tYTEkkj4o5RtNPlzWqPO",
+    "usage": {
+      "prompt_tokens": 2530,
+      "completion_tokens": 253,
+      "total_tokens": 2783,
+      "cost": 0.0008408,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008408,
+        "upstream_inference_prompt_cost": 0.000436,
+        "upstream_inference_completions_cost": 0.0004048
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.022
+  },
+  {
+    "transaction_id": "TEST-052",
+    "result": {
+      "transaction_id": "TEST-052",
+      "recognition_condition": "Control passes on customer receipt at the agreed warehouse, evidenced by signed delivery. No separate acceptance test is required. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment. (CONTRACT-052)",
+      "qualifying_event_date": null,
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 120,
+      "conclusion": "Additional evidence required",
+      "difference_cny": null,
+      "explanation": "The contract requires customer receipt at the agreed warehouse, evidenced by signed delivery, as the recognition event. The actual customer receipt date and received quantity are missing (null), so it cannot be determined if the recognition condition was met by the 2025-12-31 cut-off date. The ledger records the full quantity as receivable on 2025-12-31, but without evidence of receipt, the timing of recognition cannot be confirmed.",
+      "evidence_references": [
+        "CONTRACT-052",
+        "LEDGER-052",
+        "DELIVERY-052"
+      ],
+      "additional_evidence_requested": [
+        "Please provide the actual customer receipt date and received quantity to confirm whether control passed by 2025-12-31 as required by the contract."
+      ]
+    },
+    "reported_cost_usd": 0.0008636,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838352-MjtrhMgbO7nNveBZ4qzU",
+    "usage": {
+      "prompt_tokens": 2523,
+      "completion_tokens": 269,
+      "total_tokens": 2792,
+      "cost": 0.0008636,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008636,
+        "upstream_inference_prompt_cost": 0.0004332,
+        "upstream_inference_completions_cost": 0.0004304
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.069
+  },
+  {
+    "transaction_id": "TEST-053",
+    "result": {
+      "transaction_id": "TEST-053",
+      "recognition_condition": "Control transfers only upon customer inspection approval and acceptance, which is a substantive condition per contract CONTRACT-053.",
+      "qualifying_event_date": "2026-01-09",
+      "recorded_accounting_date": "2026-01-09",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires customer acceptance as the recognition event, which occurred on 2026-01-09, after the 2025-12-31 cut-off date. The ledger records the sale on 2026-01-09 accordingly. Therefore, no premature recognition occurred in 2025, and the accounting treatment is correct.",
+      "evidence_references": [
+        "CONTRACT-053",
+        "LEDGER-053",
+        "INVOICE-053",
+        "DELIVERY-053"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007488,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838355-KGRf3WkB6aECkgpekRGR",
+    "usage": {
+      "prompt_tokens": 2536,
+      "completion_tokens": 194,
+      "total_tokens": 2730,
+      "cost": 0.0007488,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007488,
+        "upstream_inference_prompt_cost": 0.0004384,
+        "upstream_inference_completions_cost": 0.0003104
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.291
+  },
+  {
+    "transaction_id": "TEST-054",
+    "result": {
+      "transaction_id": "TEST-054",
+      "recognition_condition": "Control transfers only upon customer inspection approval and acceptance, which is a substantive condition per contract CONTRACT-054.",
+      "qualifying_event_date": "2025-12-28",
+      "recorded_accounting_date": "2026-01-01",
+      "eligible_quantity_by_cutoff": 60,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "Delayed or omitted recognition",
+      "difference_cny": 7500,
+      "explanation": "The contract requires customer acceptance as the recognition event, which occurred on 2025-12-28, before the cut-off date 2025-12-31. However, the accounting entry was recorded on 2026-01-01, after the reporting period, resulting in delayed recognition of the full quantity and amount.",
+      "evidence_references": [
+        "CONTRACT-054",
+        "LEDGER-054",
+        "INVOICE-054",
+        "DELIVERY-054"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007472,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838358-TnmJzScu644BbRJKFChY",
+    "usage": {
+      "prompt_tokens": 2536,
+      "completion_tokens": 193,
+      "total_tokens": 2729,
+      "cost": 0.0007472,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007472,
+        "upstream_inference_prompt_cost": 0.0004384,
+        "upstream_inference_completions_cost": 0.0003088
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.129
+  },
+  {
+    "transaction_id": "TEST-055",
+    "result": {
+      "transaction_id": "TEST-055",
+      "recognition_condition": "Control passes on customer receipt at the agreed warehouse, evidenced by signed delivery. No separate acceptance test is required. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment. (CONTRACT-055)",
+      "qualifying_event_date": "2026-01-06",
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 120,
+      "conclusion": "Premature recognition",
+      "difference_cny": 15000,
+      "explanation": "The contract requires control transfer upon customer receipt at the warehouse, evidenced by signed delivery, which occurred on 2026-01-06, after the 2025-12-31 cut-off date. However, the ledger records the sale and accounts receivable on 2025-12-31 for the full quantity of 120 units. Therefore, the revenue and receivable were recognized prematurely by one reporting period, resulting in a cut-off difference of 15,000 CNY.",
+      "evidence_references": [
+        "CONTRACT-055",
+        "LEDGER-055",
+        "INVOICE-055",
+        "DELIVERY-055"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0008504,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838361-7z5lNsvXhyYvfqLPnjg9",
+    "usage": {
+      "prompt_tokens": 2530,
+      "completion_tokens": 259,
+      "total_tokens": 2789,
+      "cost": 0.0008504,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008504,
+        "upstream_inference_prompt_cost": 0.000436,
+        "upstream_inference_completions_cost": 0.0004144
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.443
+  },
+  {
+    "transaction_id": "TEST-056",
+    "result": {
+      "transaction_id": "TEST-056",
+      "recognition_condition": "Control passes only after substantive customer acceptance following inspection, as stated in CONTRACT-056. Physical receipt alone is insufficient; payment becomes unconditional at acceptance.",
+      "qualifying_event_date": "2026-01-07",
+      "recorded_accounting_date": "2026-01-07",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 40,
+      "conclusion": "Premature recognition",
+      "difference_cny": 2400,
+      "explanation": "The contract requires substantive customer acceptance for control transfer, which occurred on 2026-01-07, after the 2025-12-31 cut-off. However, the ledger recorded the sale and receivable on 2026-01-07, matching the acceptance date, but the invoice was issued earlier on 2025-12-28. Since recognition depends on acceptance, recording before acceptance is premature. The entire quantity of 40 units was recorded in 2025 accounting period, which is premature as acceptance was in 2026.",
+      "evidence_references": [
+        "CONTRACT-056",
+        "LEDGER-056",
+        "INVOICE-056",
+        "DELIVERY-056"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.000828,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838365-GzoiSKMhWfJNKong91s1",
+    "usage": {
+      "prompt_tokens": 2530,
+      "completion_tokens": 245,
+      "total_tokens": 2775,
+      "cost": 0.000828,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000828,
+        "upstream_inference_prompt_cost": 0.000436,
+        "upstream_inference_completions_cost": 0.000392
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 2.818
+  },
+  {
+    "transaction_id": "TEST-057",
+    "result": {
+      "transaction_id": "TEST-057",
+      "recognition_condition": "Control passes when the goods are handed to the buyer-authorised carrier at the loading point, as stated in CONTRACT-057. Payment becomes unconditional at that event.",
+      "qualifying_event_date": "2026-01-06",
+      "recorded_accounting_date": "2026-01-06",
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": null,
+      "conclusion": "Additional evidence required",
+      "difference_cny": null,
+      "explanation": "The contract specifies recognition upon handover to the buyer-authorised carrier at dispatch. The actual dispatch date is 2026-01-06, after the 2025-12-31 cut-off date. Therefore, the qualifying event occurred after the reporting period. However, the accounting entry is also dated 2026-01-06, outside the reporting period, so no premature recognition is evident. Since the qualifying event date is after the cut-off, no revenue should be recognized in 2025. The eligible quantity by the cut-off date cannot be determined as the dispatch date is after the cut-off. The recorded accounting date is also after the cut-off, so no cut-off exception is identified. However, the eligible quantity by the cut-off date is unknown (null) because the dispatch date is after the cut-off, and the quantity dispatched before the cut-off is not provided. This missing information prevents a definitive conclusion on cut-off compliance. Additional evidence is requested to confirm if any part of the goods was dispatched on or before 2025-12-31 to determine if any premature recognition occurred.",
+      "evidence_references": [
+        "CONTRACT-057",
+        "LEDGER-057",
+        "INVOICE-057",
+        "DELIVERY-057"
+      ],
+      "additional_evidence_requested": [
+        "Please provide evidence or confirmation whether any quantity of the goods was dispatched to the buyer-authorised carrier on or before 2025-12-31, as the current dispatch date is after the cut-off. This is necessary to determine if any revenue was prematurely recognized in the 2025 reporting period."
+      ]
+    },
+    "reported_cost_usd": 0.00111,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838368-1HO3gSG1ad1jkjIcpNdi",
+    "usage": {
+      "prompt_tokens": 2535,
+      "completion_tokens": 420,
+      "total_tokens": 2955,
+      "cost": 0.00111,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00111,
+        "upstream_inference_prompt_cost": 0.000438,
+        "upstream_inference_completions_cost": 0.000672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 7.103
+  },
+  {
+    "transaction_id": "TEST-058",
+    "result": {
+      "transaction_id": "TEST-058",
+      "recognition_condition": "Control passes when the goods are handed to the buyer-authorised carrier at the loading point, as stated in CONTRACT-058. Payment becomes unconditional at that event.",
+      "qualifying_event_date": "2026-01-08",
+      "recorded_accounting_date": "2026-01-08",
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "Delayed or omitted recognition",
+      "difference_cny": 17000,
+      "explanation": "The contract specifies that control transfers at dispatch to the buyer-authorised carrier, which occurred on 2026-01-08, after the 2025 cut-off date of 2025-12-31. The accounting entry was recorded on 2026-01-08, consistent with the qualifying event date. Since the qualifying event occurred after the 2025 reporting period, the sale and receivable should not have been recognized in 2025. No recognition was recorded in 2025, so there is no premature recognition. However, the sale was not recognized in the 2025 period, which is correct. Therefore, there is no cut-off exception identified for 2025. The eligible quantity by cutoff is zero because the qualifying event date is after the cutoff date, so no quantity was eligible for recognition in 2025. The recorded quantity in 2025 is zero. The difference is zero because no premature recognition occurred in 2025.",
+      "evidence_references": [
+        "CONTRACT-058",
+        "LEDGER-058",
+        "INVOICE-058",
+        "DELIVERY-058"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0009688,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838375-uwz4KFBUSnI8dlqu6oUr",
+    "usage": {
+      "prompt_tokens": 2534,
+      "completion_tokens": 332,
+      "total_tokens": 2866,
+      "cost": 0.0009688,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0009688,
+        "upstream_inference_prompt_cost": 0.0004376,
+        "upstream_inference_completions_cost": 0.0005312
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.64
+  },
+  {
+    "transaction_id": "TEST-059",
+    "result": {
+      "transaction_id": "TEST-059",
+      "recognition_condition": "Customer acceptance is the qualifying event for revenue recognition, as per contract CONTRACT-059: 'The customer does not obtain control until substantive inspection sign-off and acceptance. Earlier delivery to its premises is insufficient. Payment becomes unconditional at that event.'",
+      "qualifying_event_date": "2025-12-31",
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": 25,
+      "recorded_quantity_in_2025": 25,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires substantive customer acceptance before control transfers. The acceptance occurred on 2025-12-31, which is on the cut-off date. The ledger records the sale and accounts receivable on 2025-12-31 for the full quantity of 25 units at the agreed price. Therefore, recognition timing aligns with the contract condition and delivery facts, with no cut-off error.",
+      "evidence_references": [
+        "CONTRACT-059",
+        "LEDGER-059",
+        "INVOICE-059",
+        "DELIVERY-059"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0008112,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838378-416R1JIV1hxz5SUHYVx1",
+    "usage": {
+      "prompt_tokens": 2536,
+      "completion_tokens": 233,
+      "total_tokens": 2769,
+      "cost": 0.0008112,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008112,
+        "upstream_inference_prompt_cost": 0.0004384,
+        "upstream_inference_completions_cost": 0.0003728
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.319
+  },
+  {
+    "transaction_id": "TEST-060",
+    "result": {
+      "transaction_id": "TEST-060",
+      "recognition_condition": "Control transfers when the goods are collected by the customer at the factory, recorded as the actual dispatch date.",
+      "qualifying_event_date": "2025-12-22",
+      "recorded_accounting_date": "2026-01-04",
+      "eligible_quantity_by_cutoff": 60,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "Delayed or omitted recognition",
+      "difference_cny": 5100,
+      "explanation": "The contract specifies that control transfers upon customer collection at the factory, evidenced by the actual dispatch date of 2025-12-22, which is before the 2025-12-31 cut-off. However, the accounting entry was recorded on 2026-01-04, after the reporting period, resulting in delayed recognition of the full quantity of 60 units at the agreed unit price of 85 CNY, causing a cut-off difference of 5100 CNY.",
+      "evidence_references": [
+        "CONTRACT-060",
+        "LEDGER-060",
+        "INVOICE-060",
+        "DELIVERY-060"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0008,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838382-gEqwvVHFVSmRkw0q1f9y",
+    "usage": {
+      "prompt_tokens": 2540,
+      "completion_tokens": 225,
+      "total_tokens": 2765,
+      "cost": 0.0008,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008,
+        "upstream_inference_prompt_cost": 0.00044,
+        "upstream_inference_completions_cost": 0.00036
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.045
+  },
+  {
+    "transaction_id": "TEST-061",
+    "result": {
+      "transaction_id": "TEST-061",
+      "recognition_condition": "Customer obtains control upon substantive inspection sign-off and acceptance, as stated in CONTRACT-061. Earlier delivery to premises is insufficient for recognition.",
+      "qualifying_event_date": "2026-01-04",
+      "recorded_accounting_date": "2026-01-04",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires substantive acceptance for control transfer, which occurred on 2026-01-04, after the 2025-12-31 cut-off. The ledger records recognition on 2026-01-04, matching the qualifying event date. Although the invoice was issued on 2025-12-30, this is administrative only and does not create an earlier payment right. Therefore, no premature recognition occurred.",
+      "evidence_references": [
+        "CONTRACT-061",
+        "LEDGER-061",
+        "INVOICE-061",
+        "DELIVERY-061"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007876,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838385-Ik0kC9g0RcDvYkGdWZ6G",
+    "usage": {
+      "prompt_tokens": 2537,
+      "completion_tokens": 218,
+      "total_tokens": 2755,
+      "cost": 0.0007876,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007876,
+        "upstream_inference_prompt_cost": 0.0004388,
+        "upstream_inference_completions_cost": 0.0003488
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.547
+  },
+  {
+    "transaction_id": "TEST-062",
+    "result": {
+      "transaction_id": "TEST-062",
+      "recognition_condition": "Customer acceptance required: substantive inspection sign-off and acceptance by customer as per CONTRACT-062. Control transfers at acceptance event, earlier delivery insufficient.",
+      "qualifying_event_date": "2025-12-28",
+      "recorded_accounting_date": "2025-12-28",
+      "eligible_quantity_by_cutoff": 80,
+      "recorded_quantity_in_2025": 80,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires customer acceptance for control transfer. Actual acceptance occurred on 2025-12-28, on or before the cut-off date. The ledger records the sale and receivable on 2025-12-28 for the full quantity of 80 units at the agreed price. Invoice date after acceptance does not affect recognition. Therefore, recognition timing is appropriate with no cut-off error.",
+      "evidence_references": [
+        "CONTRACT-062",
+        "LEDGER-062",
+        "INVOICE-062",
+        "DELIVERY-062"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007796,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838388-U3vdfQGdEPPBphPUAxsn",
+    "usage": {
+      "prompt_tokens": 2537,
+      "completion_tokens": 213,
+      "total_tokens": 2750,
+      "cost": 0.0007796,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007796,
+        "upstream_inference_prompt_cost": 0.0004388,
+        "upstream_inference_completions_cost": 0.0003408
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 2.708
+  },
+  {
+    "transaction_id": "TEST-063",
+    "result": {
+      "transaction_id": "TEST-063",
+      "recognition_condition": "Control passes on customer receipt at the agreed warehouse, evidenced by signed delivery. No separate acceptance test is required. Payment becomes unconditional at that event and is due 45 days later. Early invoicing is administrative and creates no earlier right to payment. (CONTRACT-063)",
+      "qualifying_event_date": "2025-12-23",
+      "recorded_accounting_date": "2025-12-23",
+      "eligible_quantity_by_cutoff": 150,
+      "recorded_quantity_in_2025": 150,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires control transfer upon customer receipt at the warehouse, evidenced by signed delivery. The actual customer receipt date is 2025-12-23, which is on or before the cut-off date 2025-12-31. The ledger records the sale and accounts receivable on 2025-12-23 for the full quantity of 150 units at the agreed price. The invoice date is after the cut-off but does not affect recognition. Therefore, recognition timing is appropriate with no cut-off error.",
+      "evidence_references": [
+        "CONTRACT-063",
+        "LEDGER-063",
+        "INVOICE-063",
+        "DELIVERY-063"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0008616,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838391-U2hqU3dIB4LKNyMNVajs",
+    "usage": {
+      "prompt_tokens": 2530,
+      "completion_tokens": 266,
+      "total_tokens": 2796,
+      "cost": 0.0008616,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008616,
+        "upstream_inference_prompt_cost": 0.000436,
+        "upstream_inference_completions_cost": 0.0004256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 6.605
+  },
+  {
+    "transaction_id": "TEST-064",
+    "result": {
+      "transaction_id": "TEST-064",
+      "recognition_condition": "Control passes only after substantive customer acceptance following inspection, as stated in CONTRACT-064. Physical receipt alone is insufficient; payment becomes unconditional at acceptance.",
+      "qualifying_event_date": "2025-12-31",
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": 25,
+      "recorded_quantity_in_2025": 25,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires substantive customer acceptance for recognition. The actual acceptance date is 2025-12-31, which is on the cut-off date. The ledger records the sale and receivable on 2025-12-31 for the full quantity of 25 units at the agreed price. Therefore, recognition timing is appropriate with no cut-off error.",
+      "evidence_references": [
+        "CONTRACT-064",
+        "LEDGER-064",
+        "INVOICE-064",
+        "DELIVERY-064"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.000766,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838398-iNNaGxBOiEyH2lX4NJUC",
+    "usage": {
+      "prompt_tokens": 2531,
+      "completion_tokens": 206,
+      "total_tokens": 2737,
+      "cost": 0.000766,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000766,
+        "upstream_inference_prompt_cost": 0.0004364,
+        "upstream_inference_completions_cost": 0.0003296
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.055
+  },
+  {
+    "transaction_id": "TEST-065",
+    "result": {
+      "transaction_id": "TEST-065",
+      "recognition_condition": "Transfer of control occurs on signed delivery at the buyer warehouse. The seller remains responsible during transit. No additional acceptance procedure applies. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment. (CONTRACT-065)",
+      "qualifying_event_date": "2025-12-29",
+      "recorded_accounting_date": "2025-12-29",
+      "eligible_quantity_by_cutoff": 80,
+      "recorded_quantity_in_2025": 80,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires signed delivery at the buyer warehouse for recognition. The actual customer receipt date is 2025-12-29, which is on or before the cut-off date. The ledger records the sale and receivable on 2025-12-29 for the full quantity of 80 units at the agreed price. Therefore, recognition timing and quantity are appropriate with no cut-off error.",
+      "evidence_references": [
+        "CONTRACT-065",
+        "LEDGER-065",
+        "INVOICE-065",
+        "DELIVERY-065"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0008276,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838401-sTp4BjWe3PHvR9jUbYQF",
+    "usage": {
+      "prompt_tokens": 2533,
+      "completion_tokens": 244,
+      "total_tokens": 2777,
+      "cost": 0.0008276,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008276,
+        "upstream_inference_prompt_cost": 0.0004372,
+        "upstream_inference_completions_cost": 0.0003904
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.081
+  },
+  {
+    "transaction_id": "TEST-066",
+    "result": {
+      "transaction_id": "TEST-066",
+      "recognition_condition": "Transfer of control occurs on signed delivery at the buyer warehouse. The seller remains responsible during transit. No additional acceptance procedure applies. Payment becomes unconditional at that event and is due 30 days later. Early invoicing is administrative and creates no earlier right to payment. (CONTRACT-066)",
+      "qualifying_event_date": "2026-01-07",
+      "recorded_accounting_date": "2026-01-07",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires signed delivery at the buyer warehouse for recognition, which occurred on 2026-01-07, after the 2025-12-31 cut-off date. The ledger entry was recorded on 2026-01-07, consistent with the qualifying event date. Therefore, no premature recognition occurred in 2025, and no cut-off exception is identified.",
+      "evidence_references": [
+        "CONTRACT-066",
+        "LEDGER-066",
+        "INVOICE-066",
+        "DELIVERY-066"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0008228,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838404-xASP8PlsHBmMDZbfJ6VP",
+    "usage": {
+      "prompt_tokens": 2533,
+      "completion_tokens": 241,
+      "total_tokens": 2774,
+      "cost": 0.0008228,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008228,
+        "upstream_inference_prompt_cost": 0.0004372,
+        "upstream_inference_completions_cost": 0.0003856
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 4.127
+  },
+  {
+    "transaction_id": "TEST-067",
+    "result": {
+      "transaction_id": "TEST-067",
+      "recognition_condition": "Control passes on handover to the carrier appointed by the buyer, as per CONTRACT-067. Payment becomes unconditional at that event.",
+      "qualifying_event_date": "2026-01-03",
+      "recorded_accounting_date": "2026-01-03",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract specifies recognition upon handover to the buyer's appointed carrier, which occurred on 2026-01-03, after the 2025-12-31 cut-off date. The ledger entry is dated 2026-01-03, matching the qualifying event date. No recognition occurred prematurely in 2025, so no cut-off exception is identified.",
+      "evidence_references": [
+        "CONTRACT-067",
+        "LEDGER-067",
+        "INVOICE-067",
+        "DELIVERY-067"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007676,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838408-5XaQp9pCgRzTSfTNns9N",
+    "usage": {
+      "prompt_tokens": 2535,
+      "completion_tokens": 206,
+      "total_tokens": 2741,
+      "cost": 0.0007676,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007676,
+        "upstream_inference_prompt_cost": 0.000438,
+        "upstream_inference_completions_cost": 0.0003296
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.253
+  },
+  {
+    "transaction_id": "TEST-068",
+    "result": {
+      "transaction_id": "TEST-068",
+      "recognition_condition": "Control passes on handover to the carrier appointed by the buyer, as per CONTRACT-068. Payment becomes unconditional at that event.",
+      "qualifying_event_date": "2026-01-06",
+      "recorded_accounting_date": "2025-12-30",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 200,
+      "conclusion": "Premature recognition",
+      "difference_cny": 32000,
+      "explanation": "The contract specifies that control transfers when the buyer's appointed carrier takes possession, which occurred on 2026-01-06, after the 2025-12-31 cut-off. However, the sale and receivable were recorded on 2025-12-30, before the qualifying event, indicating premature recognition of the full quantity and amount.",
+      "evidence_references": [
+        "CONTRACT-068",
+        "LEDGER-068",
+        "INVOICE-068",
+        "DELIVERY-068"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007616,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838411-jW1OvKnRxjW5aj5kkyex",
+    "usage": {
+      "prompt_tokens": 2536,
+      "completion_tokens": 202,
+      "total_tokens": 2738,
+      "cost": 0.0007616,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007616,
+        "upstream_inference_prompt_cost": 0.0004384,
+        "upstream_inference_completions_cost": 0.0003232
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.034
+  },
+  {
+    "transaction_id": "TEST-069",
+    "result": {
+      "transaction_id": "TEST-069",
+      "recognition_condition": "Control passes when the goods are handed to the buyer-authorised carrier at the loading point, as stated in CONTRACT-069. Payment becomes unconditional at that event.",
+      "qualifying_event_date": "2026-01-04",
+      "recorded_accounting_date": "2026-01-04",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "Premature recognition",
+      "difference_cny": 48000,
+      "explanation": "The contract specifies that control transfers at dispatch to the buyer-authorised carrier, which occurred on 2026-01-04, after the 2025-12-31 cut-off date. However, the invoice was dated 2025-12-31 and the ledger recorded the sale on 2026-01-04, which is after the cut-off. Since the qualifying event occurred after the cut-off, recording the sale in 2025 would be premature. Here, the sale was recorded in 2026, so no premature recognition in 2025, but the invoice date might cause confusion. The accounting entry date matches the qualifying event date, so no cut-off exception is identified for 2025. However, since the invoice date is before the qualifying event, and the accounting entry is after, the sale was not recognized prematurely in 2025. Therefore, no cut-off exception is identified.",
+      "evidence_references": [
+        "CONTRACT-069",
+        "LEDGER-069",
+        "INVOICE-069",
+        "DELIVERY-069"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0009516,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838414-WxsnDUoqe2puaROwlBwM",
+    "usage": {
+      "prompt_tokens": 2535,
+      "completion_tokens": 321,
+      "total_tokens": 2856,
+      "cost": 0.0009516,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0009516,
+        "upstream_inference_prompt_cost": 0.000438,
+        "upstream_inference_completions_cost": 0.0005136
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.867
+  },
+  {
+    "transaction_id": "TEST-070",
+    "result": {
+      "transaction_id": "TEST-070",
+      "recognition_condition": "Control passes when the goods are handed to the buyer-authorised carrier at the loading point, as stated in CONTRACT-070. Payment becomes unconditional at that event.",
+      "qualifying_event_date": "2025-12-29",
+      "recorded_accounting_date": "2025-12-29",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract specifies recognition upon handover to the buyer-authorised carrier at loading. The delivery record confirms dispatch on 2025-12-29 with carrier authorised by customer, meeting the recognition condition before the 2025-12-31 cut-off. The ledger records the sale and receivable on 2025-12-29 for the full quantity and amount. Invoice date after cut-off does not affect recognition timing. Therefore, recognition is timely and complete with no cut-off difference.",
+      "evidence_references": [
+        "CONTRACT-070",
+        "LEDGER-070",
+        "INVOICE-070",
+        "DELIVERY-070"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0008152,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838418-Bw9mT3G7GwUPL8x6IBNg",
+    "usage": {
+      "prompt_tokens": 2534,
+      "completion_tokens": 236,
+      "total_tokens": 2770,
+      "cost": 0.0008152,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008152,
+        "upstream_inference_prompt_cost": 0.0004376,
+        "upstream_inference_completions_cost": 0.0003776
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.396
+  },
+  {
+    "transaction_id": "TEST-071",
+    "result": {
+      "transaction_id": "TEST-071",
+      "recognition_condition": "Control transfers only upon customer inspection approval and acceptance, which is a substantive condition per contract CONTRACT-071.",
+      "qualifying_event_date": "2025-12-25",
+      "recorded_accounting_date": "2025-12-25",
+      "eligible_quantity_by_cutoff": 60,
+      "recorded_quantity_in_2025": 60,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires customer acceptance as the recognition event. The actual acceptance date is 2025-12-25, on or before the cut-off date. The ledger records the sale and receivable on 2025-12-25 for the full quantity of 60 units at the agreed price. Therefore, recognition timing and quantity are correct with no cut-off error.",
+      "evidence_references": [
+        "CONTRACT-071",
+        "LEDGER-071",
+        "INVOICE-071",
+        "DELIVERY-071"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007596,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838422-aeMGyZA5iJIC7MHFuZeZ",
+    "usage": {
+      "prompt_tokens": 2535,
+      "completion_tokens": 201,
+      "total_tokens": 2736,
+      "cost": 0.0007596,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007596,
+        "upstream_inference_prompt_cost": 0.000438,
+        "upstream_inference_completions_cost": 0.0003216
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 2.952
+  },
+  {
+    "transaction_id": "TEST-072",
+    "result": {
+      "transaction_id": "TEST-072",
+      "recognition_condition": "Control passes only after substantive customer acceptance following inspection, as stated in CONTRACT-072. Physical receipt alone is insufficient; payment becomes unconditional at acceptance.",
+      "qualifying_event_date": "2025-12-29",
+      "recorded_accounting_date": "2025-12-29",
+      "eligible_quantity_by_cutoff": 25,
+      "recorded_quantity_in_2025": 25,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires substantive customer acceptance for recognition. The actual acceptance date is 2025-12-29, which is on the cut-off date. The ledger records the sale and receivable on 2025-12-29 for the full quantity of 25 units at the agreed price. Therefore, recognition timing aligns with the contract condition and delivery facts, with no cut-off error.",
+      "evidence_references": [
+        "CONTRACT-072",
+        "LEDGER-072",
+        "INVOICE-072",
+        "DELIVERY-072"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007772,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838425-jzrf9yfGJkUwiKvS4iSF",
+    "usage": {
+      "prompt_tokens": 2531,
+      "completion_tokens": 213,
+      "total_tokens": 2744,
+      "cost": 0.0007772,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007772,
+        "upstream_inference_prompt_cost": 0.0004364,
+        "upstream_inference_completions_cost": 0.0003408
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.474
+  },
+  {
+    "transaction_id": "TEST-073",
+    "result": {
+      "transaction_id": "TEST-073",
+      "recognition_condition": "Control passes on handover to the carrier appointed by the buyer, as per CONTRACT-073. Payment becomes unconditional at that event.",
+      "qualifying_event_date": "2025-12-25",
+      "recorded_accounting_date": "2025-12-25",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract specifies that control transfers when goods are handed over to the carrier authorised by the buyer. The delivery record confirms dispatch to the authorised carrier on 2025-12-25, which is on the cut-off date. The ledger records the sale and receivable on the same date for the full quantity and amount. Therefore, recognition timing is appropriate with no cut-off error.",
+      "evidence_references": [
+        "CONTRACT-073",
+        "LEDGER-073",
+        "DELIVERY-073",
+        "INVOICE-073"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007712,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838428-bQouEyH18BKmFPP6XA12",
+    "usage": {
+      "prompt_tokens": 2536,
+      "completion_tokens": 208,
+      "total_tokens": 2744,
+      "cost": 0.0007712,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007712,
+        "upstream_inference_prompt_cost": 0.0004384,
+        "upstream_inference_completions_cost": 0.0003328
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.932
+  },
+  {
+    "transaction_id": "TEST-074",
+    "result": {
+      "transaction_id": "TEST-074",
+      "recognition_condition": "Transfer of control occurs on signed delivery at the buyer warehouse. The seller remains responsible during transit. No additional acceptance procedure applies. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment. (CONTRACT-074)",
+      "qualifying_event_date": "2026-01-04",
+      "recorded_accounting_date": "2026-01-04",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires signed delivery at the buyer warehouse for recognition. Actual customer receipt (signed delivery) occurred on 2026-01-04, after the 2025-12-31 cut-off date. The ledger entry was recorded on 2026-01-04, consistent with the qualifying event date. Therefore, no premature recognition occurred and no cut-off exception is identified.",
+      "evidence_references": [
+        "CONTRACT-074",
+        "LEDGER-074",
+        "INVOICE-074",
+        "DELIVERY-074"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0008244,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838432-SXBQcQZCVQLXfjNCleTZ",
+    "usage": {
+      "prompt_tokens": 2533,
+      "completion_tokens": 242,
+      "total_tokens": 2775,
+      "cost": 0.0008244,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008244,
+        "upstream_inference_prompt_cost": 0.0004372,
+        "upstream_inference_completions_cost": 0.0003872
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.967
+  },
+  {
+    "transaction_id": "TEST-075",
+    "result": {
+      "transaction_id": "TEST-075",
+      "recognition_condition": "Control passes on customer receipt at the agreed warehouse, evidenced by signed delivery. No separate acceptance test is required. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment. (CONTRACT-075)",
+      "qualifying_event_date": "2026-01-08",
+      "recorded_accounting_date": "2026-01-08",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires customer receipt at the agreed warehouse as the recognition event. The actual customer receipt date is 2026-01-08, after the 2025-12-31 cut-off date. The ledger records the sale on 2026-01-08, consistent with the qualifying event timing. Therefore, no premature recognition occurred in 2025, and no cut-off exception is identified.",
+      "evidence_references": [
+        "CONTRACT-075",
+        "LEDGER-075",
+        "INVOICE-075",
+        "DELIVERY-075"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0008244,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838436-qkQciRfOkepT2gkrNfQ6",
+    "usage": {
+      "prompt_tokens": 2529,
+      "completion_tokens": 243,
+      "total_tokens": 2772,
+      "cost": 0.0008244,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008244,
+        "upstream_inference_prompt_cost": 0.0004356,
+        "upstream_inference_completions_cost": 0.0003888
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.227
+  },
+  {
+    "transaction_id": "TEST-076",
+    "result": {
+      "transaction_id": "TEST-076",
+      "recognition_condition": "Control passes when the goods are handed to the buyer-authorised carrier at the loading point, as stated in CONTRACT-076. Payment becomes unconditional at that event.",
+      "qualifying_event_date": null,
+      "recorded_accounting_date": "2025-12-31",
+      "eligible_quantity_by_cutoff": null,
+      "recorded_quantity_in_2025": 200,
+      "conclusion": "Additional evidence required",
+      "difference_cny": null,
+      "explanation": "The contract specifies recognition upon handover to the buyer-authorised carrier at loading. However, the actual dispatch date and dispatched quantity are missing, so the qualifying event date and eligible quantity cannot be determined. The ledger records the full quantity as receivable on 2025-12-31, but without evidence of the qualifying event date, cut-off correctness cannot be confirmed.",
+      "evidence_references": [
+        "CONTRACT-076",
+        "LEDGER-076",
+        "INVOICE-076",
+        "DELIVERY-076"
+      ],
+      "additional_evidence_requested": [
+        "Please provide the actual dispatch date and dispatched quantity to confirm the date when control passed to the buyer-authorised carrier, as required by the contract. This information is necessary to determine whether recognition on 2025-12-31 was appropriate."
+      ]
+    },
+    "reported_cost_usd": 0.0008388,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838439-fckHBdyKtT3IIMPO9E2z",
+    "usage": {
+      "prompt_tokens": 2521,
+      "completion_tokens": 254,
+      "total_tokens": 2775,
+      "cost": 0.0008388,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008388,
+        "upstream_inference_prompt_cost": 0.0004324,
+        "upstream_inference_completions_cost": 0.0004064
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.316
+  },
+  {
+    "transaction_id": "TEST-077",
+    "result": {
+      "transaction_id": "TEST-077",
+      "recognition_condition": "Control passes only after substantive customer acceptance following inspection, as stated in CONTRACT-077. Physical receipt alone is insufficient; payment becomes unconditional at acceptance.",
+      "qualifying_event_date": "2026-01-02",
+      "recorded_accounting_date": "2025-12-29",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 60,
+      "conclusion": "Premature recognition",
+      "difference_cny": 2100,
+      "explanation": "The contract requires substantive customer acceptance for control transfer, which occurred on 2026-01-02, after the 2025-12-31 cut-off. However, the sale and receivable were recorded on 2025-12-29 for the full quantity of 60 units, resulting in premature recognition of revenue and receivables for 2100 CNY.",
+      "evidence_references": [
+        "CONTRACT-077",
+        "LEDGER-077",
+        "INVOICE-077",
+        "DELIVERY-077"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007724,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838442-rLvTQ35eQ7ab6NA93CTL",
+    "usage": {
+      "prompt_tokens": 2531,
+      "completion_tokens": 210,
+      "total_tokens": 2741,
+      "cost": 0.0007724,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007724,
+        "upstream_inference_prompt_cost": 0.0004364,
+        "upstream_inference_completions_cost": 0.000336
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 3.751
+  },
+  {
+    "transaction_id": "TEST-078",
+    "result": {
+      "transaction_id": "TEST-078",
+      "recognition_condition": "Control passes on customer receipt at the agreed warehouse, evidenced by signed delivery. No separate acceptance test is required. Payment becomes unconditional at that event and is due 60 days later. Early invoicing is administrative and creates no earlier right to payment. (CONTRACT-078)",
+      "qualifying_event_date": "2025-12-21",
+      "recorded_accounting_date": "2025-12-21",
+      "eligible_quantity_by_cutoff": 60,
+      "recorded_quantity_in_2025": 60,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires customer receipt at the agreed warehouse as the recognition event. The delivery record shows receipt on 2025-12-21, which is on the cut-off date. The ledger records the sale and receivable on 2025-12-21 for the full quantity of 60 units at the agreed price. The invoice date is after the cut-off but does not affect recognition. Therefore, recognition timing is correct with no cut-off difference.",
+      "evidence_references": [
+        "CONTRACT-078",
+        "LEDGER-078",
+        "INVOICE-078",
+        "DELIVERY-078"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0008408,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838446-8ZRO1MACu0IW7sNfVsjg",
+    "usage": {
+      "prompt_tokens": 2530,
+      "completion_tokens": 253,
+      "total_tokens": 2783,
+      "cost": 0.0008408,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008408,
+        "upstream_inference_prompt_cost": 0.000436,
+        "upstream_inference_completions_cost": 0.0004048
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 4.227
+  },
+  {
+    "transaction_id": "TEST-079",
+    "result": {
+      "transaction_id": "TEST-079",
+      "recognition_condition": "Control transfers only upon customer inspection approval and acceptance, which is a substantive condition per contract CONTRACT-079.",
+      "qualifying_event_date": "2025-12-26",
+      "recorded_accounting_date": "2025-12-26",
+      "eligible_quantity_by_cutoff": 200,
+      "recorded_quantity_in_2025": 200,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires customer acceptance after inspection as the recognition event. The actual acceptance occurred on 2025-12-26, which is on the cut-off date. The ledger records the sale and receivable on the same date for the full quantity and amount. Therefore, recognition timing is appropriate with no cut-off error.",
+      "evidence_references": [
+        "CONTRACT-079",
+        "LEDGER-079",
+        "INVOICE-079",
+        "DELIVERY-079"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0007436,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838450-g9btH9Zl0u5zGURckFlC",
+    "usage": {
+      "prompt_tokens": 2535,
+      "completion_tokens": 191,
+      "total_tokens": 2726,
+      "cost": 0.0007436,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007436,
+        "upstream_inference_prompt_cost": 0.000438,
+        "upstream_inference_completions_cost": 0.0003056
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 2.78
+  },
+  {
+    "transaction_id": "TEST-080",
+    "result": {
+      "transaction_id": "TEST-080",
+      "recognition_condition": "Customer acceptance is the qualifying event for revenue recognition, as per contract CONTRACT-080: 'The customer does not obtain control until substantive inspection sign-off and acceptance. Earlier delivery to its premises is insufficient. Payment becomes unconditional at that event.'",
+      "qualifying_event_date": "2026-01-04",
+      "recorded_accounting_date": "2026-01-04",
+      "eligible_quantity_by_cutoff": 0,
+      "recorded_quantity_in_2025": 0,
+      "conclusion": "No cut-off exception identified",
+      "difference_cny": 0,
+      "explanation": "The contract requires substantive customer acceptance before recognition. Acceptance occurred on 2026-01-04, after the 2025-12-31 cut-off date. The ledger records the sale and receivable on 2026-01-04, consistent with the contract condition. Therefore, no premature recognition occurred in 2025, and no cut-off exception is identified.",
+      "evidence_references": [
+        "CONTRACT-080",
+        "LEDGER-080",
+        "INVOICE-080",
+        "DELIVERY-080"
+      ],
+      "additional_evidence_requested": []
+    },
+    "reported_cost_usd": 0.0008048,
+    "returned_model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "response_id": "gen-1790838453-nYGrU2LmZNxxa4npLdoJ",
+    "usage": {
+      "prompt_tokens": 2536,
+      "completion_tokens": 229,
+      "total_tokens": 2765,
+      "cost": 0.0008048,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008048,
+        "upstream_inference_prompt_cost": 0.0004384,
+        "upstream_inference_completions_cost": 0.0003664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "elapsed_seconds": 5.019
+  }
+]

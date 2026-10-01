@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790838398-iNNaGxBOiEyH2lX4NJUC",
+  "object": "chat.completion",
+  "created": 1790838398,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"TEST-064\",\"recognition_condition\":\"Control passes only after substantive customer acceptance following inspection, as stated in CONTRACT-064. Physical receipt alone is insufficient; payment becomes unconditional at acceptance.\",\"qualifying_event_date\":\"2025-12-31\",\"recorded_accounting_date\":\"2025-12-31\",\"eligible_quantity_by_cutoff\":25,\"recorded_quantity_in_2025\":25,\"conclusion\":\"No cut-off exception identified\",\"difference_cny\":0,\"explanation\":\"The contract requires substantive customer acceptance for recognition. The actual acceptance date is 2025-12-31, which is on the cut-off date. The ledger records the sale and receivable on 2025-12-31 for the full quantity of 25 units at the agreed price. Therefore, recognition timing is appropriate with no cut-off error.\",\"evidence_references\":[\"CONTRACT-064\",\"LEDGER-064\",\"INVOICE-064\",\"DELIVERY-064\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2531,
+    "completion_tokens": 206,
+    "total_tokens": 2737,
+    "cost": 0.000766,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000766,
+      "upstream_inference_prompt_cost": 0.0004364,
+      "upstream_inference_completions_cost": 0.0003296
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

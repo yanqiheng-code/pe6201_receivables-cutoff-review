@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790759398-SMvRQAbLNB7W7N6n7Gu6",
+  "object": "chat.completion",
+  "created": 1790759398,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"DEV-09\",\"recognition_condition\":\"Delivery-based transfer: Control transfers when the goods reach the customer warehouse and the customer signs for receipt. No further acceptance is required.\",\"qualifying_event_date\":\"2025-12-30\",\"recorded_accounting_date\":\"2026-01-03\",\"eligible_quantity_by_cutoff\":100,\"recorded_quantity_in_2025\":0,\"conclusion\":\"Delayed or omitted recognition\",\"difference_cny\":10000,\"explanation\":\"The contract requires control transfer upon customer receipt at their warehouse with signature, which occurred on 2025-12-30, before the cut-off date. However, the accounting entry was recorded on 2026-01-03, after the cut-off date, resulting in delayed recognition of the full quantity and amount.\",\"evidence_references\":[\"CON-09\",\"LED-09\",\"INV-09\",\"DEL-09\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2309,
+    "completion_tokens": 192,
+    "total_tokens": 2501,
+    "cost": 0.0012308,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0012308,
+      "upstream_inference_prompt_cost": 0.0009236,
+      "upstream_inference_completions_cost": 0.0003072
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

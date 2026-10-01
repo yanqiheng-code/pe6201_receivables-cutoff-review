@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790826763-3hbj1VURnEGigrFKXcon",
+  "object": "chat.completion",
+  "created": 1790826763,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"transaction_id\":\"DEV-03\",\"recognition_condition\":\"Control transfers when the goods are physically handed to the carrier authorised by the customer.\",\"qualifying_event_date\":\"2026-01-02\",\"recorded_accounting_date\":\"2025-12-30\",\"eligible_quantity_by_cutoff\":0,\"recorded_quantity_in_2025\":100,\"conclusion\":\"Premature recognition\",\"difference_cny\":10000,\"explanation\":\"The contract specifies that control transfers upon handover to the authorised carrier. Actual dispatch (handover) occurred on 2026-01-02, after the 2025-12-31 cut-off date. However, the ledger recorded the sale and receivable on 2025-12-30 for the full quantity of 100 units. Therefore, the revenue and receivable were recognised prematurely by one reporting period, resulting in a cut-off difference of CNY 10,000.\",\"evidence_references\":[\"CON-03\",\"LED-03\",\"INV-03\",\"DEL-03\"],\"additional_evidence_requested\":[]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2403,
+    "completion_tokens": 216,
+    "total_tokens": 2619,
+    "cost": 0.0007308,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007308,
+      "upstream_inference_prompt_cost": 0.0003852,
+      "upstream_inference_completions_cost": 0.0003456
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}
