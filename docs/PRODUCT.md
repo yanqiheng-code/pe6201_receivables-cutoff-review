@@ -8,7 +8,7 @@ The demonstrated contribution is a traceable path from structured evidence to an
 
 ## Inputs and outputs
 
-Inputs are a manually uploaded JSON package: reporting dates, currency, scope assumptions, and linked contract, ledger, invoice and delivery records for each case. The formal evaluation uses 80 synthetic cases. The recorded walkthrough uses one unchanged normal case, TEST-001, supplied in `demo_examples/TEST-001_input.json`. This demonstration subset does not replace the formal evaluation. Unknown required delivery facts are represented as null. All tested transactions have a fixed price and one full batch.
+Inputs are a manually uploaded JSON package: reporting dates, currency, scope assumptions, and linked contract, ledger, invoice and delivery records for each case. The formal evaluation uses 80 synthetic cases. The recorded walkthrough uses one unchanged normal case, TEST-001, selected from the formal dataset; its separate demonstration JSON package is not included in this repository. This demonstration subset does not replace the formal evaluation. Unknown required delivery facts are represented as null. All tested transactions have a fixed price and one full batch.
 
 Outputs include recognition condition, qualifying date, quantities, cut-off classification, absolute difference, explanation, evidence references and evidence requests. Human conclusions and amounts are recorded separately. Working and accepted CSV summaries expose both AI and human decisions.
 

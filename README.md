@@ -10,7 +10,7 @@ An educational audit-assistance prototype for industrial credit sales. Auditors 
 2. Copy `local_tester/config.example.py` to `local_tester/config.py`. Set your own OpenRouter API key there, or set the `OPENROUTER_API_KEY` environment variable. Never commit the local configuration.
 3. Open `local_tester/review_app.py` and select **Run Python File**.
 4. Open **http://127.0.0.1:8765** in a browser. Keep the Python process running.
-5. Enter your reviewer name. On **Source input**, upload `demo_examples/TEST-001_input.json` for the single-case walkthrough, or `formal_test_80/inputs.json` for the full 80-case set, and confirm the import.
+5. Enter your reviewer name. On **Source input**, upload `formal_test_80/inputs.json` and confirm the import.
 6. In **Workbench**, check the four source records in step 01. **Confirm source records & run AI** makes one paid model call and displays its result in step 02.
 7. If more evidence is needed, supply verified synthetic facts and a source reference in step 03. Confirming automatically reruns that case. Record a supported human decision in step 04.
 8. Use **Review summary** to inspect decisions and export a working CSV. Every case must be reviewed before batch acceptance and final export.
@@ -60,7 +60,6 @@ These are results from one synthetic test run, after a disclosed date-format rep
 | `local_tester/test_*.py` | Offline validation and workflow tests |
 | `accounts_receivable_cutoff_prompt_v1.1.md` | Current English model instructions |
 | `development_examples_20/` | Development inputs, labels, generator and explanation |
-| `demo_examples/` | Single normal case for the recorded walkthrough and its explanation |
 | `formal_test_80/` | Formal synthetic inputs, fixed labels, generator and original freeze manifest |
 | `evaluation_evidence/` | Preserved reported runs, raw requests/responses and evaluation explanation |
 | `verify_evaluation.py` | Offline reproducibility check of the submitted scores |
