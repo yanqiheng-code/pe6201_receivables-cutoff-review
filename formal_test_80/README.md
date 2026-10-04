@@ -42,7 +42,7 @@ BACKEND = "baseline"  # deterministic, no API cost
 
 Run `local_tester/main.py`. For the first full AI evaluation change only `BACKEND = "live"`, using your OpenRouter key already configured locally. Model inputs never include the answer key. A single formal case can be selected with `RUN_ALL = False` and `CASE_ID = "TEST-001"`, but viewing its result uses that test case; preserve and disclose all attempts.
 
-The 80-case AI run has not been performed by the dataset author. Preview files are not AI predictions. Once both methods have run, use `local_tester/compare_results.py` to produce an English comparison without additional API calls.
+The complete 80-case AI evaluation is preserved in `../evaluation_evidence/20261001T070255810759Z_live/`, alongside the rules baseline and the earlier interrupted attempt. The complete run followed a disclosed date-format repair. See `../evaluation_evidence/README.md` for chronology and limitations. Run `../verify_evaluation.py` to reproduce the submitted scores without API calls. `local_tester/compare_results.py` compares new local runs; it does not replace the preserved submission evidence.
 
 ## Auditor demo interface
 

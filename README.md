@@ -10,7 +10,7 @@ An educational audit-assistance prototype for industrial credit sales. Auditors 
 2. Copy `local_tester/config.example.py` to `local_tester/config.py`. Set your own OpenRouter API key there, or set the `OPENROUTER_API_KEY` environment variable. Never commit the local configuration.
 3. Open `local_tester/review_app.py` and select **Run Python File**.
 4. Open **http://127.0.0.1:8765** in a browser. Keep the Python process running.
-5. Enter your reviewer name. On **Source input**, upload `formal_test_80/inputs.json` and confirm the import.
+5. Enter your reviewer name. On **Source input**, upload `demo_examples/TEST-001_input.json` for the single-case walkthrough, or `formal_test_80/inputs.json` for the full 80-case set, and confirm the import.
 6. In **Workbench**, check the four source records in step 01. **Confirm source records & run AI** makes one paid model call and displays its result in step 02.
 7. If more evidence is needed, supply verified synthetic facts and a source reference in step 03. Confirming automatically reruns that case. Record a supported human decision in step 04.
 8. Use **Review summary** to inspect decisions and export a working CSV. Every case must be reviewed before batch acceptance and final export.
@@ -21,7 +21,7 @@ Importing and viewing data do not call the model. Confirmation in steps 01 and 0
 
 ## Optional public Render demo
 
-The hosted entry point is `cloud_app.py`; it serves the same frontend without a visitor password. Each browser has an isolated workspace. The default provider-call limit is 200 attempts per UTC day across all visitors. This temporary demo stores progress on the instance filesystem, so free-service restarts can lose progress. See [Render setup](docs/RENDER_SETUP.md) for exact settings, secrets and limitations. `requirements.txt` and `render.yaml` are included. Deployment to an actual public URL still requires the owner's Render account and a successful live check.
+The hosted entry point is `cloud_app.py`; it serves the same frontend without a visitor password. Each browser has an isolated workspace. The default provider-call limit is 200 attempts per UTC day across all visitors. This temporary demo stores progress on the instance filesystem, so free-service restarts can lose progress. See [Render setup](docs/RENDER_SETUP.md) for exact settings, secrets and limitations. `requirements.txt` and `render.yaml` are included. The project owner has deployed the demo on Render. The deployment instructions are retained for reproducing the hosted setup; the preserved evaluation results come from the formal experiment, not a new hosted evaluation.
 
 ## Evaluation commands
 
@@ -60,6 +60,7 @@ These are results from one synthetic test run, after a disclosed date-format rep
 | `local_tester/test_*.py` | Offline validation and workflow tests |
 | `accounts_receivable_cutoff_prompt_v1.1.md` | Current English model instructions |
 | `development_examples_20/` | Development inputs, labels, generator and explanation |
+| `demo_examples/` | Single normal case for the recorded walkthrough and its explanation |
 | `formal_test_80/` | Formal synthetic inputs, fixed labels, generator and original freeze manifest |
 | `evaluation_evidence/` | Preserved reported runs, raw requests/responses and evaluation explanation |
 | `verify_evaluation.py` | Offline reproducibility check of the submitted scores |
@@ -68,6 +69,6 @@ These are results from one synthetic test run, after a disclosed date-format rep
 
 ## Limitations and submission status
 
-Data are fictional and template-based, with shared authorship between development and formal cases. The set is not an independently authored real-world validation. Explanation quality, reviewer time savings, extraction accuracy and repeat-run stability have not been measured. Reviewer names are self-declared, and local records are not tamper-proof. The server is designed for local single-user use.
+Data are fictional and template-based, with shared authorship between development and formal cases. The set is not an independently authored real-world validation. Explanation quality, reviewer time savings, extraction accuracy and repeat-run stability have not been measured. Reviewer names are self-declared, and local records are not tamper-proof. The local server supports a single-user workspace; the hosted adapter separates browser workspaces. Hosted demo records are temporary and can be lost on service restart.
 
-Source code and these evaluation materials are ready for repository review. The final approximately 1,200-word report and face-and-screen demo video are completed in NTUlearn. GitHub stores the source repository; GitHub Pages cannot execute the Python backend. See [deployment planning](local_tester/DEPLOYMENT_PLAN.md).
+This repository contains source code, datasets and reproducible evaluation evidence. The final report and face-and-screen demo video are submitted separately through NTULearn. The Problem Statement is a separate submission document. GitHub hosts the source code; Render runs the application. See [Render setup](docs/RENDER_SETUP.md) for deployment instructions.
