@@ -70,4 +70,4 @@ These are results from one synthetic test run, after a disclosed date-format rep
 
 Data are fictional and template-based, with shared authorship between development and formal cases. The set is not an independently authored real-world validation. Explanation quality, reviewer time savings, extraction accuracy and repeat-run stability have not been measured. Reviewer names are self-declared, and local records are not tamper-proof. The server is designed for local single-user use.
 
-Source code and these evaluation materials are ready for repository review. The final approximately 1,200-word report and face-and-screen demo video are separate deliverables still to be completed. GitHub stores the source repository; GitHub Pages cannot execute the Python backend. See [deployment planning](local_tester/DEPLOYMENT_PLAN.md).
+Source code and these evaluation materials are ready for repository review. The final approximately 1,200-word report and face-and-screen demo video are completed in NTUlearn. GitHub stores the source repository; GitHub Pages cannot execute the Python backend. See [deployment planning](local_tester/DEPLOYMENT_PLAN.md).
